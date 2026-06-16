@@ -1,69 +1,71 @@
 # PulsoDeEstadioSinestesico
 
-Interactive p5.js piece for **Sinestesia Digital: Ver el Sonido**, built around the concept of a **sinesthetic stadium pulse** where football match data becomes a living audiovisual field driven by microphone input.
+Pieza interactiva en **p5.js** para **Sinestesia Digital: Ver el Sonido**, construida a partir del concepto de un **pulso de estadio sinestésico**, donde los datos del Mundial se transforman en una visualización viva impulsada por el micrófono.
 
-The project transforms FIFA World Cup matches into reactive entities: each match appears as an orb on the pitch, and its halos no longer respond to timeline playback. Instead, **even-numbered goals react to low frequencies** and **odd-numbered goals react to high frequencies**, turning live sound into a visual reading of rhythm, pressure, and intensity.
+El proyecto convierte partidos de la FIFA World Cup en entidades reactivas: cada partido aparece como una órbita sobre la cancha y sus aureolas ya no responden a una línea de tiempo. Ahora, los **goles pares reaccionan a los graves** y los **goles impares reaccionan a los agudos**, usando el sonido en vivo como motor visual.
 
-## Concept
+## Concepto
 
-**Pulso de estadio sinestesico** explores the feeling of collective tension in football as if the stadium itself were an organism. The visual system treats matches as bodies, goals as layers of memory, and sound as the force that wakes them up.
+**Pulso de estadio sinestésico** explora la tensión colectiva del fútbol como si el estadio fuera un organismo. El sistema visual trata los partidos como cuerpos, los goles como capas de memoria y el sonido como la fuerza que los activa.
 
-- **Bass** activates halos linked to even goals.
-- **Treble** activates halos linked to odd goals.
-- **Mid frequencies** affect drift, orbital motion, and visual instability.
-- **Volume** amplifies the overall visual pressure of the field.
+- **Graves**: despiertan aureolas ligadas a goles pares.
+- **Agudos**: despiertan aureolas ligadas a goles impares.
+- **Medios**: alteran la deriva, el movimiento orbital y la inestabilidad visual.
+- **Volumen**: amplifica la presión general de la escena.
 
-## Features
+## Características
 
-- Live microphone input with adjustable sensitivity.
-- FFT analysis for **bass**, **mid**, and **treble** bands.
-- Main reactive class with multiple instances and behavioral variation.
-- Real-time controls for microphone gain, thresholds, aura scale, speed, and color flow.
-- Toggleable legend with `L`.
-- Fullscreen-ready presentation for exhibition/class critique.
-- Dataset-driven structure using FIFA World Cup CSV files.
+- Entrada en vivo por micrófono con sensibilidad ajustable.
+- Análisis FFT para **graves**, **medios** y **agudos**.
+- Clase principal reactiva con múltiples instancias y variaciones de comportamiento.
+- Controles en tiempo real para sensibilidad, umbrales, escala de aureolas, velocidad y flujo de color.
+- Activación y desactivación de bandas sonoras con checkboxes.
+- Leyenda visible u oculta con la tecla `L`.
+- Ejecución apta para fullscreen en contexto de entrega o exhibición.
+- Estructura basada en datasets históricos del Mundial.
 
-## Controls
+## Controles
 
-| Input | Action |
+| Input | Acción |
 | --- | --- |
-| `L` | Show or hide legend |
-| `F` | Toggle fullscreen |
-| `A / Z` | Increase or decrease motion speed |
-| `Left / Right` | Change World Cup year |
-| Mouse drag | Orbit the field |
-| Mouse wheel | Zoom |
-| Click on orb | Pin match information |
-| Sliders | Adjust mic sensitivity, thresholds, aura scale, speed and color |
+| `L` | Mostrar u ocultar la leyenda |
+| `F` | Activar o desactivar fullscreen |
+| `A / Z` | Aumentar o disminuir la velocidad |
+| `Left / Right` | Cambiar de Mundial |
+| Drag con mouse | Orbitar la cancha |
+| Rueda del mouse | Zoom |
+| Click sobre una órbita | Fijar información del partido |
+| Sliders | Ajustar sensibilidad, umbrales, escala, velocidad y color |
+| Checkboxes | Activar o desactivar graves, medios y agudos |
 
-## Files
+## Archivos
 
-| File | Role |
+| Archivo | Función |
 | --- | --- |
-| `index.html` | Entry point |
-| `style.css` | Interface and overlay styling |
-| `sketch.js` | Main p5.js visualization and audio-reactive logic |
-| `matches_clean.csv` | Match dataset |
-| `goals_clean.csv` | Goal dataset |
-| `teams_clean.csv` | Team metadata |
-| `tournaments_clean.csv` | Tournament metadata |
+| `index.html` | Punto de entrada |
+| `style.css` | Estilos base de interfaz |
+| `sketch.js` | Lógica principal de visualización y reacción al audio |
+| `matches_clean.csv` | Dataset de partidos |
+| `goals_clean.csv` | Dataset de goles |
+| `teams_clean.csv` | Metadatos de equipos |
+| `tournaments_clean.csv` | Metadatos de torneos |
 
-## Run Locally
+## Ejecución local
 
-Because the piece uses microphone input, it should be opened from a local server instead of directly from the filesystem.
+Como la pieza usa micrófono, conviene abrirla desde un servidor local y no directamente desde el sistema de archivos.
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open:
+Luego abre:
 
 ```text
 http://localhost:8000
 ```
 
-Allow microphone access in the browser and press the interface button to activate audio input.
+Acepta el permiso del micrófono en el navegador y activa el botón de audio desde la interfaz.
 
-## Context
+## Contexto
 
-This piece was adapted from an earlier World Cup data visualization into a final-exam interactive system focused on **seeing sound** through color, form, and motion. The result keeps the football archive as source material while shifting the experience toward live audiovisual performance.
+Esta pieza nace de una visualización previa de datos de mundiales y fue adaptada hacia una entrega final centrada en la idea de **ver el sonido** por medio de color, forma y movimiento. El resultado mantiene el archivo futbolero como materia prima, pero lo desplaza hacia una experiencia performática y sinestésica en tiempo real.

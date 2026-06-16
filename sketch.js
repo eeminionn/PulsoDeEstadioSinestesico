@@ -1,4 +1,6 @@
 // Sinestesia Digital · Ver el sonido
+// Repositorio: https://github.com/eeminionn/PulsoDeEstadioSinestesico
+// Hecho por eeminionn
 // Concepto: Pulso de estadio sinestesico
 
 let Tm, Tg, Tt, Tteams;
@@ -378,7 +380,10 @@ const params = {
   trebleGate: 0.09,
   auraScale: 1.2,
   speed: 1.2,
-  colorFlux: 0.45
+  colorFlux: 0.45,
+  bassEnabled: true,
+  midEnabled: true,
+  trebleEnabled: true
 };
 
 function makeUI() {
@@ -448,6 +453,28 @@ function makeUI() {
 
   ui.colorLabel = label("FLUJO DE COLOR");
   ui.colorSlider = slider(0, 1, params.colorFlux, 0.01, updateLabels);
+
+  const bandTitle = createDiv("BANDAS ACTIVAS").parent(ui.panel);
+  styleMany(bandTitle, {
+    margin: "16px 0 8px",
+    "font-family": "Courier New, monospace",
+    "font-size": "10px",
+    "font-weight": "900",
+    "letter-spacing": ".12em",
+    "text-transform": "uppercase",
+    color: "rgba(236,230,206,.62)"
+  });
+
+  const bandRow = createDiv().parent(ui.panel);
+  styleMany(bandRow, {
+    display: "grid",
+    "grid-template-columns": "1fr 1fr 1fr",
+    gap: "8px"
+  });
+
+  ui.bassCheck = bandToggle("Graves", C.bass, params.bassEnabled, bandRow, updateLabels);
+  ui.midCheck = bandToggle("Medios", C.mid, params.midEnabled, bandRow, updateLabels);
+  ui.trebleCheck = bandToggle("Agudos", C.treble, params.trebleEnabled, bandRow, updateLabels);
 
   const row = createDiv().parent(ui.panel);
   styleMany(row, {
@@ -548,6 +575,39 @@ function button(textValue, fn, parent) {
   return b;
 }
 
+function bandToggle(name, tone, checked, parent, fn) {
+  const wrap = createDiv().parent(parent);
+  styleMany(wrap, {
+    display: "flex",
+    "align-items": "center",
+    gap: "8px",
+    padding: "10px 10px",
+    "border-radius": "12px",
+    background: "rgba(255,255,255,.04)",
+    border: "1px solid rgba(236,230,206,.1)"
+  });
+
+  const check = createCheckbox("", checked).parent(wrap);
+  styleMany(check, {
+    margin: "0",
+    transform: "scale(1.05)",
+    "accent-color": `rgb(${tone[0]},${tone[1]},${tone[2]})`
+  });
+  check.changed(fn);
+
+  const labelText = createSpan(name).parent(wrap);
+  styleMany(labelText, {
+    "font-family": "Courier New, monospace",
+    "font-size": "10px",
+    "font-weight": "900",
+    "letter-spacing": ".08em",
+    "text-transform": "uppercase",
+    color: "rgb(236,230,206)"
+  });
+
+  return check;
+}
+
 function stylePrimaryButton(el) {
   styleMany(el, {
     background: "linear-gradient(135deg, rgb(214,171,88) 0%, rgb(177,116,56) 100%)",
@@ -573,6 +633,9 @@ function readControls() {
   params.auraScale = Number(ui.auraSlider.value());
   params.speed = Number(ui.speedSlider.value());
   params.colorFlux = Number(ui.colorSlider.value());
+  params.bassEnabled = ui.bassCheck.checked();
+  params.midEnabled = ui.midCheck.checked();
+  params.trebleEnabled = ui.trebleCheck.checked();
 }
 
 function updateLabels() {
@@ -636,12 +699,13 @@ function updateAudioState() {
   fft.analyze();
 
   const level = mic.getLevel();
-  const bass = fft.getEnergy("bass") / 255;
-  const mid = fft.getEnergy("mid") / 255;
-  const treble = fft.getEnergy("treble") / 255;
+  const bass = params.bassEnabled ? fft.getEnergy("bass") / 255 : 0;
+  const mid = params.midEnabled ? fft.getEnergy("mid") / 255 : 0;
+  const treble = params.trebleEnabled ? fft.getEnergy("treble") / 255 : 0;
 
   audioState.rawLevel = level;
-  audioState.level = lerp(audioState.level, constrain(level * params.micAmp * 8, 0, 1.8), 0.18);
+  const activeBand = params.bassEnabled || params.midEnabled || params.trebleEnabled;
+  audioState.level = lerp(audioState.level, activeBand ? constrain(level * params.micAmp * 8, 0, 1.8) : 0, 0.18);
   audioState.bass = lerp(audioState.bass, bass, 0.2);
   audioState.mid = lerp(audioState.mid, mid, 0.2);
   audioState.treble = lerp(audioState.treble, treble, 0.2);
@@ -650,9 +714,11 @@ function updateAudioState() {
   const bassOpen = audioState.bass > params.bassGate;
   const trebleOpen = audioState.treble > params.trebleGate;
 
-  if (bassOpen && trebleOpen) audioState.zone = "mixto";
+  if (!activeBand) audioState.zone = "silenciado";
+  else if (bassOpen && trebleOpen) audioState.zone = "mixto";
   else if (bassOpen) audioState.zone = "graves";
   else if (trebleOpen) audioState.zone = "agudos";
+  else if (audioState.mid > 0.08) audioState.zone = "medios";
   else audioState.zone = "pasivo";
 }
 
@@ -795,9 +861,9 @@ function drawGuideGrid() {
   rect(meterX - 18, meterY - 28, meterW + 36, 54, 16);
 
   const bands = [
-    { name: "GRAVES = GOLES PARES", value: audioState.bass, col: C.bass },
-    { name: "MEDIOS = DERIVA", value: audioState.mid, col: C.mid },
-    { name: "AGUDOS = GOLES IMPARES", value: audioState.treble, col: C.treble }
+    { name: "GRAVES = GOLES PARES", value: audioState.bass, col: C.bass, on: params.bassEnabled },
+    { name: "MEDIOS = DERIVA", value: audioState.mid, col: C.mid, on: params.midEnabled },
+    { name: "AGUDOS = GOLES IMPARES", value: audioState.treble, col: C.treble, on: params.trebleEnabled }
   ];
 
   textFont("monospace");
@@ -807,12 +873,12 @@ function drawGuideGrid() {
 
   for (let i = 0; i < bands.length; i++) {
     const y = meterY - 10 + i * 16;
-    fill(C.line[0], C.line[1], C.line[2], 210);
-    text(bands[i].name, meterX, y);
+    fill(C.line[0], C.line[1], C.line[2], bands[i].on ? 210 : 90);
+    text((bands[i].on ? "■ " : "□ ") + bands[i].name, meterX, y);
 
     fill(255, 255, 255, 22);
     rect(meterX + 132, y - 5, meterW - 150, 8, 4);
-    fill(bands[i].col[0], bands[i].col[1], bands[i].col[2], 205);
+    fill(bands[i].col[0], bands[i].col[1], bands[i].col[2], bands[i].on ? 205 : 70);
     rect(meterX + 132, y - 5, (meterW - 150) * constrain(bands[i].value, 0, 1), 8, 4);
   }
 }
