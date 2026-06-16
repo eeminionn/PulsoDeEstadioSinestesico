@@ -1,0 +1,965 @@
+year,tournament_id,match_id,match_date,stage_name,group_name,city_name,country_name,home_team_name,home_team_code,away_team_name,away_team_code,home_team_score,away_team_score,score,result,total_goals,goal_margin,group_stage,knockout_stage,extra_time,penalty_shootout,is_final,is_semifinal,winner,host_country,host_won,champion_in_match,host_in_match
+1930,WC-1930,M-1930-01,1930-07-13,group stage,Group 1,Montevideo,Uruguay,France,FRA,Mexico,MEX,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-02,1930-07-13,group stage,Group 4,Montevideo,Uruguay,United States,USA,Belgium,BEL,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-03,1930-07-14,group stage,Group 2,Montevideo,Uruguay,Yugoslavia,YUG,Brazil,BRA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-04,1930-07-14,group stage,Group 3,Montevideo,Uruguay,Romania,ROU,Peru,PER,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-05,1930-07-15,group stage,Group 1,Montevideo,Uruguay,Argentina,ARG,France,FRA,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-06,1930-07-16,group stage,Group 1,Montevideo,Uruguay,Chile,CHL,Mexico,MEX,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-07,1930-07-17,group stage,Group 2,Montevideo,Uruguay,Yugoslavia,YUG,Bolivia,BOL,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-08,1930-07-17,group stage,Group 4,Montevideo,Uruguay,United States,USA,Paraguay,PRY,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-09,1930-07-18,group stage,Group 3,Montevideo,Uruguay,Uruguay,URY,Peru,PER,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Uruguay,Uruguay,1,1,1
+1930,WC-1930,M-1930-10,1930-07-19,group stage,Group 1,Montevideo,Uruguay,Chile,CHL,France,FRA,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-11,1930-07-19,group stage,Group 1,Montevideo,Uruguay,Argentina,ARG,Mexico,MEX,6,3,6–3,home team win,9,3,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-12,1930-07-20,group stage,Group 2,Montevideo,Uruguay,Brazil,BRA,Bolivia,BOL,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-13,1930-07-20,group stage,Group 4,Montevideo,Uruguay,Paraguay,PRY,Belgium,BEL,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-14,1930-07-21,group stage,Group 3,Montevideo,Uruguay,Uruguay,URY,Romania,ROU,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Uruguay,Uruguay,1,1,1
+1930,WC-1930,M-1930-15,1930-07-22,group stage,Group 1,Montevideo,Uruguay,Argentina,ARG,Chile,CHL,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-16,1930-07-26,semi-finals,not applicable,Montevideo,Uruguay,Argentina,ARG,United States,USA,6,1,6–1,home team win,7,5,0,1,0,0,0,1,Uruguay,Uruguay,1,0,0
+1930,WC-1930,M-1930-17,1930-07-27,semi-finals,not applicable,Montevideo,Uruguay,Uruguay,URY,Yugoslavia,YUG,6,1,6–1,home team win,7,5,0,1,0,0,0,1,Uruguay,Uruguay,1,1,1
+1930,WC-1930,M-1930-18,1930-07-30,final,not applicable,Montevideo,Uruguay,Uruguay,URY,Argentina,ARG,4,2,4–2,home team win,6,2,0,1,0,0,1,0,Uruguay,Uruguay,1,1,1
+1934,WC-1934,M-1934-01,1934-05-27,round of 16,not applicable,Turin,Italy,Austria,AUT,France,FRA,3,2,3–2,home team win,5,1,0,1,1,0,0,0,Italy,Italy,1,0,0
+1934,WC-1934,M-1934-02,1934-05-27,round of 16,not applicable,Trieste,Italy,Czechoslovakia,CSK,Romania,ROU,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Italy,Italy,1,0,0
+1934,WC-1934,M-1934-03,1934-05-27,round of 16,not applicable,Florence,Italy,Germany,DEU,Belgium,BEL,5,2,5–2,home team win,7,3,0,1,0,0,0,0,Italy,Italy,1,0,0
+1934,WC-1934,M-1934-04,1934-05-27,round of 16,not applicable,Naples,Italy,Hungary,HUN,Egypt,EGY,4,2,4–2,home team win,6,2,0,1,0,0,0,0,Italy,Italy,1,0,0
+1934,WC-1934,M-1934-05,1934-05-27,round of 16,not applicable,Rome,Italy,Italy,ITA,United States,USA,7,1,7–1,home team win,8,6,0,1,0,0,0,0,Italy,Italy,1,1,1
+1934,WC-1934,M-1934-06,1934-05-27,round of 16,not applicable,Genoa,Italy,Spain,ESP,Brazil,BRA,3,1,3–1,home team win,4,2,0,1,0,0,0,0,Italy,Italy,1,0,0
+1934,WC-1934,M-1934-07,1934-05-27,round of 16,not applicable,Bologna,Italy,Sweden,SWE,Argentina,ARG,3,2,3–2,home team win,5,1,0,1,0,0,0,0,Italy,Italy,1,0,0
+1934,WC-1934,M-1934-08,1934-05-27,round of 16,not applicable,Milan,Italy,Switzerland,CHE,Netherlands,NLD,3,2,3–2,home team win,5,1,0,1,0,0,0,0,Italy,Italy,1,0,0
+1934,WC-1934,M-1934-09,1934-05-31,quarter-finals,not applicable,Bologna,Italy,Austria,AUT,Hungary,HUN,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Italy,Italy,1,0,0
+1934,WC-1934,M-1934-10,1934-05-31,quarter-finals,not applicable,Turin,Italy,Czechoslovakia,CSK,Switzerland,CHE,3,2,3–2,home team win,5,1,0,1,0,0,0,0,Italy,Italy,1,0,0
+1934,WC-1934,M-1934-11,1934-05-31,quarter-finals,not applicable,Milan,Italy,Germany,DEU,Sweden,SWE,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Italy,Italy,1,0,0
+1934,WC-1934,M-1934-12,1934-05-31,quarter-finals,not applicable,Florence,Italy,Italy,ITA,Spain,ESP,1,1,1–1,draw,2,0,0,1,1,0,0,0,Italy,Italy,1,1,1
+1934,WC-1934,M-1934-13,1934-06-01,quarter-finals,not applicable,Florence,Italy,Italy,ITA,Spain,ESP,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Italy,Italy,1,1,1
+1934,WC-1934,M-1934-14,1934-06-03,semi-finals,not applicable,Rome,Italy,Czechoslovakia,CSK,Germany,DEU,3,1,3–1,home team win,4,2,0,1,0,0,0,1,Italy,Italy,1,0,0
+1934,WC-1934,M-1934-15,1934-06-03,semi-finals,not applicable,Milan,Italy,Italy,ITA,Austria,AUT,1,0,1–0,home team win,1,1,0,1,0,0,0,1,Italy,Italy,1,1,1
+1934,WC-1934,M-1934-16,1934-06-07,third-place match,not applicable,Naples,Italy,Germany,DEU,Austria,AUT,3,2,3–2,home team win,5,1,0,1,0,0,0,0,Italy,Italy,1,0,0
+1934,WC-1934,M-1934-17,1934-06-10,final,not applicable,Rome,Italy,Italy,ITA,Czechoslovakia,CSK,2,1,2–1,home team win,3,1,0,1,1,0,1,0,Italy,Italy,1,1,1
+1938,WC-1938,M-1938-01,1938-06-04,round of 16,not applicable,Paris,France,Switzerland,CHE,Germany,DEU,1,1,1–1,draw,2,0,0,1,1,0,0,0,Italy,France,0,0,0
+1938,WC-1938,M-1938-02,1938-06-05,round of 16,not applicable,Toulouse,France,Cuba,CUB,Romania,ROU,3,3,3–3,draw,6,0,0,1,1,0,0,0,Italy,France,0,0,0
+1938,WC-1938,M-1938-03,1938-06-05,round of 16,not applicable,Paris,France,France,FRA,Belgium,BEL,3,1,3–1,home team win,4,2,0,1,0,0,0,0,Italy,France,0,0,1
+1938,WC-1938,M-1938-04,1938-06-05,round of 16,not applicable,Reims,France,Hungary,HUN,Dutch East Indies,IDN,6,0,6–0,home team win,6,6,0,1,0,0,0,0,Italy,France,0,0,0
+1938,WC-1938,M-1938-05,1938-06-05,round of 16,not applicable,Marseille,France,Italy,ITA,Norway,NOR,2,1,2–1,home team win,3,1,0,1,1,0,0,0,Italy,France,0,1,0
+1938,WC-1938,M-1938-06,1938-06-05,round of 16,not applicable,Strasbourg,France,Brazil,BRA,Poland,POL,6,5,6–5,home team win,11,1,0,1,1,0,0,0,Italy,France,0,0,0
+1938,WC-1938,M-1938-07,1938-06-05,round of 16,not applicable,Le Havre,France,Czechoslovakia,CSK,Netherlands,NLD,3,0,3–0,home team win,3,3,0,1,1,0,0,0,Italy,France,0,0,0
+1938,WC-1938,M-1938-08,1938-06-09,round of 16,not applicable,Toulouse,France,Cuba,CUB,Romania,ROU,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Italy,France,0,0,0
+1938,WC-1938,M-1938-09,1938-06-09,round of 16,not applicable,Paris,France,Switzerland,CHE,Germany,DEU,4,2,4–2,home team win,6,2,0,1,0,0,0,0,Italy,France,0,0,0
+1938,WC-1938,M-1938-10,1938-06-12,quarter-finals,not applicable,Bordeaux,France,Brazil,BRA,Czechoslovakia,CSK,1,1,1–1,draw,2,0,0,1,1,0,0,0,Italy,France,0,0,0
+1938,WC-1938,M-1938-11,1938-06-12,quarter-finals,not applicable,Lille,France,Hungary,HUN,Switzerland,CHE,2,0,2–0,home team win,2,2,0,1,0,0,0,0,Italy,France,0,0,0
+1938,WC-1938,M-1938-12,1938-06-12,quarter-finals,not applicable,Paris,France,Italy,ITA,France,FRA,3,1,3–1,home team win,4,2,0,1,0,0,0,0,Italy,France,0,1,1
+1938,WC-1938,M-1938-13,1938-06-12,quarter-finals,not applicable,Antibes,France,Sweden,SWE,Cuba,CUB,8,0,8–0,home team win,8,8,0,1,0,0,0,0,Italy,France,0,0,0
+1938,WC-1938,M-1938-14,1938-06-14,quarter-finals,not applicable,Bordeaux,France,Brazil,BRA,Czechoslovakia,CSK,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Italy,France,0,0,0
+1938,WC-1938,M-1938-15,1938-06-16,semi-finals,not applicable,Paris,France,Hungary,HUN,Sweden,SWE,5,1,5–1,home team win,6,4,0,1,0,0,0,1,Italy,France,0,0,0
+1938,WC-1938,M-1938-16,1938-06-16,semi-finals,not applicable,Marseille,France,Italy,ITA,Brazil,BRA,2,1,2–1,home team win,3,1,0,1,0,0,0,1,Italy,France,0,1,0
+1938,WC-1938,M-1938-18,1938-06-19,final,not applicable,Paris,France,Italy,ITA,Hungary,HUN,4,2,4–2,home team win,6,2,0,1,0,0,1,0,Italy,France,0,1,0
+1938,WC-1938,M-1938-17,1938-06-19,third-place match,not applicable,Bordeaux,France,Brazil,BRA,Sweden,SWE,4,2,4–2,home team win,6,2,0,1,0,0,0,0,Italy,France,0,0,0
+1950,WC-1950,M-1950-01,1950-06-24,group stage,Group 1,Rio de Janeiro,Brazil,Brazil,BRA,Mexico,MEX,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Uruguay,Brazil,0,0,1
+1950,WC-1950,M-1950-02,1950-06-25,group stage,Group 1,Belo Horizonte,Brazil,Yugoslavia,YUG,Switzerland,CHE,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-03,1950-06-25,group stage,Group 2,Rio de Janeiro,Brazil,England,ENG,Chile,CHL,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-04,1950-06-25,group stage,Group 2,Curitiba,Brazil,Spain,ESP,United States,USA,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-05,1950-06-25,group stage,Group 3,São Paulo,Brazil,Sweden,SWE,Italy,ITA,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-06,1950-06-28,group stage,Group 1,São Paulo,Brazil,Brazil,BRA,Switzerland,CHE,2,2,2–2,draw,4,0,1,0,0,0,0,0,Uruguay,Brazil,0,0,1
+1950,WC-1950,M-1950-07,1950-06-28,group stage,Group 1,Porto Alegre,Brazil,Yugoslavia,YUG,Mexico,MEX,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-08,1950-06-29,group stage,Group 2,Rio de Janeiro,Brazil,Spain,ESP,Chile,CHL,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-09,1950-06-29,group stage,Group 2,Belo Horizonte,Brazil,United States,USA,England,ENG,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-10,1950-06-29,group stage,Group 3,Curitiba,Brazil,Sweden,SWE,Paraguay,PRY,2,2,2–2,draw,4,0,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-11,1950-07-01,group stage,Group 1,Rio de Janeiro,Brazil,Brazil,BRA,Yugoslavia,YUG,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Uruguay,Brazil,0,0,1
+1950,WC-1950,M-1950-12,1950-07-02,group stage,Group 2,Recife,Brazil,Chile,CHL,United States,USA,5,2,5–2,home team win,7,3,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-13,1950-07-02,group stage,Group 2,Rio de Janeiro,Brazil,Spain,ESP,England,ENG,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-14,1950-07-02,group stage,Group 3,São Paulo,Brazil,Italy,ITA,Paraguay,PRY,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-15,1950-07-02,group stage,Group 4,Belo Horizonte,Brazil,Uruguay,URY,Bolivia,BOL,8,0,8–0,home team win,8,8,1,0,0,0,0,0,Uruguay,Brazil,0,1,0
+1950,WC-1950,M-1950-16,1950-07-02,group stage,Group 1,Porto Alegre,Brazil,Switzerland,CHE,Mexico,MEX,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-17,1950-07-09,final round,not applicable,Rio de Janeiro,Brazil,Brazil,BRA,Sweden,SWE,7,1,7–1,home team win,8,6,1,0,0,0,0,0,Uruguay,Brazil,0,0,1
+1950,WC-1950,M-1950-18,1950-07-09,final round,not applicable,São Paulo,Brazil,Uruguay,URY,Spain,ESP,2,2,2–2,draw,4,0,1,0,0,0,0,0,Uruguay,Brazil,0,1,0
+1950,WC-1950,M-1950-19,1950-07-13,final round,not applicable,Rio de Janeiro,Brazil,Brazil,BRA,Spain,ESP,6,1,6–1,home team win,7,5,1,0,0,0,0,0,Uruguay,Brazil,0,0,1
+1950,WC-1950,M-1950-20,1950-07-13,final round,not applicable,São Paulo,Brazil,Uruguay,URY,Sweden,SWE,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Uruguay,Brazil,0,1,0
+1950,WC-1950,M-1950-21,1950-07-16,final round,not applicable,São Paulo,Brazil,Sweden,SWE,Spain,ESP,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Uruguay,Brazil,0,0,0
+1950,WC-1950,M-1950-22,1950-07-16,final round,not applicable,Rio de Janeiro,Brazil,Uruguay,URY,Brazil,BRA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Uruguay,Brazil,0,1,1
+1954,WC-1954,M-1954-01,1954-06-16,group stage,Group 1,Geneva,Switzerland,Brazil,BRA,Mexico,MEX,5,0,5–0,home team win,5,5,1,0,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-02,1954-06-16,group stage,Group 1,Lausanne,Switzerland,Yugoslavia,YUG,France,FRA,1,0,1–0,home team win,1,1,1,0,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-03,1954-06-16,group stage,Group 3,Zürich,Switzerland,Austria,AUT,Scotland,SCO,1,0,1–0,home team win,1,1,1,0,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-04,1954-06-16,group stage,Group 3,Bern,Switzerland,Uruguay,URY,Czechoslovakia,CSK,2,0,2–0,home team win,2,2,1,0,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-05,1954-06-17,group stage,Group 4,Lausanne,Switzerland,Switzerland,CHE,Italy,ITA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,West Germany,Switzerland,0,0,1
+1954,WC-1954,M-1954-06,1954-06-17,group stage,Group 2,Zürich,Switzerland,Hungary,HUN,South Korea,KOR,9,0,9–0,home team win,9,9,1,0,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-07,1954-06-17,group stage,Group 2,Bern,Switzerland,West Germany,DEU,Turkey,TUR,4,1,4–1,home team win,5,3,1,0,0,0,0,0,West Germany,Switzerland,0,1,0
+1954,WC-1954,M-1954-08,1954-06-17,group stage,Group 4,Basel,Switzerland,England,ENG,Belgium,BEL,4,4,4–4,draw,8,0,1,0,1,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-09,1954-06-19,group stage,Group 3,Basel,Switzerland,Uruguay,URY,Scotland,SCO,7,0,7–0,home team win,7,7,1,0,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-10,1954-06-19,group stage,Group 1,Lausanne,Switzerland,Brazil,BRA,Yugoslavia,YUG,1,1,1–1,draw,2,0,1,0,1,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-11,1954-06-19,group stage,Group 3,Zürich,Switzerland,Austria,AUT,Czechoslovakia,CSK,5,0,5–0,home team win,5,5,1,0,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-12,1954-06-19,group stage,Group 1,Geneva,Switzerland,France,FRA,Mexico,MEX,3,2,3–2,home team win,5,1,1,0,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-13,1954-06-20,group stage,Group 2,Basel,Switzerland,Hungary,HUN,West Germany,DEU,8,3,8–3,home team win,11,5,1,0,0,0,0,0,West Germany,Switzerland,0,1,0
+1954,WC-1954,M-1954-14,1954-06-20,group stage,Group 2,Geneva,Switzerland,Turkey,TUR,South Korea,KOR,7,0,7–0,home team win,7,7,1,0,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-15,1954-06-20,group stage,Group 4,Lugano,Switzerland,Italy,ITA,Belgium,BEL,4,1,4–1,home team win,5,3,1,0,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-16,1954-06-20,group stage,Group 4,Bern,Switzerland,England,ENG,Switzerland,CHE,2,0,2–0,home team win,2,2,1,0,0,0,0,0,West Germany,Switzerland,0,0,1
+1954,WC-1954,M-1954-17,1954-06-23,group stage,Group 2,Zürich,Switzerland,West Germany,DEU,Turkey,TUR,7,2,7–2,home team win,9,5,1,0,0,0,0,0,West Germany,Switzerland,0,1,0
+1954,WC-1954,M-1954-18,1954-06-23,group stage,Group 4,Basel,Switzerland,Switzerland,CHE,Italy,ITA,4,1,4–1,home team win,5,3,1,0,0,0,0,0,West Germany,Switzerland,0,0,1
+1954,WC-1954,M-1954-19,1954-06-26,quarter-finals,not applicable,Lausanne,Switzerland,Austria,AUT,Switzerland,CHE,7,5,7–5,home team win,12,2,0,1,0,0,0,0,West Germany,Switzerland,0,0,1
+1954,WC-1954,M-1954-20,1954-06-26,quarter-finals,not applicable,Basel,Switzerland,Uruguay,URY,England,ENG,4,2,4–2,home team win,6,2,0,1,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-21,1954-06-27,quarter-finals,not applicable,Bern,Switzerland,Hungary,HUN,Brazil,BRA,4,2,4–2,home team win,6,2,0,1,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-22,1954-06-27,quarter-finals,not applicable,Geneva,Switzerland,West Germany,DEU,Yugoslavia,YUG,2,0,2–0,home team win,2,2,0,1,0,0,0,0,West Germany,Switzerland,0,1,0
+1954,WC-1954,M-1954-23,1954-06-30,semi-finals,not applicable,Lausanne,Switzerland,Hungary,HUN,Uruguay,URY,4,2,4–2,home team win,6,2,0,1,1,0,0,1,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-24,1954-06-30,semi-finals,not applicable,Basel,Switzerland,West Germany,DEU,Austria,AUT,6,1,6–1,home team win,7,5,0,1,0,0,0,1,West Germany,Switzerland,0,1,0
+1954,WC-1954,M-1954-25,1954-07-03,third-place match,not applicable,Zürich,Switzerland,Austria,AUT,Uruguay,URY,3,1,3–1,home team win,4,2,0,1,0,0,0,0,West Germany,Switzerland,0,0,0
+1954,WC-1954,M-1954-26,1954-07-04,final,not applicable,Bern,Switzerland,West Germany,DEU,Hungary,HUN,3,2,3–2,home team win,5,1,0,1,0,0,1,0,West Germany,Switzerland,0,1,0
+1958,WC-1958,M-1958-01,1958-06-08,group stage,Group 3,Solna,Sweden,Sweden,SWE,Mexico,MEX,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Brazil,Sweden,0,0,1
+1958,WC-1958,M-1958-02,1958-06-08,group stage,Group 1,Malmö,Sweden,Argentina,ARG,West Germany,DEU,1,3,1–3,away team win,4,2,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-03,1958-06-08,group stage,Group 1,Halmstad,Sweden,Northern Ireland,NIR,Czechoslovakia,CSK,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-04,1958-06-08,group stage,Group 2,Norrköping,Sweden,France,FRA,Paraguay,PRY,7,3,7–3,home team win,10,4,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-05,1958-06-08,group stage,Group 2,Västerås,Sweden,Yugoslavia,YUG,Scotland,SCO,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-06,1958-06-08,group stage,Group 3,Sandviken,Sweden,Hungary,HUN,Wales,WAL,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-07,1958-06-08,group stage,Group 4,Uddevalla,Sweden,Brazil,BRA,Austria,AUT,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Brazil,Sweden,0,1,0
+1958,WC-1958,M-1958-08,1958-06-08,group stage,Group 4,Gothenburg,Sweden,Soviet Union,SUN,England,ENG,2,2,2–2,draw,4,0,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-09,1958-06-11,group stage,Group 1,Halmstad,Sweden,Argentina,ARG,Northern Ireland,NIR,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-10,1958-06-11,group stage,Group 1,Helsingborg,Sweden,West Germany,DEU,Czechoslovakia,CSK,2,2,2–2,draw,4,0,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-11,1958-06-11,group stage,Group 2,Norrköping,Sweden,Paraguay,PRY,Scotland,SCO,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-12,1958-06-11,group stage,Group 2,Västerås,Sweden,Yugoslavia,YUG,France,FRA,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-13,1958-06-11,group stage,Group 3,Solna,Sweden,Mexico,MEX,Wales,WAL,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-14,1958-06-11,group stage,Group 4,Gothenburg,Sweden,Brazil,BRA,England,ENG,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,Sweden,0,1,0
+1958,WC-1958,M-1958-15,1958-06-11,group stage,Group 4,Borås,Sweden,Soviet Union,SUN,Austria,AUT,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-16,1958-06-12,group stage,Group 3,Solna,Sweden,Sweden,SWE,Hungary,HUN,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,Sweden,0,0,1
+1958,WC-1958,M-1958-17,1958-06-15,group stage,Group 3,Solna,Sweden,Sweden,SWE,Wales,WAL,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,Sweden,0,0,1
+1958,WC-1958,M-1958-18,1958-06-15,group stage,Group 1,Helsingborg,Sweden,Czechoslovakia,CSK,Argentina,ARG,6,1,6–1,home team win,7,5,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-19,1958-06-15,group stage,Group 1,Malmö,Sweden,West Germany,DEU,Northern Ireland,NIR,2,2,2–2,draw,4,0,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-20,1958-06-15,group stage,Group 2,Örebro,Sweden,France,FRA,Scotland,SCO,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-21,1958-06-15,group stage,Group 2,Eskilstuna,Sweden,Paraguay,PRY,Yugoslavia,YUG,3,3,3–3,draw,6,0,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-22,1958-06-15,group stage,Group 3,Sandviken,Sweden,Hungary,HUN,Mexico,MEX,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-23,1958-06-15,group stage,Group 4,Gothenburg,Sweden,Brazil,BRA,Soviet Union,SUN,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,Sweden,0,1,0
+1958,WC-1958,M-1958-24,1958-06-15,group stage,Group 4,Borås,Sweden,England,ENG,Austria,AUT,2,2,2–2,draw,4,0,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-25,1958-06-17,group stage,Group 1,Malmö,Sweden,Northern Ireland,NIR,Czechoslovakia,CSK,2,1,2–1,home team win,3,1,1,0,1,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-26,1958-06-17,group stage,Group 3,Solna,Sweden,Wales,WAL,Hungary,HUN,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-27,1958-06-17,group stage,Group 4,Gothenburg,Sweden,Soviet Union,SUN,England,ENG,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-28,1958-06-19,quarter-finals,not applicable,Gothenburg,Sweden,Brazil,BRA,Wales,WAL,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Brazil,Sweden,0,1,0
+1958,WC-1958,M-1958-29,1958-06-19,quarter-finals,not applicable,Norrköping,Sweden,France,FRA,Northern Ireland,NIR,4,0,4–0,home team win,4,4,0,1,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-30,1958-06-19,quarter-finals,not applicable,Solna,Sweden,Sweden,SWE,Soviet Union,SUN,2,0,2–0,home team win,2,2,0,1,0,0,0,0,Brazil,Sweden,0,0,1
+1958,WC-1958,M-1958-31,1958-06-19,quarter-finals,not applicable,Malmö,Sweden,West Germany,DEU,Yugoslavia,YUG,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-32,1958-06-24,semi-finals,not applicable,Solna,Sweden,Brazil,BRA,France,FRA,5,2,5–2,home team win,7,3,0,1,0,0,0,1,Brazil,Sweden,0,1,0
+1958,WC-1958,M-1958-33,1958-06-24,semi-finals,not applicable,Gothenburg,Sweden,Sweden,SWE,West Germany,DEU,3,1,3–1,home team win,4,2,0,1,0,0,0,1,Brazil,Sweden,0,0,1
+1958,WC-1958,M-1958-34,1958-06-28,third-place match,not applicable,Gothenburg,Sweden,France,FRA,West Germany,DEU,6,3,6–3,home team win,9,3,0,1,0,0,0,0,Brazil,Sweden,0,0,0
+1958,WC-1958,M-1958-35,1958-06-29,final,not applicable,Solna,Sweden,Brazil,BRA,Sweden,SWE,5,2,5–2,home team win,7,3,0,1,0,0,1,0,Brazil,Sweden,0,1,1
+1962,WC-1962,M-1962-01,1962-05-30,group stage,Group 1,Arica,Chile,Uruguay,URY,Colombia,COL,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-02,1962-05-30,group stage,Group 2,Santiago,Chile,Chile,CHL,Switzerland,CHE,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Brazil,Chile,0,0,1
+1962,WC-1962,M-1962-03,1962-05-30,group stage,Group 3,Viña del Mar,Chile,Brazil,BRA,Mexico,MEX,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,Chile,0,1,0
+1962,WC-1962,M-1962-04,1962-05-30,group stage,Group 4,Rancagua,Chile,Argentina,ARG,Bulgaria,BGR,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-05,1962-05-31,group stage,Group 1,Arica,Chile,Soviet Union,SUN,Yugoslavia,YUG,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-06,1962-05-31,group stage,Group 2,Santiago,Chile,West Germany,DEU,Italy,ITA,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-07,1962-05-31,group stage,Group 3,Viña del Mar,Chile,Czechoslovakia,CSK,Spain,ESP,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-08,1962-05-31,group stage,Group 4,Rancagua,Chile,Hungary,HUN,England,ENG,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-09,1962-06-02,group stage,Group 1,Arica,Chile,Yugoslavia,YUG,Uruguay,URY,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-10,1962-06-02,group stage,Group 2,Santiago,Chile,Chile,CHL,Italy,ITA,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,Chile,0,0,1
+1962,WC-1962,M-1962-11,1962-06-02,group stage,Group 3,Viña del Mar,Chile,Brazil,BRA,Czechoslovakia,CSK,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,Chile,0,1,0
+1962,WC-1962,M-1962-12,1962-06-02,group stage,Group 4,Rancagua,Chile,England,ENG,Argentina,ARG,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-13,1962-06-03,group stage,Group 1,Arica,Chile,Soviet Union,SUN,Colombia,COL,4,4,4–4,draw,8,0,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-14,1962-06-03,group stage,Group 2,Santiago,Chile,West Germany,DEU,Switzerland,CHE,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-15,1962-06-03,group stage,Group 3,Viña del Mar,Chile,Spain,ESP,Mexico,MEX,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-16,1962-06-03,group stage,Group 4,Rancagua,Chile,Hungary,HUN,Bulgaria,BGR,6,1,6–1,home team win,7,5,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-17,1962-06-06,group stage,Group 1,Arica,Chile,Soviet Union,SUN,Uruguay,URY,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-18,1962-06-06,group stage,Group 2,Santiago,Chile,West Germany,DEU,Chile,CHL,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,Chile,0,0,1
+1962,WC-1962,M-1962-19,1962-06-06,group stage,Group 3,Viña del Mar,Chile,Brazil,BRA,Spain,ESP,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,Chile,0,1,0
+1962,WC-1962,M-1962-20,1962-06-06,group stage,Group 4,Rancagua,Chile,Hungary,HUN,Argentina,ARG,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-21,1962-06-07,group stage,Group 1,Arica,Chile,Yugoslavia,YUG,Colombia,COL,5,0,5–0,home team win,5,5,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-22,1962-06-07,group stage,Group 2,Santiago,Chile,Italy,ITA,Switzerland,CHE,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-23,1962-06-07,group stage,Group 3,Viña del Mar,Chile,Mexico,MEX,Czechoslovakia,CSK,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-24,1962-06-07,group stage,Group 4,Rancagua,Chile,England,ENG,Bulgaria,BGR,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-25,1962-06-10,quarter-finals,not applicable,Viña del Mar,Chile,Brazil,BRA,England,ENG,3,1,3–1,home team win,4,2,0,1,0,0,0,0,Brazil,Chile,0,1,0
+1962,WC-1962,M-1962-26,1962-06-10,quarter-finals,not applicable,Arica,Chile,Chile,CHL,Soviet Union,SUN,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Brazil,Chile,0,0,1
+1962,WC-1962,M-1962-27,1962-06-10,quarter-finals,not applicable,Rancagua,Chile,Czechoslovakia,CSK,Hungary,HUN,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-28,1962-06-10,quarter-finals,not applicable,Santiago,Chile,Yugoslavia,YUG,West Germany,DEU,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-29,1962-06-13,semi-finals,not applicable,Santiago,Chile,Brazil,BRA,Chile,CHL,4,2,4–2,home team win,6,2,0,1,0,0,0,1,Brazil,Chile,0,1,1
+1962,WC-1962,M-1962-30,1962-06-13,semi-finals,not applicable,Viña del Mar,Chile,Czechoslovakia,CSK,Yugoslavia,YUG,3,1,3–1,home team win,4,2,0,1,0,0,0,1,Brazil,Chile,0,0,0
+1962,WC-1962,M-1962-31,1962-06-16,third-place match,not applicable,Santiago,Chile,Chile,CHL,Yugoslavia,YUG,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Brazil,Chile,0,0,1
+1962,WC-1962,M-1962-32,1962-06-17,final,not applicable,Santiago,Chile,Brazil,BRA,Czechoslovakia,CSK,3,1,3–1,home team win,4,2,0,1,0,0,1,0,Brazil,Chile,0,1,0
+1966,WC-1966,M-1966-01,1966-07-11,group stage,Group 1,London,England,England,ENG,Uruguay,URY,0,0,0–0,draw,0,0,1,0,0,0,0,0,England,England,1,1,1
+1966,WC-1966,M-1966-02,1966-07-12,group stage,Group 2,Sheffield,England,West Germany,DEU,Switzerland,CHE,5,0,5–0,home team win,5,5,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-03,1966-07-12,group stage,Group 3,Liverpool,England,Brazil,BRA,Bulgaria,BGR,2,0,2–0,home team win,2,2,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-04,1966-07-12,group stage,Group 4,Middlesbrough,England,Soviet Union,SUN,North Korea,PRK,3,0,3–0,home team win,3,3,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-05,1966-07-13,group stage,Group 1,London,England,France,FRA,Mexico,MEX,1,1,1–1,draw,2,0,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-06,1966-07-13,group stage,Group 2,Birmingham,England,Argentina,ARG,Spain,ESP,2,1,2–1,home team win,3,1,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-07,1966-07-13,group stage,Group 3,Manchester,England,Portugal,PRT,Hungary,HUN,3,1,3–1,home team win,4,2,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-08,1966-07-13,group stage,Group 4,Sunderland,England,Italy,ITA,Chile,CHL,2,0,2–0,home team win,2,2,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-09,1966-07-15,group stage,Group 1,London,England,Uruguay,URY,France,FRA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-10,1966-07-15,group stage,Group 2,Sheffield,England,Spain,ESP,Switzerland,CHE,2,1,2–1,home team win,3,1,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-11,1966-07-15,group stage,Group 3,Liverpool,England,Hungary,HUN,Brazil,BRA,3,1,3–1,home team win,4,2,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-12,1966-07-15,group stage,Group 4,Middlesbrough,England,Chile,CHL,North Korea,PRK,1,1,1–1,draw,2,0,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-13,1966-07-16,group stage,Group 2,Birmingham,England,Argentina,ARG,West Germany,DEU,0,0,0–0,draw,0,0,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-14,1966-07-16,group stage,Group 3,Manchester,England,Portugal,PRT,Bulgaria,BGR,3,0,3–0,home team win,3,3,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-15,1966-07-16,group stage,Group 4,Sunderland,England,Soviet Union,SUN,Italy,ITA,1,0,1–0,home team win,1,1,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-16,1966-07-16,group stage,Group 1,London,England,England,ENG,Mexico,MEX,2,0,2–0,home team win,2,2,1,0,0,0,0,0,England,England,1,1,1
+1966,WC-1966,M-1966-17,1966-07-19,group stage,Group 1,London,England,Mexico,MEX,Uruguay,URY,0,0,0–0,draw,0,0,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-18,1966-07-19,group stage,Group 2,Sheffield,England,Argentina,ARG,Switzerland,CHE,2,0,2–0,home team win,2,2,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-19,1966-07-19,group stage,Group 3,Liverpool,England,Portugal,PRT,Brazil,BRA,3,1,3–1,home team win,4,2,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-20,1966-07-19,group stage,Group 4,Middlesbrough,England,North Korea,PRK,Italy,ITA,1,0,1–0,home team win,1,1,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-21,1966-07-20,group stage,Group 1,London,England,England,ENG,France,FRA,2,0,2–0,home team win,2,2,1,0,0,0,0,0,England,England,1,1,1
+1966,WC-1966,M-1966-22,1966-07-20,group stage,Group 2,Birmingham,England,West Germany,DEU,Spain,ESP,2,1,2–1,home team win,3,1,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-23,1966-07-20,group stage,Group 3,Manchester,England,Hungary,HUN,Bulgaria,BGR,3,1,3–1,home team win,4,2,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-24,1966-07-20,group stage,Group 4,Sunderland,England,Soviet Union,SUN,Chile,CHL,2,1,2–1,home team win,3,1,1,0,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-25,1966-07-23,quarter-finals,not applicable,London,England,England,ENG,Argentina,ARG,1,0,1–0,home team win,1,1,0,1,0,0,0,0,England,England,1,1,1
+1966,WC-1966,M-1966-26,1966-07-23,quarter-finals,not applicable,Liverpool,England,Portugal,PRT,North Korea,PRK,5,3,5–3,home team win,8,2,0,1,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-27,1966-07-23,quarter-finals,not applicable,Sunderland,England,Soviet Union,SUN,Hungary,HUN,2,1,2–1,home team win,3,1,0,1,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-28,1966-07-23,quarter-finals,not applicable,Sheffield,England,West Germany,DEU,Uruguay,URY,4,0,4–0,home team win,4,4,0,1,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-29,1966-07-25,semi-finals,not applicable,Liverpool,England,West Germany,DEU,Soviet Union,SUN,2,1,2–1,home team win,3,1,0,1,0,0,0,1,England,England,1,0,0
+1966,WC-1966,M-1966-30,1966-07-26,semi-finals,not applicable,London,England,England,ENG,Portugal,PRT,2,1,2–1,home team win,3,1,0,1,0,0,0,1,England,England,1,1,1
+1966,WC-1966,M-1966-31,1966-07-28,third-place match,not applicable,London,England,Portugal,PRT,Soviet Union,SUN,2,1,2–1,home team win,3,1,0,1,0,0,0,0,England,England,1,0,0
+1966,WC-1966,M-1966-32,1966-07-30,final,not applicable,London,England,England,ENG,West Germany,DEU,4,2,4–2,home team win,6,2,0,1,1,0,1,0,England,England,1,1,1
+1970,WC-1970,M-1970-01,1970-05-31,group stage,Group 1,Mexico City,Mexico,Mexico,MEX,Soviet Union,SUN,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,Mexico,0,0,1
+1970,WC-1970,M-1970-02,1970-06-02,group stage,Group 2,Puebla,Mexico,Uruguay,URY,Israel,ISR,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-03,1970-06-02,group stage,Group 3,Guadalajara,Mexico,England,ENG,Romania,ROU,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-04,1970-06-02,group stage,Group 4,León,Mexico,Peru,PER,Bulgaria,BGR,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-05,1970-06-03,group stage,Group 1,Mexico City,Mexico,Belgium,BEL,El Salvador,SLV,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-06,1970-06-03,group stage,Group 2,Toluca,Mexico,Italy,ITA,Sweden,SWE,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-07,1970-06-03,group stage,Group 3,Guadalajara,Mexico,Brazil,BRA,Czechoslovakia,CSK,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Brazil,Mexico,0,1,0
+1970,WC-1970,M-1970-08,1970-06-03,group stage,Group 4,León,Mexico,West Germany,DEU,Morocco,MAR,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-09,1970-06-06,group stage,Group 1,Mexico City,Mexico,Soviet Union,SUN,Belgium,BEL,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-10,1970-06-06,group stage,Group 2,Puebla,Mexico,Uruguay,URY,Italy,ITA,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-11,1970-06-06,group stage,Group 3,Guadalajara,Mexico,Romania,ROU,Czechoslovakia,CSK,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-12,1970-06-06,group stage,Group 4,León,Mexico,Peru,PER,Morocco,MAR,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-13,1970-06-07,group stage,Group 1,Mexico City,Mexico,Mexico,MEX,El Salvador,SLV,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Brazil,Mexico,0,0,1
+1970,WC-1970,M-1970-14,1970-06-07,group stage,Group 2,Toluca,Mexico,Sweden,SWE,Israel,ISR,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-15,1970-06-07,group stage,Group 3,Guadalajara,Mexico,Brazil,BRA,England,ENG,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,Mexico,0,1,0
+1970,WC-1970,M-1970-16,1970-06-07,group stage,Group 4,León,Mexico,West Germany,DEU,Bulgaria,BGR,5,2,5–2,home team win,7,3,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-17,1970-06-10,group stage,Group 1,Mexico City,Mexico,Soviet Union,SUN,El Salvador,SLV,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-18,1970-06-10,group stage,Group 2,Puebla,Mexico,Sweden,SWE,Uruguay,URY,1,0,1-0,home team win,1,1,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-19,1970-06-10,group stage,Group 3,Guadalajara,Mexico,Brazil,BRA,Romania,ROU,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Brazil,Mexico,0,1,0
+1970,WC-1970,M-1970-20,1970-06-10,group stage,Group 4,León,Mexico,West Germany,DEU,Peru,PER,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-21,1970-06-11,group stage,Group 1,Mexico City,Mexico,Mexico,MEX,Belgium,BEL,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,Mexico,0,0,1
+1970,WC-1970,M-1970-22,1970-06-11,group stage,Group 2,Toluca,Mexico,Italy,ITA,Israel,ISR,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-23,1970-06-11,group stage,Group 3,Guadalajara,Mexico,England,ENG,Czechoslovakia,CSK,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-24,1970-06-11,group stage,Group 4,León,Mexico,Bulgaria,BGR,Morocco,MAR,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-25,1970-06-14,quarter-finals,not applicable,Guadalajara,Mexico,Brazil,BRA,Peru,PER,4,2,4–2,home team win,6,2,0,1,0,0,0,0,Brazil,Mexico,0,1,0
+1970,WC-1970,M-1970-26,1970-06-14,quarter-finals,not applicable,Toluca,Mexico,Italy,ITA,Mexico,MEX,4,1,4–1,home team win,5,3,0,1,0,0,0,0,Brazil,Mexico,0,0,1
+1970,WC-1970,M-1970-27,1970-06-14,quarter-finals,not applicable,Mexico City,Mexico,Soviet Union,SUN,Uruguay,URY,0,1,0–1,away team win,1,1,0,1,1,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-28,1970-06-14,quarter-finals,not applicable,León,Mexico,West Germany,DEU,England,ENG,3,2,3–2,home team win,5,1,0,1,1,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-29,1970-06-17,semi-finals,not applicable,Guadalajara,Mexico,Brazil,BRA,Uruguay,URY,3,1,3–1,home team win,4,2,0,1,0,0,0,1,Brazil,Mexico,0,1,0
+1970,WC-1970,M-1970-30,1970-06-17,semi-finals,not applicable,Mexico City,Mexico,Italy,ITA,West Germany,DEU,4,3,4–3,home team win,7,1,0,1,1,0,0,1,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-31,1970-06-20,third-place match,not applicable,Mexico City,Mexico,West Germany,DEU,Uruguay,URY,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Brazil,Mexico,0,0,0
+1970,WC-1970,M-1970-32,1970-06-21,final,not applicable,Mexico City,Mexico,Brazil,BRA,Italy,ITA,4,1,4–1,home team win,5,3,0,1,0,0,1,0,Brazil,Mexico,0,1,0
+1974,WC-1974,M-1974-01,1974-06-13,group stage,Group 2,Frankfurt,Germany,Brazil,BRA,Yugoslavia,YUG,0,0,0–0,draw,0,0,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-02,1974-06-14,group stage,Group 1,Berlin,Germany,West Germany,DEU,Chile,CHL,1,0,1–0,home team win,1,1,1,0,0,0,0,0,West Germany,West Germany,1,1,1
+1974,WC-1974,M-1974-03,1974-06-14,group stage,Group 1,Hamburg,Germany,East Germany,DDR,Australia,AUS,2,0,2–0,home team win,2,2,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-04,1974-06-14,group stage,Group 2,Dortmund,Germany,Zaire,COD,Scotland,SCO,0,2,0–2,away team win,2,2,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-05,1974-06-15,group stage,Group 3,Düsseldorf,Germany,Sweden,SWE,Bulgaria,BGR,0,0,0–0,draw,0,0,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-06,1974-06-15,group stage,Group 3,Hanover,Germany,Uruguay,URY,Netherlands,NLD,0,2,0–2,away team win,2,2,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-07,1974-06-15,group stage,Group 4,Munich,Germany,Italy,ITA,Haiti,HTI,3,1,3–1,home team win,4,2,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-08,1974-06-15,group stage,Group 4,Stuttgart,Germany,Poland,POL,Argentina,ARG,3,2,3–2,home team win,5,1,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-09,1974-06-18,group stage,Group 1,Hamburg,Germany,Australia,AUS,West Germany,DEU,0,3,0–3,away team win,3,3,1,0,0,0,0,0,West Germany,West Germany,1,1,1
+1974,WC-1974,M-1974-10,1974-06-18,group stage,Group 1,Berlin,Germany,Chile,CHL,East Germany,DDR,1,1,1–1,draw,2,0,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-11,1974-06-18,group stage,Group 2,Frankfurt,Germany,Scotland,SCO,Brazil,BRA,0,0,0–0,draw,0,0,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-12,1974-06-18,group stage,Group 2,Gelsenkirchen,Germany,Yugoslavia,YUG,Zaire,COD,9,0,9–0,home team win,9,9,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-13,1974-06-19,group stage,Group 3,Hanover,Germany,Bulgaria,BGR,Uruguay,URY,1,1,1–1,draw,2,0,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-14,1974-06-19,group stage,Group 3,Dortmund,Germany,Netherlands,NLD,Sweden,SWE,0,0,0–0,draw,0,0,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-15,1974-06-19,group stage,Group 4,Stuttgart,Germany,Argentina,ARG,Italy,ITA,1,1,1–1,draw,2,0,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-16,1974-06-19,group stage,Group 4,Munich,Germany,Haiti,HTI,Poland,POL,0,7,0–7,away team win,7,7,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-17,1974-06-22,group stage,Group 1,Berlin,Germany,Australia,AUS,Chile,CHL,0,0,0–0,draw,0,0,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-18,1974-06-22,group stage,Group 2,Frankfurt,Germany,Scotland,SCO,Yugoslavia,YUG,1,1,1–1,draw,2,0,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-19,1974-06-22,group stage,Group 2,Gelsenkirchen,Germany,Zaire,COD,Brazil,BRA,0,3,0–3,away team win,3,3,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-20,1974-06-22,group stage,Group 1,Hamburg,Germany,East Germany,DDR,West Germany,DEU,1,0,1–0,home team win,1,1,1,0,0,0,0,0,West Germany,West Germany,1,1,1
+1974,WC-1974,M-1974-21,1974-06-23,group stage,Group 3,Dortmund,Germany,Bulgaria,BGR,Netherlands,NLD,1,4,1–4,away team win,5,3,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-22,1974-06-23,group stage,Group 3,Düsseldorf,Germany,Sweden,SWE,Uruguay,URY,3,0,3–0,home team win,3,3,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-23,1974-06-23,group stage,Group 4,Munich,Germany,Argentina,ARG,Haiti,HTI,4,1,4–1,home team win,5,3,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-24,1974-06-23,group stage,Group 4,Stuttgart,Germany,Poland,POL,Italy,ITA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-25,1974-06-26,second group stage,Group B,Düsseldorf,Germany,Yugoslavia,YUG,West Germany,DEU,0,2,0–2,away team win,2,2,1,0,0,0,0,0,West Germany,West Germany,1,1,1
+1974,WC-1974,M-1974-26,1974-06-26,second group stage,Group A,Hanover,Germany,Brazil,BRA,East Germany,DDR,1,0,1–0,home team win,1,1,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-27,1974-06-26,second group stage,Group A,Gelsenkirchen,Germany,Netherlands,NLD,Argentina,ARG,4,0,4–0,home team win,4,4,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-28,1974-06-26,second group stage,Group B,Stuttgart,Germany,Sweden,SWE,Poland,POL,0,1,0–1,away team win,1,1,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-29,1974-06-30,second group stage,Group A,Hanover,Germany,Argentina,ARG,Brazil,BRA,1,2,1–2,away team win,3,1,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-30,1974-06-30,second group stage,Group A,Gelsenkirchen,Germany,East Germany,DDR,Netherlands,NLD,0,2,0–2,away team win,2,2,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-31,1974-06-30,second group stage,Group B,Frankfurt,Germany,Poland,POL,Yugoslavia,YUG,2,1,2–1,home team win,3,1,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-32,1974-06-30,second group stage,Group B,Düsseldorf,Germany,West Germany,DEU,Sweden,SWE,4,2,4–2,home team win,6,2,1,0,0,0,0,0,West Germany,West Germany,1,1,1
+1974,WC-1974,M-1974-33,1974-07-03,second group stage,Group B,Frankfurt,Germany,Poland,POL,West Germany,DEU,0,1,0–1,away team win,1,1,1,0,0,0,0,0,West Germany,West Germany,1,1,1
+1974,WC-1974,M-1974-34,1974-07-03,second group stage,Group A,Gelsenkirchen,Germany,Argentina,ARG,East Germany,DDR,1,1,1–1,draw,2,0,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-35,1974-07-03,second group stage,Group A,Dortmund,Germany,Netherlands,NLD,Brazil,BRA,2,0,2–0,home team win,2,2,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-36,1974-07-03,second group stage,Group B,Düsseldorf,Germany,Sweden,SWE,Yugoslavia,YUG,2,1,2–1,home team win,3,1,1,0,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-37,1974-07-06,third-place match,not applicable,Munich,Germany,Brazil,BRA,Poland,POL,0,1,0–1,away team win,1,1,0,1,0,0,0,0,West Germany,West Germany,1,0,0
+1974,WC-1974,M-1974-38,1974-07-07,final,not applicable,Munich,Germany,Netherlands,NLD,West Germany,DEU,1,2,1–2,away team win,3,1,0,1,0,0,1,0,West Germany,West Germany,1,1,1
+1978,WC-1978,M-1978-01,1978-06-01,group stage,Group 2,Buenos Aires,Argentina,West Germany,DEU,Poland,POL,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-02,1978-06-02,group stage,Group 1,Mar del Plata,Argentina,Italy,ITA,France,FRA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-03,1978-06-02,group stage,Group 2,Rosario,Argentina,Tunisia,TUN,Mexico,MEX,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-04,1978-06-02,group stage,Group 1,Buenos Aires,Argentina,Argentina,ARG,Hungary,HUN,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Argentina,Argentina,1,1,1
+1978,WC-1978,M-1978-05,1978-06-03,group stage,Group 3,Buenos Aires,Argentina,Austria,AUT,Spain,ESP,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-06,1978-06-03,group stage,Group 3,Mar del Plata,Argentina,Brazil,BRA,Sweden,SWE,1,1,1–1,draw,2,0,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-07,1978-06-03,group stage,Group 4,Mendoza,Argentina,Netherlands,NLD,Iran,IRN,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-08,1978-06-03,group stage,Group 4,Córdoba,Argentina,Peru,PER,Scotland,SCO,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-09,1978-06-06,group stage,Group 1,Mar del Plata,Argentina,Italy,ITA,Hungary,HUN,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-10,1978-06-06,group stage,Group 2,Rosario,Argentina,Poland,POL,Tunisia,TUN,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-11,1978-06-06,group stage,Group 2,Córdoba,Argentina,West Germany,DEU,Mexico,MEX,6,0,6–0,home team win,6,6,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-12,1978-06-06,group stage,Group 1,Buenos Aires,Argentina,Argentina,ARG,France,FRA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Argentina,Argentina,1,1,1
+1978,WC-1978,M-1978-13,1978-06-07,group stage,Group 3,Buenos Aires,Argentina,Austria,AUT,Sweden,SWE,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-14,1978-06-07,group stage,Group 3,Mar del Plata,Argentina,Brazil,BRA,Spain,ESP,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-15,1978-06-07,group stage,Group 4,Mendoza,Argentina,Netherlands,NLD,Peru,PER,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-16,1978-06-07,group stage,Group 4,Córdoba,Argentina,Scotland,SCO,Iran,IRN,1,1,1–1,draw,2,0,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-17,1978-06-10,group stage,Group 1,Mar del Plata,Argentina,France,FRA,Hungary,HUN,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-18,1978-06-10,group stage,Group 2,Rosario,Argentina,Poland,POL,Mexico,MEX,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-19,1978-06-10,group stage,Group 2,Córdoba,Argentina,West Germany,DEU,Tunisia,TUN,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-20,1978-06-10,group stage,Group 1,Buenos Aires,Argentina,Argentina,ARG,Italy,ITA,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Argentina,Argentina,1,1,1
+1978,WC-1978,M-1978-21,1978-06-11,group stage,Group 3,Mar del Plata,Argentina,Brazil,BRA,Austria,AUT,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-22,1978-06-11,group stage,Group 3,Buenos Aires,Argentina,Spain,ESP,Sweden,SWE,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-23,1978-06-11,group stage,Group 4,Córdoba,Argentina,Peru,PER,Iran,IRN,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-24,1978-06-11,group stage,Group 4,Mendoza,Argentina,Scotland,SCO,Netherlands,NLD,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-25,1978-06-14,second group stage,Group A,Córdoba,Argentina,Austria,AUT,Netherlands,NLD,1,5,1–5,away team win,6,4,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-26,1978-06-14,second group stage,Group A,Buenos Aires,Argentina,Italy,ITA,West Germany,DEU,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-27,1978-06-14,second group stage,Group B,Mendoza,Argentina,Brazil,BRA,Peru,PER,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-28,1978-06-14,second group stage,Group B,Rosario,Argentina,Argentina,ARG,Poland,POL,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Argentina,Argentina,1,1,1
+1978,WC-1978,M-1978-29,1978-06-18,second group stage,Group B,Mendoza,Argentina,Peru,PER,Poland,POL,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-30,1978-06-18,second group stage,Group A,Buenos Aires,Argentina,Italy,ITA,Austria,AUT,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-31,1978-06-18,second group stage,Group A,Córdoba,Argentina,Netherlands,NLD,West Germany,DEU,2,2,2–2,draw,4,0,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-32,1978-06-18,second group stage,Group B,Rosario,Argentina,Argentina,ARG,Brazil,BRA,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Argentina,1,1,1
+1978,WC-1978,M-1978-33,1978-06-21,second group stage,Group A,Córdoba,Argentina,Austria,AUT,West Germany,DEU,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-34,1978-06-21,second group stage,Group A,Buenos Aires,Argentina,Italy,ITA,Netherlands,NLD,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-35,1978-06-21,second group stage,Group B,Mendoza,Argentina,Brazil,BRA,Poland,POL,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-36,1978-06-21,second group stage,Group B,Rosario,Argentina,Argentina,ARG,Peru,PER,6,0,6–0,home team win,6,6,1,0,0,0,0,0,Argentina,Argentina,1,1,1
+1978,WC-1978,M-1978-37,1978-06-24,third-place match,not applicable,Buenos Aires,Argentina,Brazil,BRA,Italy,ITA,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Argentina,Argentina,1,0,0
+1978,WC-1978,M-1978-38,1978-06-25,final,not applicable,Buenos Aires,Argentina,Argentina,ARG,Netherlands,NLD,3,1,3–1,home team win,4,2,0,1,1,0,1,0,Argentina,Argentina,1,1,1
+1982,WC-1982,M-1982-01,1982-06-13,group stage,Group 3,Barcelona,Spain,Argentina,ARG,Belgium,BEL,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-02,1982-06-14,group stage,Group 1,Vigo,Spain,Italy,ITA,Poland,POL,0,0,0–0,draw,0,0,1,0,0,0,0,0,Italy,Spain,0,1,0
+1982,WC-1982,M-1982-03,1982-06-14,group stage,Group 6,Seville,Spain,Brazil,BRA,Soviet Union,SUN,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-04,1982-06-15,group stage,Group 1,A Coruña,Spain,Peru,PER,Cameroon,CMR,0,0,0–0,draw,0,0,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-05,1982-06-15,group stage,Group 3,Elche,Spain,Hungary,HUN,El Salvador,SLV,10,1,10–1,home team win,11,9,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-06,1982-06-15,group stage,Group 6,Málaga,Spain,Scotland,SCO,New Zealand,NZL,5,2,5–2,home team win,7,3,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-07,1982-06-16,group stage,Group 2,Gijón,Spain,West Germany,DEU,Algeria,DZA,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-08,1982-06-16,group stage,Group 4,Bilbao,Spain,England,ENG,France,FRA,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-09,1982-06-16,group stage,Group 5,Valencia,Spain,Spain,ESP,Honduras,HND,1,1,1–1,draw,2,0,1,0,0,0,0,0,Italy,Spain,0,0,1
+1982,WC-1982,M-1982-10,1982-06-17,group stage,Group 2,Oviedo,Spain,Chile,CHL,Austria,AUT,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-11,1982-06-17,group stage,Group 4,Valladolid,Spain,Czechoslovakia,CSK,Kuwait,KWT,1,1,1–1,draw,2,0,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-12,1982-06-17,group stage,Group 5,Zaragoza,Spain,Yugoslavia,YUG,Northern Ireland,NIR,0,0,0–0,draw,0,0,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-13,1982-06-18,group stage,Group 1,Vigo,Spain,Italy,ITA,Peru,PER,1,1,1–1,draw,2,0,1,0,0,0,0,0,Italy,Spain,0,1,0
+1982,WC-1982,M-1982-14,1982-06-18,group stage,Group 3,Alicante,Spain,Argentina,ARG,Hungary,HUN,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-15,1982-06-18,group stage,Group 6,Seville,Spain,Brazil,BRA,Scotland,SCO,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-16,1982-06-19,group stage,Group 1,A Coruña,Spain,Poland,POL,Cameroon,CMR,0,0,0–0,draw,0,0,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-17,1982-06-19,group stage,Group 3,Elche,Spain,Belgium,BEL,El Salvador,SLV,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-18,1982-06-19,group stage,Group 6,Málaga,Spain,Soviet Union,SUN,New Zealand,NZL,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-19,1982-06-20,group stage,Group 2,Gijón,Spain,West Germany,DEU,Chile,CHL,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-20,1982-06-20,group stage,Group 4,Bilbao,Spain,England,ENG,Czechoslovakia,CSK,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-21,1982-06-20,group stage,Group 5,Valencia,Spain,Spain,ESP,Yugoslavia,YUG,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Italy,Spain,0,0,1
+1982,WC-1982,M-1982-22,1982-06-21,group stage,Group 2,Oviedo,Spain,Algeria,DZA,Austria,AUT,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-23,1982-06-21,group stage,Group 4,Valladolid,Spain,France,FRA,Kuwait,KWT,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-24,1982-06-21,group stage,Group 5,Zaragoza,Spain,Honduras,HND,Northern Ireland,NIR,1,1,1–1,draw,2,0,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-25,1982-06-22,group stage,Group 1,A Coruña,Spain,Poland,POL,Peru,PER,5,1,5–1,home team win,6,4,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-26,1982-06-22,group stage,Group 3,Elche,Spain,Belgium,BEL,Hungary,HUN,1,1,1–1,draw,2,0,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-27,1982-06-22,group stage,Group 6,Málaga,Spain,Soviet Union,SUN,Scotland,SCO,2,2,2–2,draw,4,0,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-28,1982-06-23,group stage,Group 1,Vigo,Spain,Italy,ITA,Cameroon,CMR,1,1,1–1,draw,2,0,1,0,0,0,0,0,Italy,Spain,0,1,0
+1982,WC-1982,M-1982-29,1982-06-23,group stage,Group 3,Alicante,Spain,Argentina,ARG,El Salvador,SLV,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-30,1982-06-23,group stage,Group 6,Seville,Spain,Brazil,BRA,New Zealand,NZL,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-31,1982-06-24,group stage,Group 2,Oviedo,Spain,Algeria,DZA,Chile,CHL,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-32,1982-06-24,group stage,Group 4,Valladolid,Spain,France,FRA,Czechoslovakia,CSK,1,1,1–1,draw,2,0,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-33,1982-06-24,group stage,Group 5,Zaragoza,Spain,Honduras,HND,Yugoslavia,YUG,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-34,1982-06-25,group stage,Group 2,Gijón,Spain,West Germany,DEU,Austria,AUT,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-35,1982-06-25,group stage,Group 4,Bilbao,Spain,England,ENG,Kuwait,KWT,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-36,1982-06-25,group stage,Group 5,Valencia,Spain,Spain,ESP,Northern Ireland,NIR,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Italy,Spain,0,0,1
+1982,WC-1982,M-1982-37,1982-06-28,second group stage,Group 4,Madrid,Spain,Austria,AUT,France,FRA,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-38,1982-06-28,second group stage,Group 1,Barcelona,Spain,Poland,POL,Belgium,BEL,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-39,1982-06-29,second group stage,Group 3,Barcelona,Spain,Italy,ITA,Argentina,ARG,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Italy,Spain,0,1,0
+1982,WC-1982,M-1982-40,1982-06-29,second group stage,Group 2,Madrid,Spain,West Germany,DEU,England,ENG,0,0,0–0,draw,0,0,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-41,1982-07-01,second group stage,Group 4,Madrid,Spain,Austria,AUT,Northern Ireland,NIR,2,2,2–2,draw,4,0,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-42,1982-07-01,second group stage,Group 1,Barcelona,Spain,Belgium,BEL,Soviet Union,SUN,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-43,1982-07-02,second group stage,Group 3,Barcelona,Spain,Argentina,ARG,Brazil,BRA,1,3,1–3,away team win,4,2,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-44,1982-07-02,second group stage,Group 2,Madrid,Spain,West Germany,DEU,Spain,ESP,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Italy,Spain,0,0,1
+1982,WC-1982,M-1982-45,1982-07-04,second group stage,Group 4,Madrid,Spain,France,FRA,Northern Ireland,NIR,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-46,1982-07-04,second group stage,Group 1,Barcelona,Spain,Soviet Union,SUN,Poland,POL,0,0,0–0,draw,0,0,1,0,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-47,1982-07-05,second group stage,Group 3,Barcelona,Spain,Italy,ITA,Brazil,BRA,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Italy,Spain,0,1,0
+1982,WC-1982,M-1982-48,1982-07-05,second group stage,Group 2,Madrid,Spain,Spain,ESP,England,ENG,0,0,0–0,draw,0,0,1,0,0,0,0,0,Italy,Spain,0,0,1
+1982,WC-1982,M-1982-49,1982-07-08,semi-finals,not applicable,Barcelona,Spain,Poland,POL,Italy,ITA,0,2,0–2,away team win,2,2,0,1,0,0,0,1,Italy,Spain,0,1,0
+1982,WC-1982,M-1982-50,1982-07-08,semi-finals,not applicable,Seville,Spain,West Germany,DEU,France,FRA,3,3,3–3,home team win,6,0,0,1,1,1,0,1,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-51,1982-07-10,third-place match,not applicable,Alicante,Spain,Poland,POL,France,FRA,3,2,3–2,home team win,5,1,0,1,0,0,0,0,Italy,Spain,0,0,0
+1982,WC-1982,M-1982-52,1982-07-11,final,not applicable,Madrid,Spain,Italy,ITA,West Germany,DEU,3,1,3–1,home team win,4,2,0,1,0,0,1,0,Italy,Spain,0,1,0
+1986,WC-1986,M-1986-01,1986-05-31,group stage,Group A,Mexico City,Mexico,Bulgaria,BGR,Italy,ITA,1,1,1–1,draw,2,0,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-02,1986-06-01,group stage,Group D,Guadalajara,Mexico,Spain,ESP,Brazil,BRA,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-03,1986-06-01,group stage,Group C,León,Mexico,Canada,CAN,France,FRA,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-04,1986-06-02,group stage,Group A,Mexico City,Mexico,Argentina,ARG,South Korea,KOR,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Argentina,Mexico,0,1,0
+1986,WC-1986,M-1986-05,1986-06-02,group stage,Group C,Irapuato,Mexico,Soviet Union,SUN,Hungary,HUN,6,0,6–0,home team win,6,6,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-06,1986-06-02,group stage,Group F,Monterrey,Mexico,Morocco,MAR,Poland,POL,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-07,1986-06-03,group stage,Group B,Mexico City,Mexico,Belgium,BEL,Mexico,MEX,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Argentina,Mexico,0,0,1
+1986,WC-1986,M-1986-08,1986-06-03,group stage,Group D,Guadalajara,Mexico,Algeria,DZA,Northern Ireland,NIR,1,1,1–1,draw,2,0,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-09,1986-06-03,group stage,Group F,Monterrey,Mexico,Portugal,PRT,England,ENG,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-10,1986-06-04,group stage,Group B,Toluca,Mexico,Paraguay,PRY,Iraq,IRQ,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-11,1986-06-04,group stage,Group E,Querétaro,Mexico,Uruguay,URY,West Germany,DEU,1,1,1–1,draw,2,0,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-12,1986-06-04,group stage,Group E,Nezahualcóyotl,Mexico,Scotland,SCO,Denmark,DNK,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-13,1986-06-05,group stage,Group A,Puebla,Mexico,Italy,ITA,Argentina,ARG,1,1,1–1,draw,2,0,1,0,0,0,0,0,Argentina,Mexico,0,1,0
+1986,WC-1986,M-1986-14,1986-06-05,group stage,Group C,León,Mexico,France,FRA,Soviet Union,SUN,1,1,1–1,draw,2,0,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-15,1986-06-05,group stage,Group A,Mexico City,Mexico,South Korea,KOR,Bulgaria,BGR,1,1,1–1,draw,2,0,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-16,1986-06-06,group stage,Group C,Irapuato,Mexico,Hungary,HUN,Canada,CAN,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-17,1986-06-06,group stage,Group D,Guadalajara,Mexico,Brazil,BRA,Algeria,DZA,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-18,1986-06-06,group stage,Group F,Monterrey,Mexico,England,ENG,Morocco,MAR,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-19,1986-06-07,group stage,Group B,Mexico City,Mexico,Mexico,MEX,Paraguay,PRY,1,1,1–1,draw,2,0,1,0,0,0,0,0,Argentina,Mexico,0,0,1
+1986,WC-1986,M-1986-20,1986-06-07,group stage,Group D,Guadalajara,Mexico,Northern Ireland,NIR,Spain,ESP,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-21,1986-06-07,group stage,Group F,Monterrey,Mexico,Poland,POL,Portugal,PRT,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-22,1986-06-08,group stage,Group B,Toluca,Mexico,Iraq,IRQ,Belgium,BEL,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-23,1986-06-08,group stage,Group E,Querétaro,Mexico,West Germany,DEU,Scotland,SCO,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-24,1986-06-08,group stage,Group E,Nezahualcóyotl,Mexico,Denmark,DNK,Uruguay,URY,6,1,6–1,home team win,7,5,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-25,1986-06-09,group stage,Group C,León,Mexico,Hungary,HUN,France,FRA,0,3,0–3,away team win,3,3,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-26,1986-06-09,group stage,Group C,Irapuato,Mexico,Soviet Union,SUN,Canada,CAN,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-27,1986-06-10,group stage,Group A,Mexico City,Mexico,Argentina,ARG,Bulgaria,BGR,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Argentina,Mexico,0,1,0
+1986,WC-1986,M-1986-28,1986-06-10,group stage,Group A,Puebla,Mexico,South Korea,KOR,Italy,ITA,2,3,2–3,away team win,5,1,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-29,1986-06-11,group stage,Group B,Mexico City,Mexico,Iraq,IRQ,Mexico,MEX,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Argentina,Mexico,0,0,1
+1986,WC-1986,M-1986-30,1986-06-11,group stage,Group B,Toluca,Mexico,Paraguay,PRY,Belgium,BEL,2,2,2–2,draw,4,0,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-31,1986-06-11,group stage,Group F,Monterrey,Mexico,England,ENG,Poland,POL,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-32,1986-06-11,group stage,Group F,Guadalajara,Mexico,Portugal,PRT,Morocco,MAR,1,3,1–3,away team win,4,2,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-33,1986-06-12,group stage,Group D,Monterrey,Mexico,Algeria,DZA,Spain,ESP,0,3,0–3,away team win,3,3,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-34,1986-06-12,group stage,Group D,Guadalajara,Mexico,Northern Ireland,NIR,Brazil,BRA,0,3,0–3,away team win,3,3,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-35,1986-06-13,group stage,Group E,Querétaro,Mexico,Denmark,DNK,West Germany,DEU,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-36,1986-06-13,group stage,Group E,Nezahualcóyotl,Mexico,Scotland,SCO,Uruguay,URY,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-37,1986-06-15,round of 16,not applicable,Mexico City,Mexico,Mexico,MEX,Bulgaria,BGR,2,0,2–0,home team win,2,2,0,1,0,0,0,0,Argentina,Mexico,0,0,1
+1986,WC-1986,M-1986-38,1986-06-15,round of 16,not applicable,León,Mexico,Soviet Union,SUN,Belgium,BEL,3,4,3–4,away team win,7,1,0,1,1,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-39,1986-06-16,round of 16,not applicable,Guadalajara,Mexico,Brazil,BRA,Poland,POL,4,0,4–0,home team win,4,4,0,1,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-40,1986-06-16,round of 16,not applicable,Puebla,Mexico,Argentina,ARG,Uruguay,URY,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Argentina,Mexico,0,1,0
+1986,WC-1986,M-1986-41,1986-06-17,round of 16,not applicable,Mexico City,Mexico,Italy,ITA,France,FRA,0,2,0–2,away team win,2,2,0,1,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-42,1986-06-17,round of 16,not applicable,Monterrey,Mexico,Morocco,MAR,West Germany,DEU,0,1,0–1,away team win,1,1,0,1,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-43,1986-06-18,round of 16,not applicable,Mexico City,Mexico,England,ENG,Paraguay,PRY,3,0,3–0,home team win,3,3,0,1,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-44,1986-06-18,round of 16,not applicable,Querétaro,Mexico,Denmark,DNK,Spain,ESP,1,5,1–5,away team win,6,4,0,1,0,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-45,1986-06-21,quarter-finals,not applicable,Guadalajara,Mexico,Brazil,BRA,France,FRA,1,1,1–1,away team win,2,0,0,1,1,1,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-46,1986-06-21,quarter-finals,not applicable,Monterrey,Mexico,West Germany,DEU,Mexico,MEX,0,0,0–0,home team win,0,0,0,1,1,1,0,0,Argentina,Mexico,0,0,1
+1986,WC-1986,M-1986-47,1986-06-22,quarter-finals,not applicable,Mexico City,Mexico,Argentina,ARG,England,ENG,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Argentina,Mexico,0,1,0
+1986,WC-1986,M-1986-48,1986-06-22,quarter-finals,not applicable,Puebla,Mexico,Spain,ESP,Belgium,BEL,1,1,1–1,away team win,2,0,0,1,1,1,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-49,1986-06-25,semi-finals,not applicable,Guadalajara,Mexico,France,FRA,West Germany,DEU,0,2,0–2,away team win,2,2,0,1,0,0,0,1,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-50,1986-06-25,semi-finals,not applicable,Mexico City,Mexico,Argentina,ARG,Belgium,BEL,2,0,2–0,home team win,2,2,0,1,0,0,0,1,Argentina,Mexico,0,1,0
+1986,WC-1986,M-1986-51,1986-06-28,third-place match,not applicable,Puebla,Mexico,Belgium,BEL,France,FRA,2,4,2–4,away team win,6,2,0,1,1,0,0,0,Argentina,Mexico,0,0,0
+1986,WC-1986,M-1986-52,1986-06-29,final,not applicable,Mexico City,Mexico,Argentina,ARG,West Germany,DEU,3,2,3–2,home team win,5,1,0,1,0,0,1,0,Argentina,Mexico,0,1,0
+1990,WC-1990,M-1990-01,1990-06-08,group stage,Group B,Milan,Italy,Argentina,ARG,Cameroon,CMR,0,1,0–1,away team win,1,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-02,1990-06-09,group stage,Group B,Bari,Italy,Soviet Union,SUN,Romania,ROU,0,2,0–2,away team win,2,2,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-03,1990-06-09,group stage,Group D,Bologna,Italy,United Arab Emirates,ARE,Colombia,COL,0,2,0–2,away team win,2,2,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-04,1990-06-09,group stage,Group A,Rome,Italy,Italy,ITA,Austria,AUT,1,0,1–0,home team win,1,1,1,0,0,0,0,0,West Germany,Italy,0,0,1
+1990,WC-1990,M-1990-05,1990-06-10,group stage,Group A,Florence,Italy,United States,USA,Czechoslovakia,CSK,1,5,1–5,away team win,6,4,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-06,1990-06-10,group stage,Group C,Turin,Italy,Brazil,BRA,Sweden,SWE,2,1,2–1,home team win,3,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-07,1990-06-10,group stage,Group D,Milan,Italy,West Germany,DEU,Yugoslavia,YUG,4,1,4–1,home team win,5,3,1,0,0,0,0,0,West Germany,Italy,0,1,0
+1990,WC-1990,M-1990-08,1990-06-11,group stage,Group C,Genoa,Italy,Costa Rica,CRI,Scotland,SCO,1,0,1–0,home team win,1,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-09,1990-06-11,group stage,Group F,Cagliari,Italy,England,ENG,Republic of Ireland,IRL,1,1,1–1,draw,2,0,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-10,1990-06-12,group stage,Group E,Verona,Italy,Belgium,BEL,South Korea,KOR,2,0,2–0,home team win,2,2,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-11,1990-06-12,group stage,Group F,Palermo,Italy,Netherlands,NLD,Egypt,EGY,1,1,1–1,draw,2,0,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-12,1990-06-13,group stage,Group E,Udine,Italy,Uruguay,URY,Spain,ESP,0,0,0–0,draw,0,0,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-13,1990-06-13,group stage,Group B,Naples,Italy,Argentina,ARG,Soviet Union,SUN,2,0,2–0,home team win,2,2,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-14,1990-06-14,group stage,Group B,Bari,Italy,Cameroon,CMR,Romania,ROU,2,1,2–1,home team win,3,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-15,1990-06-14,group stage,Group D,Bologna,Italy,Yugoslavia,YUG,Colombia,COL,1,0,1–0,home team win,1,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-16,1990-06-14,group stage,Group A,Rome,Italy,Italy,ITA,United States,USA,1,0,1–0,home team win,1,1,1,0,0,0,0,0,West Germany,Italy,0,0,1
+1990,WC-1990,M-1990-17,1990-06-15,group stage,Group A,Florence,Italy,Austria,AUT,Czechoslovakia,CSK,0,1,0–1,away team win,1,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-18,1990-06-15,group stage,Group D,Milan,Italy,West Germany,DEU,United Arab Emirates,ARE,5,1,5–1,home team win,6,4,1,0,0,0,0,0,West Germany,Italy,0,1,0
+1990,WC-1990,M-1990-19,1990-06-16,group stage,Group C,Turin,Italy,Brazil,BRA,Costa Rica,CRI,1,0,1–0,home team win,1,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-20,1990-06-16,group stage,Group C,Genoa,Italy,Sweden,SWE,Scotland,SCO,1,2,1–2,away team win,3,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-21,1990-06-16,group stage,Group F,Cagliari,Italy,England,ENG,Netherlands,NLD,0,0,0–0,draw,0,0,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-22,1990-06-17,group stage,Group F,Palermo,Italy,Republic of Ireland,IRL,Egypt,EGY,0,0,0–0,draw,0,0,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-23,1990-06-17,group stage,Group E,Verona,Italy,Belgium,BEL,Uruguay,URY,3,1,3–1,home team win,4,2,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-24,1990-06-17,group stage,Group E,Udine,Italy,South Korea,KOR,Spain,ESP,1,3,1–3,away team win,4,2,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-25,1990-06-18,group stage,Group B,Naples,Italy,Argentina,ARG,Romania,ROU,1,1,1–1,draw,2,0,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-26,1990-06-18,group stage,Group B,Bari,Italy,Cameroon,CMR,Soviet Union,SUN,0,4,0–4,away team win,4,4,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-27,1990-06-19,group stage,Group D,Milan,Italy,West Germany,DEU,Colombia,COL,1,1,1–1,draw,2,0,1,0,0,0,0,0,West Germany,Italy,0,1,0
+1990,WC-1990,M-1990-28,1990-06-19,group stage,Group D,Bologna,Italy,Yugoslavia,YUG,United Arab Emirates,ARE,4,1,4–1,home team win,5,3,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-29,1990-06-19,group stage,Group A,Florence,Italy,Austria,AUT,United States,USA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-30,1990-06-19,group stage,Group A,Rome,Italy,Italy,ITA,Czechoslovakia,CSK,2,0,2–0,home team win,2,2,1,0,0,0,0,0,West Germany,Italy,0,0,1
+1990,WC-1990,M-1990-31,1990-06-20,group stage,Group C,Turin,Italy,Brazil,BRA,Scotland,SCO,1,0,1–0,home team win,1,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-32,1990-06-20,group stage,Group C,Genoa,Italy,Sweden,SWE,Costa Rica,CRI,1,2,1–2,away team win,3,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-33,1990-06-21,group stage,Group E,Verona,Italy,Belgium,BEL,Spain,ESP,1,2,1–2,away team win,3,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-34,1990-06-21,group stage,Group E,Udine,Italy,South Korea,KOR,Uruguay,URY,0,1,0–1,away team win,1,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-35,1990-06-21,group stage,Group F,Cagliari,Italy,England,ENG,Egypt,EGY,1,0,1–0,home team win,1,1,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-36,1990-06-21,group stage,Group F,Palermo,Italy,Republic of Ireland,IRL,Netherlands,NLD,1,1,1–1,draw,2,0,1,0,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-37,1990-06-23,round of 16,not applicable,Naples,Italy,Cameroon,CMR,Colombia,COL,2,1,2–1,home team win,3,1,0,1,1,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-38,1990-06-23,round of 16,not applicable,Bari,Italy,Czechoslovakia,CSK,Costa Rica,CRI,4,1,4–1,home team win,5,3,0,1,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-39,1990-06-24,round of 16,not applicable,Turin,Italy,Brazil,BRA,Argentina,ARG,0,1,0–1,away team win,1,1,0,1,0,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-40,1990-06-24,round of 16,not applicable,Milan,Italy,West Germany,DEU,Netherlands,NLD,2,1,2–1,home team win,3,1,0,1,0,0,0,0,West Germany,Italy,0,1,0
+1990,WC-1990,M-1990-41,1990-06-25,round of 16,not applicable,Genoa,Italy,Republic of Ireland,IRL,Romania,ROU,0,0,0–0,home team win,0,0,0,1,1,1,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-42,1990-06-25,round of 16,not applicable,Rome,Italy,Italy,ITA,Uruguay,URY,2,0,2–0,home team win,2,2,0,1,0,0,0,0,West Germany,Italy,0,0,1
+1990,WC-1990,M-1990-43,1990-06-26,round of 16,not applicable,Verona,Italy,Spain,ESP,Yugoslavia,YUG,1,2,1–2,away team win,3,1,0,1,1,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-44,1990-06-26,round of 16,not applicable,Bologna,Italy,England,ENG,Belgium,BEL,1,0,1–0,home team win,1,1,0,1,1,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-45,1990-06-30,quarter-finals,not applicable,Florence,Italy,Argentina,ARG,Yugoslavia,YUG,0,0,0–0,home team win,0,0,0,1,1,1,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-46,1990-06-30,quarter-finals,not applicable,Rome,Italy,Republic of Ireland,IRL,Italy,ITA,0,1,0–1,away team win,1,1,0,1,0,0,0,0,West Germany,Italy,0,0,1
+1990,WC-1990,M-1990-47,1990-07-01,quarter-finals,not applicable,Milan,Italy,Czechoslovakia,CSK,West Germany,DEU,0,1,0–1,away team win,1,1,0,1,0,0,0,0,West Germany,Italy,0,1,0
+1990,WC-1990,M-1990-48,1990-07-01,quarter-finals,not applicable,Naples,Italy,Cameroon,CMR,England,ENG,2,3,2–3,away team win,5,1,0,1,1,0,0,0,West Germany,Italy,0,0,0
+1990,WC-1990,M-1990-49,1990-07-03,semi-finals,not applicable,Naples,Italy,Argentina,ARG,Italy,ITA,1,1,1–1,home team win,2,0,0,1,1,1,0,1,West Germany,Italy,0,0,1
+1990,WC-1990,M-1990-50,1990-07-04,semi-finals,not applicable,Turin,Italy,West Germany,DEU,England,ENG,1,1,1–1,home team win,2,0,0,1,1,1,0,1,West Germany,Italy,0,1,0
+1990,WC-1990,M-1990-51,1990-07-07,third-place match,not applicable,Bari,Italy,Italy,ITA,England,ENG,2,1,2–1,home team win,3,1,0,1,0,0,0,0,West Germany,Italy,0,0,1
+1990,WC-1990,M-1990-52,1990-07-08,final,not applicable,Rome,Italy,West Germany,DEU,Argentina,ARG,1,0,1–0,home team win,1,1,0,1,0,0,1,0,West Germany,Italy,0,1,0
+1994,WC-1994,M-1994-01,1994-06-17,group stage,Group C,Chicago,United States,Germany,DEU,Bolivia,BOL,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-02,1994-06-17,group stage,Group C,Dallas,United States,Spain,ESP,South Korea,KOR,2,2,2–2,draw,4,0,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-03,1994-06-18,group stage,Group A,Pontiac,United States,United States,USA,Switzerland,CHE,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,United States,0,0,1
+1994,WC-1994,M-1994-04,1994-06-18,group stage,Group E,East Rutherford,United States,Italy,ITA,Republic of Ireland,IRL,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-05,1994-06-18,group stage,Group A,Pasadena,United States,Colombia,COL,Romania,ROU,1,3,1–3,away team win,4,2,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-06,1994-06-19,group stage,Group F,Orlando,United States,Belgium,BEL,Morocco,MAR,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-07,1994-06-19,group stage,Group E,"Washington, D.C.",United States,Norway,NOR,Mexico,MEX,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-08,1994-06-19,group stage,Group B,Pasadena,United States,Cameroon,CMR,Sweden,SWE,2,2,2–2,draw,4,0,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-09,1994-06-20,group stage,Group B,Stanford,United States,Brazil,BRA,Russia,RUS,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,United States,0,1,0
+1994,WC-1994,M-1994-10,1994-06-20,group stage,Group F,"Washington, D.C.",United States,Netherlands,NLD,Saudi Arabia,SAU,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-11,1994-06-21,group stage,Group D,Foxborough,United States,Argentina,ARG,Greece,GRC,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-12,1994-06-21,group stage,Group C,Chicago,United States,Germany,DEU,Spain,ESP,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-13,1994-06-21,group stage,Group D,Dallas,United States,Nigeria,NGA,Bulgaria,BGR,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-14,1994-06-22,group stage,Group A,Pontiac,United States,Romania,ROU,Switzerland,CHE,1,4,1–4,away team win,5,3,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-15,1994-06-22,group stage,Group A,Pasadena,United States,United States,USA,Colombia,COL,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,United States,0,0,1
+1994,WC-1994,M-1994-16,1994-06-23,group stage,Group E,East Rutherford,United States,Italy,ITA,Norway,NOR,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-17,1994-06-23,group stage,Group C,Foxborough,United States,South Korea,KOR,Bolivia,BOL,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-18,1994-06-24,group stage,Group E,Orlando,United States,Mexico,MEX,Republic of Ireland,IRL,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-19,1994-06-24,group stage,Group B,Stanford,United States,Brazil,BRA,Cameroon,CMR,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Brazil,United States,0,1,0
+1994,WC-1994,M-1994-20,1994-06-24,group stage,Group B,Pontiac,United States,Sweden,SWE,Russia,RUS,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-21,1994-06-25,group stage,Group F,Orlando,United States,Belgium,BEL,Netherlands,NLD,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-22,1994-06-25,group stage,Group F,East Rutherford,United States,Saudi Arabia,SAU,Morocco,MAR,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-23,1994-06-25,group stage,Group D,Foxborough,United States,Argentina,ARG,Nigeria,NGA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-24,1994-06-26,group stage,Group D,Chicago,United States,Bulgaria,BGR,Greece,GRC,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-25,1994-06-26,group stage,Group A,Stanford,United States,Switzerland,CHE,Colombia,COL,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-26,1994-06-26,group stage,Group A,Pasadena,United States,United States,USA,Romania,ROU,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Brazil,United States,0,0,1
+1994,WC-1994,M-1994-27,1994-06-27,group stage,Group C,Chicago,United States,Bolivia,BOL,Spain,ESP,1,3,1–3,away team win,4,2,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-28,1994-06-27,group stage,Group C,Dallas,United States,Germany,DEU,South Korea,KOR,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-29,1994-06-28,group stage,Group E,"Washington, D.C.",United States,Italy,ITA,Mexico,MEX,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-30,1994-06-28,group stage,Group E,East Rutherford,United States,Republic of Ireland,IRL,Norway,NOR,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-31,1994-06-28,group stage,Group B,Stanford,United States,Russia,RUS,Cameroon,CMR,6,1,6–1,home team win,7,5,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-32,1994-06-28,group stage,Group B,Pontiac,United States,Brazil,BRA,Sweden,SWE,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,United States,0,1,0
+1994,WC-1994,M-1994-33,1994-06-29,group stage,Group F,"Washington, D.C.",United States,Belgium,BEL,Saudi Arabia,SAU,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-34,1994-06-29,group stage,Group F,Orlando,United States,Morocco,MAR,Netherlands,NLD,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-35,1994-06-30,group stage,Group D,Dallas,United States,Argentina,ARG,Bulgaria,BGR,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-36,1994-06-30,group stage,Group D,Foxborough,United States,Greece,GRC,Nigeria,NGA,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-37,1994-07-02,round of 16,not applicable,Chicago,United States,Germany,DEU,Belgium,BEL,3,2,3–2,home team win,5,1,0,1,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-38,1994-07-02,round of 16,not applicable,"Washington, D.C.",United States,Spain,ESP,Switzerland,CHE,3,0,3–0,home team win,3,3,0,1,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-39,1994-07-03,round of 16,not applicable,Dallas,United States,Saudi Arabia,SAU,Sweden,SWE,1,3,1–3,away team win,4,2,0,1,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-40,1994-07-03,round of 16,not applicable,Pasadena,United States,Romania,ROU,Argentina,ARG,3,2,3–2,home team win,5,1,0,1,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-41,1994-07-04,round of 16,not applicable,Orlando,United States,Netherlands,NLD,Republic of Ireland,IRL,2,0,2–0,home team win,2,2,0,1,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-42,1994-07-04,round of 16,not applicable,Stanford,United States,Brazil,BRA,United States,USA,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Brazil,United States,0,1,1
+1994,WC-1994,M-1994-43,1994-07-05,round of 16,not applicable,Foxborough,United States,Nigeria,NGA,Italy,ITA,1,2,1–2,away team win,3,1,0,1,1,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-44,1994-07-05,round of 16,not applicable,East Rutherford,United States,Mexico,MEX,Bulgaria,BGR,1,1,1–1,away team win,2,0,0,1,1,1,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-45,1994-07-09,quarter-finals,not applicable,Foxborough,United States,Italy,ITA,Spain,ESP,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-46,1994-07-09,quarter-finals,not applicable,Dallas,United States,Netherlands,NLD,Brazil,BRA,2,3,2–3,away team win,5,1,0,1,0,0,0,0,Brazil,United States,0,1,0
+1994,WC-1994,M-1994-47,1994-07-10,quarter-finals,not applicable,East Rutherford,United States,Bulgaria,BGR,Germany,DEU,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-48,1994-07-10,quarter-finals,not applicable,Stanford,United States,Romania,ROU,Sweden,SWE,2,2,2–2,away team win,4,0,0,1,1,1,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-49,1994-07-13,semi-finals,not applicable,East Rutherford,United States,Bulgaria,BGR,Italy,ITA,1,2,1–2,away team win,3,1,0,1,0,0,0,1,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-50,1994-07-13,semi-finals,not applicable,Pasadena,United States,Sweden,SWE,Brazil,BRA,0,1,0–1,away team win,1,1,0,1,0,0,0,1,Brazil,United States,0,1,0
+1994,WC-1994,M-1994-51,1994-07-16,third-place match,not applicable,Pasadena,United States,Sweden,SWE,Bulgaria,BGR,4,0,4–0,home team win,4,4,0,1,0,0,0,0,Brazil,United States,0,0,0
+1994,WC-1994,M-1994-52,1994-07-17,final,not applicable,Pasadena,United States,Brazil,BRA,Italy,ITA,0,0,0–0,home team win,0,0,0,1,1,1,1,0,Brazil,United States,0,1,0
+1998,WC-1998,M-1998-01,1998-06-10,group stage,Group A,Saint-Denis,France,Brazil,BRA,Scotland,SCO,2,1,2–1,home team win,3,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-02,1998-06-10,group stage,Group A,Montpellier,France,Morocco,MAR,Norway,NOR,2,2,2–2,draw,4,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-03,1998-06-11,group stage,Group B,Bordeaux,France,Italy,ITA,Chile,CHL,2,2,2–2,draw,4,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-04,1998-06-11,group stage,Group B,Toulouse,France,Cameroon,CMR,Austria,AUT,1,1,1–1,draw,2,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-05,1998-06-12,group stage,Group D,Montpellier,France,Paraguay,PRY,Bulgaria,BGR,0,0,0–0,draw,0,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-06,1998-06-12,group stage,Group C,Lens,France,Saudi Arabia,SAU,Denmark,DNK,0,1,0–1,away team win,1,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-07,1998-06-12,group stage,Group C,Marseille,France,France,FRA,South Africa,ZAF,3,0,3–0,home team win,3,3,1,0,0,0,0,0,France,France,1,1,1
+1998,WC-1998,M-1998-08,1998-06-13,group stage,Group D,Nantes,France,Spain,ESP,Nigeria,NGA,2,3,2–3,away team win,5,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-09,1998-06-13,group stage,Group E,Lyon,France,South Korea,KOR,Mexico,MEX,1,3,1–3,away team win,4,2,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-10,1998-06-13,group stage,Group E,Saint-Denis,France,Netherlands,NLD,Belgium,BEL,0,0,0–0,draw,0,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-11,1998-06-14,group stage,Group H,Toulouse,France,Argentina,ARG,Japan,JPN,1,0,1–0,home team win,1,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-12,1998-06-14,group stage,Group F,Saint-Étienne,France,Yugoslavia,YUG,Iran,IRN,1,0,1–0,home team win,1,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-13,1998-06-14,group stage,Group H,Lens,France,Jamaica,JAM,Croatia,HRV,1,3,1–3,away team win,4,2,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-14,1998-06-15,group stage,Group G,Marseille,France,England,ENG,Tunisia,TUN,2,0,2–0,home team win,2,2,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-15,1998-06-15,group stage,Group G,Lyon,France,Romania,ROU,Colombia,COL,1,0,1–0,home team win,1,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-16,1998-06-15,group stage,Group F,Paris,France,Germany,DEU,United States,USA,2,0,2–0,home team win,2,2,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-17,1998-06-16,group stage,Group A,Bordeaux,France,Scotland,SCO,Norway,NOR,1,1,1–1,draw,2,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-18,1998-06-16,group stage,Group A,Nantes,France,Brazil,BRA,Morocco,MAR,3,0,3–0,home team win,3,3,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-19,1998-06-17,group stage,Group B,Saint-Étienne,France,Chile,CHL,Austria,AUT,1,1,1–1,draw,2,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-20,1998-06-17,group stage,Group B,Montpellier,France,Italy,ITA,Cameroon,CMR,3,0,3–0,home team win,3,3,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-21,1998-06-18,group stage,Group C,Toulouse,France,South Africa,ZAF,Denmark,DNK,1,1,1–1,draw,2,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-22,1998-06-18,group stage,Group C,Saint-Denis,France,France,FRA,Saudi Arabia,SAU,4,0,4–0,home team win,4,4,1,0,0,0,0,0,France,France,1,1,1
+1998,WC-1998,M-1998-23,1998-06-19,group stage,Group D,Paris,France,Nigeria,NGA,Bulgaria,BGR,1,0,1–0,home team win,1,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-24,1998-06-19,group stage,Group D,Saint-Étienne,France,Spain,ESP,Paraguay,PRY,0,0,0–0,draw,0,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-25,1998-06-20,group stage,Group H,Nantes,France,Japan,JPN,Croatia,HRV,0,1,0–1,away team win,1,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-26,1998-06-20,group stage,Group E,Bordeaux,France,Belgium,BEL,Mexico,MEX,2,2,2–2,draw,4,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-27,1998-06-20,group stage,Group E,Marseille,France,Netherlands,NLD,South Korea,KOR,5,0,5–0,home team win,5,5,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-28,1998-06-21,group stage,Group F,Lens,France,Germany,DEU,Yugoslavia,YUG,2,2,2–2,draw,4,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-29,1998-06-21,group stage,Group H,Paris,France,Argentina,ARG,Jamaica,JAM,5,0,5–0,home team win,5,5,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-30,1998-06-21,group stage,Group F,Lyon,France,United States,USA,Iran,IRN,1,2,1–2,away team win,3,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-31,1998-06-22,group stage,Group G,Montpellier,France,Colombia,COL,Tunisia,TUN,1,0,1–0,home team win,1,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-32,1998-06-22,group stage,Group G,Toulouse,France,Romania,ROU,England,ENG,2,1,2–1,home team win,3,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-33,1998-06-23,group stage,Group B,Nantes,France,Chile,CHL,Cameroon,CMR,1,1,1–1,draw,2,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-34,1998-06-23,group stage,Group B,Saint-Denis,France,Italy,ITA,Austria,AUT,2,1,2–1,home team win,3,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-35,1998-06-23,group stage,Group A,Marseille,France,Brazil,BRA,Norway,NOR,1,2,1–2,away team win,3,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-36,1998-06-23,group stage,Group A,Saint-Étienne,France,Scotland,SCO,Morocco,MAR,0,3,0–3,away team win,3,3,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-37,1998-06-24,group stage,Group C,Lyon,France,France,FRA,Denmark,DNK,2,1,2–1,home team win,3,1,1,0,0,0,0,0,France,France,1,1,1
+1998,WC-1998,M-1998-38,1998-06-24,group stage,Group C,Bordeaux,France,South Africa,ZAF,Saudi Arabia,SAU,2,2,2–2,draw,4,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-39,1998-06-24,group stage,Group D,Toulouse,France,Nigeria,NGA,Paraguay,PRY,1,3,1–3,away team win,4,2,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-40,1998-06-24,group stage,Group D,Lens,France,Spain,ESP,Bulgaria,BGR,6,1,6–1,home team win,7,5,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-41,1998-06-25,group stage,Group E,Paris,France,Belgium,BEL,South Korea,KOR,1,1,1–1,draw,2,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-42,1998-06-25,group stage,Group E,Saint-Étienne,France,Netherlands,NLD,Mexico,MEX,2,2,2–2,draw,4,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-43,1998-06-25,group stage,Group F,Montpellier,France,Germany,DEU,Iran,IRN,2,0,2–0,home team win,2,2,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-44,1998-06-25,group stage,Group F,Nantes,France,United States,USA,Yugoslavia,YUG,0,1,0–1,away team win,1,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-45,1998-06-26,group stage,Group H,Bordeaux,France,Argentina,ARG,Croatia,HRV,1,0,1–0,home team win,1,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-46,1998-06-26,group stage,Group H,Lyon,France,Japan,JPN,Jamaica,JAM,1,2,1–2,away team win,3,1,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-47,1998-06-26,group stage,Group G,Lens,France,Colombia,COL,England,ENG,0,2,0–2,away team win,2,2,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-48,1998-06-26,group stage,Group G,Saint-Denis,France,Romania,ROU,Tunisia,TUN,1,1,1–1,draw,2,0,1,0,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-49,1998-06-27,round of 16,not applicable,Marseille,France,Italy,ITA,Norway,NOR,1,0,1–0,home team win,1,1,0,1,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-50,1998-06-27,round of 16,not applicable,Paris,France,Brazil,BRA,Chile,CHL,4,1,4–1,home team win,5,3,0,1,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-51,1998-06-28,round of 16,not applicable,Lens,France,France,FRA,Paraguay,PRY,1,0,1–0,home team win,1,1,0,1,1,0,0,0,France,France,1,1,1
+1998,WC-1998,M-1998-52,1998-06-28,round of 16,not applicable,Saint-Denis,France,Nigeria,NGA,Denmark,DNK,1,4,1–4,away team win,5,3,0,1,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-53,1998-06-29,round of 16,not applicable,Montpellier,France,Germany,DEU,Mexico,MEX,2,1,2–1,home team win,3,1,0,1,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-54,1998-06-29,round of 16,not applicable,Toulouse,France,Netherlands,NLD,Yugoslavia,YUG,2,1,2–1,home team win,3,1,0,1,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-55,1998-06-30,round of 16,not applicable,Bordeaux,France,Romania,ROU,Croatia,HRV,0,1,0–1,away team win,1,1,0,1,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-56,1998-06-30,round of 16,not applicable,Saint-Étienne,France,Argentina,ARG,England,ENG,2,2,2–2,home team win,4,0,0,1,1,1,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-57,1998-07-03,quarter-finals,not applicable,Saint-Denis,France,Italy,ITA,France,FRA,0,0,0–0,away team win,0,0,0,1,1,1,0,0,France,France,1,1,1
+1998,WC-1998,M-1998-58,1998-07-03,quarter-finals,not applicable,Nantes,France,Brazil,BRA,Denmark,DNK,3,2,3–2,home team win,5,1,0,1,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-59,1998-07-04,quarter-finals,not applicable,Marseille,France,Netherlands,NLD,Argentina,ARG,2,1,2–1,home team win,3,1,0,1,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-60,1998-07-04,quarter-finals,not applicable,Lyon,France,Germany,DEU,Croatia,HRV,0,3,0–3,away team win,3,3,0,1,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-61,1998-07-07,semi-finals,not applicable,Marseille,France,Brazil,BRA,Netherlands,NLD,1,1,1–1,home team win,2,0,0,1,1,1,0,1,France,France,1,0,0
+1998,WC-1998,M-1998-62,1998-07-08,semi-finals,not applicable,Saint-Denis,France,France,FRA,Croatia,HRV,2,1,2–1,home team win,3,1,0,1,0,0,0,1,France,France,1,1,1
+1998,WC-1998,M-1998-63,1998-07-11,third-place match,not applicable,Paris,France,Netherlands,NLD,Croatia,HRV,1,2,1–2,away team win,3,1,0,1,0,0,0,0,France,France,1,0,0
+1998,WC-1998,M-1998-64,1998-07-12,final,not applicable,Saint-Denis,France,Brazil,BRA,France,FRA,0,3,0–3,away team win,3,3,0,1,0,0,1,0,France,France,1,1,1
+2002,WC-2002,M-2002-01,2002-05-31,group stage,Group A,Seoul,South Korea,France,FRA,Senegal,SEN,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-02,2002-06-01,group stage,Group E,Niigata,Japan,Republic of Ireland,IRL,Cameroon,CMR,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-03,2002-06-01,group stage,Group A,Ulsan,South Korea,Uruguay,URY,Denmark,DNK,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-04,2002-06-01,group stage,Group E,Sapporo,Japan,Germany,DEU,Saudi Arabia,SAU,8,0,8–0,home team win,8,8,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-05,2002-06-02,group stage,Group F,Ibaraki,Japan,Argentina,ARG,Nigeria,NGA,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-06,2002-06-02,group stage,Group B,Busan,South Korea,Paraguay,PRY,South Africa,ZAF,2,2,2–2,draw,4,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-07,2002-06-02,group stage,Group F,Saitama,Japan,England,ENG,Sweden,SWE,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-08,2002-06-02,group stage,Group B,Gwangju,South Korea,Spain,ESP,Slovenia,SVN,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-09,2002-06-03,group stage,Group G,Niigata,Japan,Croatia,HRV,Mexico,MEX,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-10,2002-06-03,group stage,Group C,Ulsan,South Korea,Brazil,BRA,Turkey,TUR,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,1,0
+2002,WC-2002,M-2002-11,2002-06-03,group stage,Group G,Sapporo,Japan,Italy,ITA,Ecuador,ECU,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-12,2002-06-04,group stage,Group C,Gwangju,South Korea,China,CHN,Costa Rica,CRI,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-13,2002-06-04,group stage,Group H,Saitama,Japan,Japan,JPN,Belgium,BEL,2,2,2–2,draw,4,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-14,2002-06-04,group stage,Group D,Busan,South Korea,South Korea,KOR,Poland,POL,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-15,2002-06-05,group stage,Group H,Kobe,Japan,Russia,RUS,Tunisia,TUN,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-16,2002-06-05,group stage,Group D,Suwon,South Korea,United States,USA,Portugal,PRT,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-17,2002-06-05,group stage,Group E,Ibaraki,Japan,Germany,DEU,Republic of Ireland,IRL,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-18,2002-06-06,group stage,Group A,Daegu,South Korea,Denmark,DNK,Senegal,SEN,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-19,2002-06-06,group stage,Group E,Saitama,Japan,Cameroon,CMR,Saudi Arabia,SAU,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-20,2002-06-06,group stage,Group A,Busan,South Korea,France,FRA,Uruguay,URY,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-21,2002-06-07,group stage,Group F,Kobe,Japan,Sweden,SWE,Nigeria,NGA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-22,2002-06-07,group stage,Group B,Jeonju,South Korea,Spain,ESP,Paraguay,PRY,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-23,2002-06-07,group stage,Group F,Sapporo,Japan,Argentina,ARG,England,ENG,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-24,2002-06-08,group stage,Group B,Daegu,South Korea,South Africa,ZAF,Slovenia,SVN,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-25,2002-06-08,group stage,Group G,Ibaraki,Japan,Italy,ITA,Croatia,HRV,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-26,2002-06-08,group stage,Group C,Seogwipo,South Korea,Brazil,BRA,China,CHN,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Brazil,"Korea, Japan",0,1,0
+2002,WC-2002,M-2002-27,2002-06-09,group stage,Group G,Miyagi,Japan,Mexico,MEX,Ecuador,ECU,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-28,2002-06-09,group stage,Group C,Incheon,South Korea,Costa Rica,CRI,Turkey,TUR,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-29,2002-06-09,group stage,Group H,Yokohama,Japan,Japan,JPN,Russia,RUS,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-30,2002-06-10,group stage,Group D,Daegu,South Korea,South Korea,KOR,United States,USA,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-31,2002-06-10,group stage,Group H,Ōita,Japan,Tunisia,TUN,Belgium,BEL,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-32,2002-06-10,group stage,Group D,Jeonju,South Korea,Portugal,PRT,Poland,POL,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-33,2002-06-11,group stage,Group A,Incheon,South Korea,Denmark,DNK,France,FRA,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-34,2002-06-11,group stage,Group A,Suwon,South Korea,Senegal,SEN,Uruguay,URY,3,3,3–3,draw,6,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-35,2002-06-11,group stage,Group E,Shizuoka,Japan,Cameroon,CMR,Germany,DEU,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-36,2002-06-11,group stage,Group E,Yokohama,Japan,Saudi Arabia,SAU,Republic of Ireland,IRL,0,3,0–3,away team win,3,3,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-37,2002-06-12,group stage,Group F,Osaka,Japan,Nigeria,NGA,England,ENG,0,0,0–0,draw,0,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-38,2002-06-12,group stage,Group F,Miyagi,Japan,Sweden,SWE,Argentina,ARG,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-39,2002-06-12,group stage,Group B,Seogwipo,South Korea,Slovenia,SVN,Paraguay,PRY,1,3,1–3,away team win,4,2,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-40,2002-06-12,group stage,Group B,Daejeon,South Korea,South Africa,ZAF,Spain,ESP,2,3,2–3,away team win,5,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-41,2002-06-13,group stage,Group C,Suwon,South Korea,Costa Rica,CRI,Brazil,BRA,2,5,2–5,away team win,7,3,1,0,0,0,0,0,Brazil,"Korea, Japan",0,1,0
+2002,WC-2002,M-2002-42,2002-06-13,group stage,Group C,Seoul,South Korea,Turkey,TUR,China,CHN,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-43,2002-06-13,group stage,Group G,Yokohama,Japan,Ecuador,ECU,Croatia,HRV,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-44,2002-06-13,group stage,Group G,Ōita,Japan,Mexico,MEX,Italy,ITA,1,1,1–1,draw,2,0,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-45,2002-06-14,group stage,Group H,Shizuoka,Japan,Belgium,BEL,Russia,RUS,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-46,2002-06-14,group stage,Group H,Osaka,Japan,Tunisia,TUN,Japan,JPN,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-47,2002-06-14,group stage,Group D,Daejeon,South Korea,Poland,POL,United States,USA,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-48,2002-06-14,group stage,Group D,Incheon,South Korea,Portugal,PRT,South Korea,KOR,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-49,2002-06-15,round of 16,not applicable,Seogwipo,South Korea,Germany,DEU,Paraguay,PRY,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-50,2002-06-15,round of 16,not applicable,Niigata,Japan,Denmark,DNK,England,ENG,0,3,0–3,away team win,3,3,0,1,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-51,2002-06-16,round of 16,not applicable,Ōita,Japan,Sweden,SWE,Senegal,SEN,1,2,1–2,away team win,3,1,0,1,1,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-52,2002-06-16,round of 16,not applicable,Suwon,South Korea,Spain,ESP,Republic of Ireland,IRL,1,1,1–1,home team win,2,0,0,1,1,1,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-53,2002-06-17,round of 16,not applicable,Jeonju,South Korea,Mexico,MEX,United States,USA,0,2,0–2,away team win,2,2,0,1,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-54,2002-06-17,round of 16,not applicable,Kobe,Japan,Brazil,BRA,Belgium,BEL,2,0,2–0,home team win,2,2,0,1,0,0,0,0,Brazil,"Korea, Japan",0,1,0
+2002,WC-2002,M-2002-55,2002-06-18,round of 16,not applicable,Miyagi,Japan,Japan,JPN,Turkey,TUR,0,1,0–1,away team win,1,1,0,1,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-56,2002-06-18,round of 16,not applicable,Daejeon,South Korea,South Korea,KOR,Italy,ITA,2,1,2–1,home team win,3,1,0,1,1,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-57,2002-06-21,quarter-finals,not applicable,Shizuoka,Japan,England,ENG,Brazil,BRA,1,2,1–2,away team win,3,1,0,1,0,0,0,0,Brazil,"Korea, Japan",0,1,0
+2002,WC-2002,M-2002-58,2002-06-21,quarter-finals,not applicable,Ulsan,South Korea,Germany,DEU,United States,USA,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-59,2002-06-22,quarter-finals,not applicable,Gwangju,South Korea,Spain,ESP,South Korea,KOR,0,0,0–0,away team win,0,0,0,1,1,1,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-60,2002-06-22,quarter-finals,not applicable,Osaka,Japan,Senegal,SEN,Turkey,TUR,0,1,0–1,away team win,1,1,0,1,1,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-61,2002-06-25,semi-finals,not applicable,Seoul,South Korea,Germany,DEU,South Korea,KOR,1,0,1–0,home team win,1,1,0,1,0,0,0,1,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-62,2002-06-26,semi-finals,not applicable,Saitama,Japan,Brazil,BRA,Turkey,TUR,1,0,1–0,home team win,1,1,0,1,0,0,0,1,Brazil,"Korea, Japan",0,1,0
+2002,WC-2002,M-2002-63,2002-06-29,third-place match,not applicable,Daegu,South Korea,South Korea,KOR,Turkey,TUR,2,3,2–3,away team win,5,1,0,1,0,0,0,0,Brazil,"Korea, Japan",0,0,0
+2002,WC-2002,M-2002-64,2002-06-30,final,not applicable,Yokohama,Japan,Germany,DEU,Brazil,BRA,0,2,0–2,away team win,2,2,0,1,0,0,1,0,Brazil,"Korea, Japan",0,1,0
+2006,WC-2006,M-2006-01,2006-06-09,group stage,Group A,Munich,Germany,Germany,DEU,Costa Rica,CRI,4,2,4–2,home team win,6,2,1,0,0,0,0,0,Italy,Germany,0,0,1
+2006,WC-2006,M-2006-02,2006-06-09,group stage,Group A,Gelsenkirchen,Germany,Poland,POL,Ecuador,ECU,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-03,2006-06-10,group stage,Group B,Frankfurt,Germany,England,ENG,Paraguay,PRY,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-04,2006-06-10,group stage,Group B,Dortmund,Germany,Trinidad and Tobago,TTO,Sweden,SWE,0,0,0–0,draw,0,0,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-05,2006-06-10,group stage,Group C,Hamburg,Germany,Argentina,ARG,Ivory Coast,CIV,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-06,2006-06-11,group stage,Group C,Leipzig,Germany,Serbia and Montenegro,SCG,Netherlands,NLD,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-07,2006-06-11,group stage,Group D,Nuremberg,Germany,Mexico,MEX,Iran,IRN,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-08,2006-06-11,group stage,Group D,Cologne,Germany,Angola,AGO,Portugal,PRT,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-09,2006-06-12,group stage,Group F,Kaiserslautern,Germany,Australia,AUS,Japan,JPN,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-10,2006-06-12,group stage,Group E,Gelsenkirchen,Germany,United States,USA,Czech Republic,CZE,0,3,0–3,away team win,3,3,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-11,2006-06-12,group stage,Group E,Hanover,Germany,Italy,ITA,Ghana,GHA,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Italy,Germany,0,1,0
+2006,WC-2006,M-2006-12,2006-06-13,group stage,Group G,Frankfurt,Germany,South Korea,KOR,Togo,TGO,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-13,2006-06-13,group stage,Group G,Stuttgart,Germany,France,FRA,Switzerland,CHE,0,0,0–0,draw,0,0,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-14,2006-06-13,group stage,Group F,Berlin,Germany,Brazil,BRA,Croatia,HRV,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-15,2006-06-14,group stage,Group H,Leipzig,Germany,Spain,ESP,Ukraine,UKR,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-16,2006-06-14,group stage,Group H,Munich,Germany,Tunisia,TUN,Saudi Arabia,SAU,2,2,2–2,draw,4,0,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-17,2006-06-14,group stage,Group A,Dortmund,Germany,Germany,DEU,Poland,POL,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Italy,Germany,0,0,1
+2006,WC-2006,M-2006-18,2006-06-15,group stage,Group A,Hamburg,Germany,Ecuador,ECU,Costa Rica,CRI,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-19,2006-06-15,group stage,Group B,Nuremberg,Germany,England,ENG,Trinidad and Tobago,TTO,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-20,2006-06-15,group stage,Group B,Berlin,Germany,Sweden,SWE,Paraguay,PRY,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-21,2006-06-16,group stage,Group C,Gelsenkirchen,Germany,Argentina,ARG,Serbia and Montenegro,SCG,6,0,6–0,home team win,6,6,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-22,2006-06-16,group stage,Group C,Stuttgart,Germany,Netherlands,NLD,Ivory Coast,CIV,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-23,2006-06-16,group stage,Group D,Hanover,Germany,Mexico,MEX,Angola,AGO,0,0,0–0,draw,0,0,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-24,2006-06-17,group stage,Group D,Frankfurt,Germany,Portugal,PRT,Iran,IRN,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-25,2006-06-17,group stage,Group E,Cologne,Germany,Czech Republic,CZE,Ghana,GHA,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-26,2006-06-17,group stage,Group E,Kaiserslautern,Germany,Italy,ITA,United States,USA,1,1,1–1,draw,2,0,1,0,0,0,0,0,Italy,Germany,0,1,0
+2006,WC-2006,M-2006-27,2006-06-18,group stage,Group F,Nuremberg,Germany,Japan,JPN,Croatia,HRV,0,0,0–0,draw,0,0,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-28,2006-06-18,group stage,Group F,Munich,Germany,Brazil,BRA,Australia,AUS,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-29,2006-06-18,group stage,Group G,Leipzig,Germany,France,FRA,South Korea,KOR,1,1,1–1,draw,2,0,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-30,2006-06-19,group stage,Group G,Dortmund,Germany,Togo,TGO,Switzerland,CHE,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-31,2006-06-19,group stage,Group H,Hamburg,Germany,Saudi Arabia,SAU,Ukraine,UKR,0,4,0–4,away team win,4,4,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-32,2006-06-19,group stage,Group H,Stuttgart,Germany,Spain,ESP,Tunisia,TUN,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-33,2006-06-20,group stage,Group A,Hanover,Germany,Costa Rica,CRI,Poland,POL,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-34,2006-06-20,group stage,Group A,Berlin,Germany,Ecuador,ECU,Germany,DEU,0,3,0–3,away team win,3,3,1,0,0,0,0,0,Italy,Germany,0,0,1
+2006,WC-2006,M-2006-35,2006-06-20,group stage,Group B,Kaiserslautern,Germany,Paraguay,PRY,Trinidad and Tobago,TTO,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-36,2006-06-20,group stage,Group B,Cologne,Germany,Sweden,SWE,England,ENG,2,2,2–2,draw,4,0,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-37,2006-06-21,group stage,Group D,Leipzig,Germany,Iran,IRN,Angola,AGO,1,1,1–1,draw,2,0,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-38,2006-06-21,group stage,Group D,Gelsenkirchen,Germany,Portugal,PRT,Mexico,MEX,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-39,2006-06-21,group stage,Group C,Munich,Germany,Ivory Coast,CIV,Serbia and Montenegro,SCG,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-40,2006-06-21,group stage,Group C,Frankfurt,Germany,Netherlands,NLD,Argentina,ARG,0,0,0–0,draw,0,0,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-41,2006-06-22,group stage,Group E,Hamburg,Germany,Czech Republic,CZE,Italy,ITA,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Italy,Germany,0,1,0
+2006,WC-2006,M-2006-42,2006-06-22,group stage,Group E,Nuremberg,Germany,Ghana,GHA,United States,USA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-43,2006-06-22,group stage,Group F,Stuttgart,Germany,Croatia,HRV,Australia,AUS,2,2,2–2,draw,4,0,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-44,2006-06-22,group stage,Group F,Dortmund,Germany,Japan,JPN,Brazil,BRA,1,4,1–4,away team win,5,3,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-45,2006-06-23,group stage,Group H,Kaiserslautern,Germany,Saudi Arabia,SAU,Spain,ESP,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-46,2006-06-23,group stage,Group H,Berlin,Germany,Ukraine,UKR,Tunisia,TUN,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-47,2006-06-23,group stage,Group G,Hanover,Germany,Switzerland,CHE,South Korea,KOR,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-48,2006-06-23,group stage,Group G,Cologne,Germany,Togo,TGO,France,FRA,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-49,2006-06-24,round of 16,not applicable,Munich,Germany,Germany,DEU,Sweden,SWE,2,0,2–0,home team win,2,2,0,1,0,0,0,0,Italy,Germany,0,0,1
+2006,WC-2006,M-2006-50,2006-06-24,round of 16,not applicable,Leipzig,Germany,Argentina,ARG,Mexico,MEX,2,1,2–1,home team win,3,1,0,1,1,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-51,2006-06-25,round of 16,not applicable,Stuttgart,Germany,England,ENG,Ecuador,ECU,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-52,2006-06-25,round of 16,not applicable,Nuremberg,Germany,Portugal,PRT,Netherlands,NLD,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-53,2006-06-26,round of 16,not applicable,Kaiserslautern,Germany,Italy,ITA,Australia,AUS,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Italy,Germany,0,1,0
+2006,WC-2006,M-2006-54,2006-06-26,round of 16,not applicable,Cologne,Germany,Switzerland,CHE,Ukraine,UKR,0,0,0–0,away team win,0,0,0,1,1,1,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-55,2006-06-27,round of 16,not applicable,Dortmund,Germany,Brazil,BRA,Ghana,GHA,3,0,3–0,home team win,3,3,0,1,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-56,2006-06-27,round of 16,not applicable,Hanover,Germany,Spain,ESP,France,FRA,1,3,1–3,away team win,4,2,0,1,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-57,2006-06-30,quarter-finals,not applicable,Berlin,Germany,Germany,DEU,Argentina,ARG,1,1,1–1,home team win,2,0,0,1,1,1,0,0,Italy,Germany,0,0,1
+2006,WC-2006,M-2006-58,2006-06-30,quarter-finals,not applicable,Hamburg,Germany,Italy,ITA,Ukraine,UKR,3,0,3–0,home team win,3,3,0,1,0,0,0,0,Italy,Germany,0,1,0
+2006,WC-2006,M-2006-59,2006-07-01,quarter-finals,not applicable,Gelsenkirchen,Germany,England,ENG,Portugal,PRT,0,0,0–0,away team win,0,0,0,1,1,1,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-60,2006-07-01,quarter-finals,not applicable,Frankfurt,Germany,Brazil,BRA,France,FRA,0,1,0–1,away team win,1,1,0,1,0,0,0,0,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-61,2006-07-04,semi-finals,not applicable,Dortmund,Germany,Germany,DEU,Italy,ITA,0,2,0–2,away team win,2,2,0,1,1,0,0,1,Italy,Germany,0,1,1
+2006,WC-2006,M-2006-62,2006-07-05,semi-finals,not applicable,Munich,Germany,Portugal,PRT,France,FRA,0,1,0–1,away team win,1,1,0,1,0,0,0,1,Italy,Germany,0,0,0
+2006,WC-2006,M-2006-63,2006-07-08,third-place match,not applicable,Stuttgart,Germany,Germany,DEU,Portugal,PRT,3,1,3–1,home team win,4,2,0,1,0,0,0,0,Italy,Germany,0,0,1
+2006,WC-2006,M-2006-64,2006-07-09,final,not applicable,Berlin,Germany,Italy,ITA,France,FRA,1,1,1–1,home team win,2,0,0,1,1,1,1,0,Italy,Germany,0,1,0
+2010,WC-2010,M-2010-01,2010-06-11,group stage,Group A,Johannesburg,South Africa,South Africa,ZAF,Mexico,MEX,1,1,1–1,draw,2,0,1,0,0,0,0,0,Spain,South Africa,0,0,1
+2010,WC-2010,M-2010-02,2010-06-11,group stage,Group A,Cape Town,South Africa,Uruguay,URY,France,FRA,0,0,0–0,draw,0,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-03,2010-06-12,group stage,Group B,Port Elizabeth,South Africa,South Korea,KOR,Greece,GRC,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-04,2010-06-12,group stage,Group B,Johannesburg,South Africa,Argentina,ARG,Nigeria,NGA,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-05,2010-06-12,group stage,Group C,Rustenburg,South Africa,England,ENG,United States,USA,1,1,1–1,draw,2,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-06,2010-06-13,group stage,Group C,Polokwane,South Africa,Algeria,DZA,Slovenia,SVN,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-07,2010-06-13,group stage,Group D,Pretoria,South Africa,Serbia,SRB,Ghana,GHA,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-08,2010-06-13,group stage,Group D,Durban,South Africa,Germany,DEU,Australia,AUS,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-09,2010-06-14,group stage,Group E,Johannesburg,South Africa,Netherlands,NLD,Denmark,DNK,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-10,2010-06-14,group stage,Group E,Bloemfontein,South Africa,Japan,JPN,Cameroon,CMR,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-11,2010-06-14,group stage,Group F,Cape Town,South Africa,Italy,ITA,Paraguay,PRY,1,1,1–1,draw,2,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-12,2010-06-15,group stage,Group F,Rustenburg,South Africa,New Zealand,NZL,Slovakia,SVK,1,1,1–1,draw,2,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-13,2010-06-15,group stage,Group G,Port Elizabeth,South Africa,Ivory Coast,CIV,Portugal,PRT,0,0,0–0,draw,0,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-14,2010-06-15,group stage,Group G,Johannesburg,South Africa,Brazil,BRA,North Korea,PRK,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-15,2010-06-16,group stage,Group H,Nelspruit,South Africa,Honduras,HND,Chile,CHL,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-16,2010-06-16,group stage,Group H,Durban,South Africa,Spain,ESP,Switzerland,CHE,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,1,0
+2010,WC-2010,M-2010-17,2010-06-16,group stage,Group A,Pretoria,South Africa,South Africa,ZAF,Uruguay,URY,0,3,0–3,away team win,3,3,1,0,0,0,0,0,Spain,South Africa,0,0,1
+2010,WC-2010,M-2010-18,2010-06-17,group stage,Group B,Johannesburg,South Africa,Argentina,ARG,South Korea,KOR,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-19,2010-06-17,group stage,Group B,Bloemfontein,South Africa,Greece,GRC,Nigeria,NGA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-20,2010-06-17,group stage,Group A,Polokwane,South Africa,France,FRA,Mexico,MEX,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-21,2010-06-18,group stage,Group D,Port Elizabeth,South Africa,Germany,DEU,Serbia,SRB,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-22,2010-06-18,group stage,Group C,Johannesburg,South Africa,Slovenia,SVN,United States,USA,2,2,2–2,draw,4,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-23,2010-06-18,group stage,Group C,Cape Town,South Africa,England,ENG,Algeria,DZA,0,0,0–0,draw,0,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-24,2010-06-19,group stage,Group E,Durban,South Africa,Netherlands,NLD,Japan,JPN,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-25,2010-06-19,group stage,Group D,Rustenburg,South Africa,Ghana,GHA,Australia,AUS,1,1,1–1,draw,2,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-26,2010-06-19,group stage,Group E,Pretoria,South Africa,Cameroon,CMR,Denmark,DNK,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-27,2010-06-20,group stage,Group F,Bloemfontein,South Africa,Slovakia,SVK,Paraguay,PRY,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-28,2010-06-20,group stage,Group F,Nelspruit,South Africa,Italy,ITA,New Zealand,NZL,1,1,1–1,draw,2,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-29,2010-06-20,group stage,Group G,Johannesburg,South Africa,Brazil,BRA,Ivory Coast,CIV,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-30,2010-06-21,group stage,Group G,Cape Town,South Africa,Portugal,PRT,North Korea,PRK,7,0,7–0,home team win,7,7,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-31,2010-06-21,group stage,Group H,Port Elizabeth,South Africa,Chile,CHL,Switzerland,CHE,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-32,2010-06-21,group stage,Group H,Johannesburg,South Africa,Spain,ESP,Honduras,HND,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Spain,South Africa,0,1,0
+2010,WC-2010,M-2010-33,2010-06-22,group stage,Group A,Bloemfontein,South Africa,France,FRA,South Africa,ZAF,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Spain,South Africa,0,0,1
+2010,WC-2010,M-2010-34,2010-06-22,group stage,Group A,Rustenburg,South Africa,Mexico,MEX,Uruguay,URY,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-35,2010-06-22,group stage,Group B,Polokwane,South Africa,Greece,GRC,Argentina,ARG,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-36,2010-06-22,group stage,Group B,Durban,South Africa,Nigeria,NGA,South Korea,KOR,2,2,2–2,draw,4,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-37,2010-06-23,group stage,Group C,Port Elizabeth,South Africa,Slovenia,SVN,England,ENG,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-38,2010-06-23,group stage,Group C,Pretoria,South Africa,United States,USA,Algeria,DZA,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-39,2010-06-23,group stage,Group D,Nelspruit,South Africa,Australia,AUS,Serbia,SRB,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-40,2010-06-23,group stage,Group D,Johannesburg,South Africa,Ghana,GHA,Germany,DEU,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-41,2010-06-24,group stage,Group F,Polokwane,South Africa,Paraguay,PRY,New Zealand,NZL,0,0,0–0,draw,0,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-42,2010-06-24,group stage,Group F,Johannesburg,South Africa,Slovakia,SVK,Italy,ITA,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-43,2010-06-24,group stage,Group E,Cape Town,South Africa,Cameroon,CMR,Netherlands,NLD,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-44,2010-06-24,group stage,Group E,Rustenburg,South Africa,Denmark,DNK,Japan,JPN,1,3,1–3,away team win,4,2,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-45,2010-06-25,group stage,Group G,Nelspruit,South Africa,North Korea,PRK,Ivory Coast,CIV,0,3,0–3,away team win,3,3,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-46,2010-06-25,group stage,Group G,Durban,South Africa,Portugal,PRT,Brazil,BRA,0,0,0–0,draw,0,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-47,2010-06-25,group stage,Group H,Pretoria,South Africa,Chile,CHL,Spain,ESP,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Spain,South Africa,0,1,0
+2010,WC-2010,M-2010-48,2010-06-25,group stage,Group H,Bloemfontein,South Africa,Switzerland,CHE,Honduras,HND,0,0,0–0,draw,0,0,1,0,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-49,2010-06-26,round of 16,not applicable,Port Elizabeth,South Africa,Uruguay,URY,South Korea,KOR,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-50,2010-06-26,round of 16,not applicable,Rustenburg,South Africa,United States,USA,Ghana,GHA,1,2,1–2,away team win,3,1,0,1,1,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-51,2010-06-27,round of 16,not applicable,Bloemfontein,South Africa,Germany,DEU,England,ENG,4,1,4–1,home team win,5,3,0,1,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-52,2010-06-27,round of 16,not applicable,Johannesburg,South Africa,Argentina,ARG,Mexico,MEX,3,1,3–1,home team win,4,2,0,1,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-53,2010-06-28,round of 16,not applicable,Durban,South Africa,Netherlands,NLD,Slovakia,SVK,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-54,2010-06-28,round of 16,not applicable,Johannesburg,South Africa,Brazil,BRA,Chile,CHL,3,0,3–0,home team win,3,3,0,1,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-55,2010-06-29,round of 16,not applicable,Pretoria,South Africa,Paraguay,PRY,Japan,JPN,0,0,0–0,home team win,0,0,0,1,1,1,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-56,2010-06-29,round of 16,not applicable,Cape Town,South Africa,Spain,ESP,Portugal,PRT,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Spain,South Africa,0,1,0
+2010,WC-2010,M-2010-57,2010-07-02,quarter-finals,not applicable,Port Elizabeth,South Africa,Netherlands,NLD,Brazil,BRA,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-58,2010-07-02,quarter-finals,not applicable,Johannesburg,South Africa,Uruguay,URY,Ghana,GHA,1,1,1–1,home team win,2,0,0,1,1,1,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-59,2010-07-03,quarter-finals,not applicable,Cape Town,South Africa,Argentina,ARG,Germany,DEU,0,4,0–4,away team win,4,4,0,1,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-60,2010-07-03,quarter-finals,not applicable,Johannesburg,South Africa,Paraguay,PRY,Spain,ESP,0,1,0–1,away team win,1,1,0,1,0,0,0,0,Spain,South Africa,0,1,0
+2010,WC-2010,M-2010-61,2010-07-06,semi-finals,not applicable,Cape Town,South Africa,Uruguay,URY,Netherlands,NLD,2,3,2–3,away team win,5,1,0,1,0,0,0,1,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-62,2010-07-07,semi-finals,not applicable,Durban,South Africa,Germany,DEU,Spain,ESP,0,1,0–1,away team win,1,1,0,1,0,0,0,1,Spain,South Africa,0,1,0
+2010,WC-2010,M-2010-63,2010-07-10,third-place match,not applicable,Port Elizabeth,South Africa,Uruguay,URY,Germany,DEU,2,3,2–3,away team win,5,1,0,1,0,0,0,0,Spain,South Africa,0,0,0
+2010,WC-2010,M-2010-64,2010-07-11,final,not applicable,Johannesburg,South Africa,Netherlands,NLD,Spain,ESP,0,1,0–1,away team win,1,1,0,1,1,0,1,0,Spain,South Africa,0,1,0
+2014,WC-2014,M-2014-01,2014-06-12,group stage,Group A,São Paulo,Brazil,Brazil,BRA,Croatia,HRV,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Germany,Brazil,0,0,1
+2014,WC-2014,M-2014-02,2014-06-13,group stage,Group A,Natal,Brazil,Mexico,MEX,Cameroon,CMR,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-03,2014-06-13,group stage,Group B,Salvador,Brazil,Spain,ESP,Netherlands,NLD,1,5,1–5,away team win,6,4,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-04,2014-06-13,group stage,Group B,Cuiabá,Brazil,Chile,CHL,Australia,AUS,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-05,2014-06-14,group stage,Group C,Belo Horizonte,Brazil,Colombia,COL,Greece,GRC,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-06,2014-06-14,group stage,Group D,Fortaleza,Brazil,Uruguay,URY,Costa Rica,CRI,1,3,1–3,away team win,4,2,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-07,2014-06-14,group stage,Group D,Manaus,Brazil,England,ENG,Italy,ITA,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-08,2014-06-14,group stage,Group C,Recife,Brazil,Ivory Coast,CIV,Japan,JPN,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-09,2014-06-15,group stage,Group E,Brasília,Brazil,Switzerland,CHE,Ecuador,ECU,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-10,2014-06-15,group stage,Group E,Porto Alegre,Brazil,France,FRA,Honduras,HND,3,0,3–0,home team win,3,3,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-11,2014-06-15,group stage,Group F,Rio de Janeiro,Brazil,Argentina,ARG,Bosnia and Herzegovina,BIH,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-12,2014-06-16,group stage,Group G,Salvador,Brazil,Germany,DEU,Portugal,PRT,4,0,4–0,home team win,4,4,1,0,0,0,0,0,Germany,Brazil,0,1,0
+2014,WC-2014,M-2014-13,2014-06-16,group stage,Group F,Curitiba,Brazil,Iran,IRN,Nigeria,NGA,0,0,0–0,draw,0,0,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-14,2014-06-16,group stage,Group G,Natal,Brazil,Ghana,GHA,United States,USA,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-15,2014-06-17,group stage,Group H,Belo Horizonte,Brazil,Belgium,BEL,Algeria,DZA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-16,2014-06-17,group stage,Group A,Fortaleza,Brazil,Brazil,BRA,Mexico,MEX,0,0,0–0,draw,0,0,1,0,0,0,0,0,Germany,Brazil,0,0,1
+2014,WC-2014,M-2014-17,2014-06-17,group stage,Group H,Cuiabá,Brazil,Russia,RUS,South Korea,KOR,1,1,1–1,draw,2,0,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-18,2014-06-18,group stage,Group B,Porto Alegre,Brazil,Australia,AUS,Netherlands,NLD,2,3,2–3,away team win,5,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-19,2014-06-18,group stage,Group B,Rio de Janeiro,Brazil,Spain,ESP,Chile,CHL,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-20,2014-06-18,group stage,Group A,Manaus,Brazil,Cameroon,CMR,Croatia,HRV,0,4,0–4,away team win,4,4,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-21,2014-06-19,group stage,Group C,Brasília,Brazil,Colombia,COL,Ivory Coast,CIV,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-22,2014-06-19,group stage,Group D,São Paulo,Brazil,Uruguay,URY,England,ENG,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-23,2014-06-19,group stage,Group C,Natal,Brazil,Japan,JPN,Greece,GRC,0,0,0–0,draw,0,0,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-24,2014-06-20,group stage,Group D,Recife,Brazil,Italy,ITA,Costa Rica,CRI,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-25,2014-06-20,group stage,Group E,Salvador,Brazil,Switzerland,CHE,France,FRA,2,5,2–5,away team win,7,3,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-26,2014-06-20,group stage,Group E,Curitiba,Brazil,Honduras,HND,Ecuador,ECU,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-27,2014-06-21,group stage,Group F,Belo Horizonte,Brazil,Argentina,ARG,Iran,IRN,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-28,2014-06-21,group stage,Group G,Fortaleza,Brazil,Germany,DEU,Ghana,GHA,2,2,2–2,draw,4,0,1,0,0,0,0,0,Germany,Brazil,0,1,0
+2014,WC-2014,M-2014-29,2014-06-21,group stage,Group F,Cuiabá,Brazil,Nigeria,NGA,Bosnia and Herzegovina,BIH,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-30,2014-06-22,group stage,Group H,Rio de Janeiro,Brazil,Belgium,BEL,Russia,RUS,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-31,2014-06-22,group stage,Group H,Porto Alegre,Brazil,South Korea,KOR,Algeria,DZA,2,4,2–4,away team win,6,2,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-32,2014-06-22,group stage,Group G,Manaus,Brazil,United States,USA,Portugal,PRT,2,2,2–2,draw,4,0,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-33,2014-06-23,group stage,Group B,Curitiba,Brazil,Australia,AUS,Spain,ESP,0,3,0–3,away team win,3,3,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-34,2014-06-23,group stage,Group B,São Paulo,Brazil,Netherlands,NLD,Chile,CHL,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-35,2014-06-23,group stage,Group A,Brasília,Brazil,Cameroon,CMR,Brazil,BRA,1,4,1–4,away team win,5,3,1,0,0,0,0,0,Germany,Brazil,0,0,1
+2014,WC-2014,M-2014-36,2014-06-23,group stage,Group A,Recife,Brazil,Croatia,HRV,Mexico,MEX,1,3,1–3,away team win,4,2,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-37,2014-06-24,group stage,Group D,Belo Horizonte,Brazil,Costa Rica,CRI,England,ENG,0,0,0–0,draw,0,0,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-38,2014-06-24,group stage,Group D,Natal,Brazil,Italy,ITA,Uruguay,URY,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-39,2014-06-24,group stage,Group C,Cuiabá,Brazil,Japan,JPN,Colombia,COL,1,4,1–4,away team win,5,3,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-40,2014-06-24,group stage,Group C,Fortaleza,Brazil,Greece,GRC,Ivory Coast,CIV,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-41,2014-06-25,group stage,Group F,Salvador,Brazil,Bosnia and Herzegovina,BIH,Iran,IRN,3,1,3–1,home team win,4,2,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-42,2014-06-25,group stage,Group F,Porto Alegre,Brazil,Nigeria,NGA,Argentina,ARG,2,3,2–3,away team win,5,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-43,2014-06-25,group stage,Group E,Manaus,Brazil,Honduras,HND,Switzerland,CHE,0,3,0–3,away team win,3,3,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-44,2014-06-25,group stage,Group E,Rio de Janeiro,Brazil,Ecuador,ECU,France,FRA,0,0,0–0,draw,0,0,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-45,2014-06-26,group stage,Group G,Brasília,Brazil,Portugal,PRT,Ghana,GHA,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-46,2014-06-26,group stage,Group G,Recife,Brazil,United States,USA,Germany,DEU,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Germany,Brazil,0,1,0
+2014,WC-2014,M-2014-47,2014-06-26,group stage,Group H,Curitiba,Brazil,Algeria,DZA,Russia,RUS,1,1,1–1,draw,2,0,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-48,2014-06-26,group stage,Group H,São Paulo,Brazil,South Korea,KOR,Belgium,BEL,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-49,2014-06-28,round of 16,not applicable,Belo Horizonte,Brazil,Brazil,BRA,Chile,CHL,1,1,1–1,home team win,2,0,0,1,1,1,0,0,Germany,Brazil,0,0,1
+2014,WC-2014,M-2014-50,2014-06-28,round of 16,not applicable,Rio de Janeiro,Brazil,Colombia,COL,Uruguay,URY,2,0,2–0,home team win,2,2,0,1,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-51,2014-06-29,round of 16,not applicable,Fortaleza,Brazil,Netherlands,NLD,Mexico,MEX,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-52,2014-06-29,round of 16,not applicable,Recife,Brazil,Costa Rica,CRI,Greece,GRC,1,1,1–1,home team win,2,0,0,1,1,1,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-53,2014-06-30,round of 16,not applicable,Brasília,Brazil,France,FRA,Nigeria,NGA,2,0,2–0,home team win,2,2,0,1,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-54,2014-06-30,round of 16,not applicable,Porto Alegre,Brazil,Germany,DEU,Algeria,DZA,2,1,2–1,home team win,3,1,0,1,1,0,0,0,Germany,Brazil,0,1,0
+2014,WC-2014,M-2014-55,2014-07-01,round of 16,not applicable,São Paulo,Brazil,Argentina,ARG,Switzerland,CHE,1,0,1–0,home team win,1,1,0,1,1,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-56,2014-07-01,round of 16,not applicable,Salvador,Brazil,Belgium,BEL,United States,USA,2,1,2–1,home team win,3,1,0,1,1,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-57,2014-07-04,quarter-finals,not applicable,Rio de Janeiro,Brazil,France,FRA,Germany,DEU,0,1,0–1,away team win,1,1,0,1,0,0,0,0,Germany,Brazil,0,1,0
+2014,WC-2014,M-2014-58,2014-07-04,quarter-finals,not applicable,Fortaleza,Brazil,Brazil,BRA,Colombia,COL,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Germany,Brazil,0,0,1
+2014,WC-2014,M-2014-59,2014-07-05,quarter-finals,not applicable,Brasília,Brazil,Argentina,ARG,Belgium,BEL,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-60,2014-07-05,quarter-finals,not applicable,Salvador,Brazil,Netherlands,NLD,Costa Rica,CRI,0,0,0–0,home team win,0,0,0,1,1,1,0,0,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-61,2014-07-08,semi-finals,not applicable,Belo Horizonte,Brazil,Brazil,BRA,Germany,DEU,1,7,1–7,away team win,8,6,0,1,0,0,0,1,Germany,Brazil,0,1,1
+2014,WC-2014,M-2014-62,2014-07-09,semi-finals,not applicable,São Paulo,Brazil,Netherlands,NLD,Argentina,ARG,0,0,0–0,away team win,0,0,0,1,1,1,0,1,Germany,Brazil,0,0,0
+2014,WC-2014,M-2014-63,2014-07-12,third-place match,not applicable,Brasília,Brazil,Brazil,BRA,Netherlands,NLD,0,3,0–3,away team win,3,3,0,1,0,0,0,0,Germany,Brazil,0,0,1
+2014,WC-2014,M-2014-64,2014-07-13,final,not applicable,Rio de Janeiro,Brazil,Germany,DEU,Argentina,ARG,1,0,1–0,home team win,1,1,0,1,1,0,1,0,Germany,Brazil,0,1,0
+2018,WC-2018,M-2018-01,2018-06-14,group stage,Group A,Moscow,Russia,Russia,RUS,Saudi Arabia,SAU,5,0,5–0,home team win,5,5,1,0,0,0,0,0,France,Russia,0,0,1
+2018,WC-2018,M-2018-02,2018-06-15,group stage,Group A,Yekaterinburg,Russia,Egypt,EGY,Uruguay,URY,0,1,0–1,away team win,1,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-03,2018-06-15,group stage,Group B,Saint Petersburg,Russia,Morocco,MAR,Iran,IRN,0,1,0–1,away team win,1,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-04,2018-06-15,group stage,Group B,Sochi,Russia,Portugal,PRT,Spain,ESP,3,3,3–3,draw,6,0,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-05,2018-06-16,group stage,Group C,Kazan,Russia,France,FRA,Australia,AUS,2,1,2–1,home team win,3,1,1,0,0,0,0,0,France,Russia,0,1,0
+2018,WC-2018,M-2018-06,2018-06-16,group stage,Group D,Moscow,Russia,Argentina,ARG,Iceland,ISL,1,1,1–1,draw,2,0,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-07,2018-06-16,group stage,Group C,Saransk,Russia,Peru,PER,Denmark,DNK,0,1,0–1,away team win,1,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-08,2018-06-16,group stage,Group D,Kaliningrad,Russia,Croatia,HRV,Nigeria,NGA,2,0,2–0,home team win,2,2,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-09,2018-06-17,group stage,Group E,Samara,Russia,Costa Rica,CRI,Serbia,SRB,0,1,0–1,away team win,1,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-10,2018-06-17,group stage,Group F,Moscow,Russia,Germany,DEU,Mexico,MEX,0,1,0–1,away team win,1,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-11,2018-06-17,group stage,Group E,Rostov-on-Don,Russia,Brazil,BRA,Switzerland,CHE,1,1,1–1,draw,2,0,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-12,2018-06-18,group stage,Group F,Nizhny Novgorod,Russia,Sweden,SWE,South Korea,KOR,1,0,1–0,home team win,1,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-13,2018-06-18,group stage,Group G,Sochi,Russia,Belgium,BEL,Panama,PAN,3,0,3–0,home team win,3,3,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-14,2018-06-18,group stage,Group G,Volgograd,Russia,Tunisia,TUN,England,ENG,1,2,1–2,away team win,3,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-15,2018-06-19,group stage,Group H,Saransk,Russia,Colombia,COL,Japan,JPN,1,2,1–2,away team win,3,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-16,2018-06-19,group stage,Group H,Moscow,Russia,Poland,POL,Senegal,SEN,1,2,1–2,away team win,3,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-17,2018-06-19,group stage,Group A,Saint Petersburg,Russia,Russia,RUS,Egypt,EGY,3,1,3–1,home team win,4,2,1,0,0,0,0,0,France,Russia,0,0,1
+2018,WC-2018,M-2018-18,2018-06-20,group stage,Group B,Moscow,Russia,Portugal,PRT,Morocco,MAR,1,0,1–0,home team win,1,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-19,2018-06-20,group stage,Group A,Rostov-on-Don,Russia,Uruguay,URY,Saudi Arabia,SAU,1,0,1–0,home team win,1,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-20,2018-06-20,group stage,Group B,Kazan,Russia,Iran,IRN,Spain,ESP,0,1,0–1,away team win,1,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-21,2018-06-21,group stage,Group C,Samara,Russia,Denmark,DNK,Australia,AUS,1,1,1–1,draw,2,0,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-22,2018-06-21,group stage,Group C,Yekaterinburg,Russia,France,FRA,Peru,PER,1,0,1–0,home team win,1,1,1,0,0,0,0,0,France,Russia,0,1,0
+2018,WC-2018,M-2018-23,2018-06-21,group stage,Group D,Nizhny Novgorod,Russia,Argentina,ARG,Croatia,HRV,0,3,0–3,away team win,3,3,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-24,2018-06-22,group stage,Group E,Saint Petersburg,Russia,Brazil,BRA,Costa Rica,CRI,2,0,2–0,home team win,2,2,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-25,2018-06-22,group stage,Group D,Volgograd,Russia,Nigeria,NGA,Iceland,ISL,2,0,2–0,home team win,2,2,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-26,2018-06-22,group stage,Group E,Kaliningrad,Russia,Serbia,SRB,Switzerland,CHE,1,2,1–2,away team win,3,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-27,2018-06-23,group stage,Group G,Moscow,Russia,Belgium,BEL,Tunisia,TUN,5,2,5–2,home team win,7,3,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-28,2018-06-23,group stage,Group F,Rostov-on-Don,Russia,South Korea,KOR,Mexico,MEX,1,2,1–2,away team win,3,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-29,2018-06-23,group stage,Group F,Sochi,Russia,Germany,DEU,Sweden,SWE,2,1,2–1,home team win,3,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-30,2018-06-24,group stage,Group G,Nizhny Novgorod,Russia,England,ENG,Panama,PAN,6,1,6–1,home team win,7,5,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-31,2018-06-24,group stage,Group H,Yekaterinburg,Russia,Japan,JPN,Senegal,SEN,2,2,2–2,draw,4,0,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-32,2018-06-24,group stage,Group H,Kazan,Russia,Poland,POL,Colombia,COL,0,3,0–3,away team win,3,3,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-33,2018-06-25,group stage,Group A,Volgograd,Russia,Saudi Arabia,SAU,Egypt,EGY,2,1,2–1,home team win,3,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-34,2018-06-25,group stage,Group A,Samara,Russia,Uruguay,URY,Russia,RUS,3,0,3–0,home team win,3,3,1,0,0,0,0,0,France,Russia,0,0,1
+2018,WC-2018,M-2018-35,2018-06-25,group stage,Group B,Kaliningrad,Russia,Spain,ESP,Morocco,MAR,2,2,2–2,draw,4,0,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-36,2018-06-25,group stage,Group B,Saransk,Russia,Iran,IRN,Portugal,PRT,1,1,1–1,draw,2,0,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-37,2018-06-26,group stage,Group C,Sochi,Russia,Australia,AUS,Peru,PER,0,2,0–2,away team win,2,2,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-38,2018-06-26,group stage,Group C,Moscow,Russia,Denmark,DNK,France,FRA,0,0,0–0,draw,0,0,1,0,0,0,0,0,France,Russia,0,1,0
+2018,WC-2018,M-2018-39,2018-06-26,group stage,Group D,Rostov-on-Don,Russia,Iceland,ISL,Croatia,HRV,1,2,1–2,away team win,3,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-40,2018-06-26,group stage,Group D,Saint Petersburg,Russia,Nigeria,NGA,Argentina,ARG,1,2,1–2,away team win,3,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-41,2018-06-27,group stage,Group F,Kazan,Russia,South Korea,KOR,Germany,DEU,2,0,2–0,home team win,2,2,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-42,2018-06-27,group stage,Group F,Yekaterinburg,Russia,Mexico,MEX,Sweden,SWE,0,3,0–3,away team win,3,3,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-43,2018-06-27,group stage,Group E,Moscow,Russia,Serbia,SRB,Brazil,BRA,0,2,0–2,away team win,2,2,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-44,2018-06-27,group stage,Group E,Nizhny Novgorod,Russia,Switzerland,CHE,Costa Rica,CRI,2,2,2–2,draw,4,0,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-45,2018-06-28,group stage,Group H,Volgograd,Russia,Japan,JPN,Poland,POL,0,1,0–1,away team win,1,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-46,2018-06-28,group stage,Group H,Samara,Russia,Senegal,SEN,Colombia,COL,0,1,0–1,away team win,1,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-47,2018-06-28,group stage,Group G,Kaliningrad,Russia,England,ENG,Belgium,BEL,0,1,0–1,away team win,1,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-48,2018-06-28,group stage,Group G,Saransk,Russia,Panama,PAN,Tunisia,TUN,1,2,1–2,away team win,3,1,1,0,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-49,2018-06-30,round of 16,not applicable,Kazan,Russia,France,FRA,Argentina,ARG,4,3,4–3,home team win,7,1,0,1,0,0,0,0,France,Russia,0,1,0
+2018,WC-2018,M-2018-50,2018-06-30,round of 16,not applicable,Sochi,Russia,Uruguay,URY,Portugal,PRT,2,1,2–1,home team win,3,1,0,1,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-51,2018-07-01,round of 16,not applicable,Moscow,Russia,Spain,ESP,Russia,RUS,1,1,1–1,away team win,2,0,0,1,1,1,0,0,France,Russia,0,0,1
+2018,WC-2018,M-2018-52,2018-07-01,round of 16,not applicable,Nizhny Novgorod,Russia,Croatia,HRV,Denmark,DNK,1,1,1–1,home team win,2,0,0,1,1,1,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-53,2018-07-02,round of 16,not applicable,Samara,Russia,Brazil,BRA,Mexico,MEX,2,0,2–0,home team win,2,2,0,1,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-54,2018-07-02,round of 16,not applicable,Rostov-on-Don,Russia,Belgium,BEL,Japan,JPN,3,2,3–2,home team win,5,1,0,1,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-55,2018-07-03,round of 16,not applicable,Saint Petersburg,Russia,Sweden,SWE,Switzerland,CHE,1,0,1–0,home team win,1,1,0,1,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-56,2018-07-03,round of 16,not applicable,Moscow,Russia,Colombia,COL,England,ENG,1,1,1–1,away team win,2,0,0,1,1,1,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-57,2018-07-06,quarter-finals,not applicable,Nizhny Novgorod,Russia,Uruguay,URY,France,FRA,0,2,0–2,away team win,2,2,0,1,0,0,0,0,France,Russia,0,1,0
+2018,WC-2018,M-2018-58,2018-07-06,quarter-finals,not applicable,Kazan,Russia,Brazil,BRA,Belgium,BEL,1,2,1–2,away team win,3,1,0,1,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-59,2018-07-07,quarter-finals,not applicable,Samara,Russia,Sweden,SWE,England,ENG,0,2,0–2,away team win,2,2,0,1,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-60,2018-07-07,quarter-finals,not applicable,Sochi,Russia,Russia,RUS,Croatia,HRV,2,2,2–2,away team win,4,0,0,1,1,1,0,0,France,Russia,0,0,1
+2018,WC-2018,M-2018-61,2018-07-10,semi-finals,not applicable,Saint Petersburg,Russia,France,FRA,Belgium,BEL,1,0,1–0,home team win,1,1,0,1,0,0,0,1,France,Russia,0,1,0
+2018,WC-2018,M-2018-62,2018-07-11,semi-finals,not applicable,Moscow,Russia,Croatia,HRV,England,ENG,2,1,2–1,home team win,3,1,0,1,1,0,0,1,France,Russia,0,0,0
+2018,WC-2018,M-2018-63,2018-07-14,third-place match,not applicable,Saint Petersburg,Russia,Belgium,BEL,England,ENG,2,0,2–0,home team win,2,2,0,1,0,0,0,0,France,Russia,0,0,0
+2018,WC-2018,M-2018-64,2018-07-15,final,not applicable,Moscow,Russia,France,FRA,Croatia,HRV,4,2,4–2,home team win,6,2,0,1,0,0,1,0,France,Russia,0,1,0
+2022,WC-2022,M-2022-01,2022-11-20,group stage,Group A,Al Khor,Qatar,Qatar,QAT,Ecuador,ECU,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Argentina,Qatar,0,0,1
+2022,WC-2022,M-2022-02,2022-11-21,group stage,Group B,Al Rayyan,Qatar,England,ENG,Iran,IRN,6,2,6–2,home team win,8,4,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-03,2022-11-21,group stage,Group A,Doha,Qatar,Senegal,SEN,Netherlands,NLD,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-04,2022-11-21,group stage,Group B,Al Rayyan,Qatar,United States,USA,Wales,WAL,1,1,1–1,draw,2,0,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-05,2022-11-22,group stage,Group C,Lusail,Qatar,Argentina,ARG,Saudi Arabia,SAU,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Argentina,Qatar,0,1,0
+2022,WC-2022,M-2022-06,2022-11-22,group stage,Group D,Al Rayyan,Qatar,Denmark,DNK,Tunisia,TUN,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-07,2022-11-22,group stage,Group C,Doha,Qatar,Mexico,MEX,Poland,POL,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-08,2022-11-22,group stage,Group D,Al Wakrah,Qatar,France,FRA,Australia,AUS,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-09,2022-11-23,group stage,Group F,Al Khor,Qatar,Morocco,MAR,Croatia,HRV,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-10,2022-11-23,group stage,Group E,Al Rayyan,Qatar,Germany,DEU,Japan,JPN,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-11,2022-11-23,group stage,Group E,Doha,Qatar,Spain,ESP,Costa Rica,CRI,7,0,7–0,home team win,7,7,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-12,2022-11-23,group stage,Group F,Al Rayyan,Qatar,Belgium,BEL,Canada,CAN,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-13,2022-11-24,group stage,Group G,Al Wakrah,Qatar,Switzerland,CHE,Cameroon,CMR,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-14,2022-11-24,group stage,Group H,Al Rayyan,Qatar,Uruguay,URY,South Korea,KOR,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-15,2022-11-24,group stage,Group H,Doha,Qatar,Portugal,PRT,Ghana,GHA,3,2,3–2,home team win,5,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-16,2022-11-24,group stage,Group G,Lusail,Qatar,Brazil,BRA,Serbia,SRB,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-17,2022-11-25,group stage,Group B,Al Rayyan,Qatar,Wales,WAL,Iran,IRN,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-18,2022-11-25,group stage,Group A,Doha,Qatar,Qatar,QAT,Senegal,SEN,1,3,1–3,away team win,4,2,1,0,0,0,0,0,Argentina,Qatar,0,0,1
+2022,WC-2022,M-2022-19,2022-11-25,group stage,Group A,Al Rayyan,Qatar,Netherlands,NLD,Ecuador,ECU,1,1,1–1,draw,2,0,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-20,2022-11-25,group stage,Group B,Al Khor,Qatar,England,ENG,United States,USA,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-21,2022-11-26,group stage,Group D,Al Wakrah,Qatar,Tunisia,TUN,Australia,AUS,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-22,2022-11-26,group stage,Group C,Al Rayyan,Qatar,Poland,POL,Saudi Arabia,SAU,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-23,2022-11-26,group stage,Group D,Doha,Qatar,France,FRA,Denmark,DNK,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-24,2022-11-26,group stage,Group C,Lusail,Qatar,Argentina,ARG,Mexico,MEX,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Argentina,Qatar,0,1,0
+2022,WC-2022,M-2022-25,2022-11-27,group stage,Group E,Al Rayyan,Qatar,Japan,JPN,Costa Rica,CRI,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-26,2022-11-27,group stage,Group F,Doha,Qatar,Belgium,BEL,Morocco,MAR,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-27,2022-11-27,group stage,Group F,Al Rayyan,Qatar,Croatia,HRV,Canada,CAN,4,1,4–1,home team win,5,3,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-28,2022-11-27,group stage,Group E,Al Khor,Qatar,Spain,ESP,Germany,DEU,1,1,1–1,draw,2,0,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-29,2022-11-28,group stage,Group G,Al Wakrah,Qatar,Cameroon,CMR,Serbia,SRB,3,3,3–3,draw,6,0,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-30,2022-11-28,group stage,Group H,Al Rayyan,Qatar,South Korea,KOR,Ghana,GHA,2,3,2–3,away team win,5,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-31,2022-11-28,group stage,Group G,Doha,Qatar,Brazil,BRA,Switzerland,CHE,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-32,2022-11-28,group stage,Group H,Lusail,Qatar,Portugal,PRT,Uruguay,URY,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-33,2022-11-29,group stage,Group A,Al Rayyan,Qatar,Ecuador,ECU,Senegal,SEN,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-34,2022-11-29,group stage,Group A,Al Khor,Qatar,Netherlands,NLD,Qatar,QAT,2,0,2–0,home team win,2,2,1,0,0,0,0,0,Argentina,Qatar,0,0,1
+2022,WC-2022,M-2022-35,2022-11-29,group stage,Group B,Doha,Qatar,Iran,IRN,United States,USA,0,1,0–1,away team win,1,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-36,2022-11-29,group stage,Group B,Al Rayyan,Qatar,Wales,WAL,England,ENG,0,3,0–3,away team win,3,3,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-37,2022-11-30,group stage,Group D,Al Wakrah,Qatar,Australia,AUS,Denmark,DNK,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-38,2022-11-30,group stage,Group D,Al Rayyan,Qatar,Tunisia,TUN,France,FRA,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-39,2022-11-30,group stage,Group C,Doha,Qatar,Poland,POL,Argentina,ARG,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Argentina,Qatar,0,1,0
+2022,WC-2022,M-2022-40,2022-11-30,group stage,Group C,Lusail,Qatar,Saudi Arabia,SAU,Mexico,MEX,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-41,2022-12-01,group stage,Group F,Doha,Qatar,Canada,CAN,Morocco,MAR,1,2,1–2,away team win,3,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-42,2022-12-01,group stage,Group F,Al Rayyan,Qatar,Croatia,HRV,Belgium,BEL,0,0,0–0,draw,0,0,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-43,2022-12-01,group stage,Group E,Al Khor,Qatar,Costa Rica,CRI,Germany,DEU,2,4,2–4,away team win,6,2,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-44,2022-12-01,group stage,Group E,Al Rayyan,Qatar,Japan,JPN,Spain,ESP,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-45,2022-12-02,group stage,Group H,Al Wakrah,Qatar,Ghana,GHA,Uruguay,URY,0,2,0–2,away team win,2,2,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-46,2022-12-02,group stage,Group H,Al Rayyan,Qatar,South Korea,KOR,Portugal,PRT,2,1,2–1,home team win,3,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-47,2022-12-02,group stage,Group G,Lusail,Qatar,Cameroon,CMR,Brazil,BRA,1,0,1–0,home team win,1,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-48,2022-12-02,group stage,Group G,Doha,Qatar,Serbia,SRB,Switzerland,CHE,2,3,2–3,away team win,5,1,1,0,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-49,2022-12-03,round of 16,not applicable,Al Rayyan,Qatar,Netherlands,NLD,United States,USA,3,1,3–1,home team win,4,2,0,1,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-50,2022-12-03,round of 16,not applicable,Al Rayyan,Qatar,Argentina,ARG,Australia,AUS,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Argentina,Qatar,0,1,0
+2022,WC-2022,M-2022-51,2022-12-04,round of 16,not applicable,Doha,Qatar,France,FRA,Poland,POL,3,1,3–1,home team win,4,2,0,1,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-52,2022-12-04,round of 16,not applicable,Al Khor,Qatar,England,ENG,Senegal,SEN,3,0,3–0,home team win,3,3,0,1,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-53,2022-12-05,round of 16,not applicable,Al Wakrah,Qatar,Japan,JPN,Croatia,HRV,1,1,1–1,away team win,2,0,0,1,1,1,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-54,2022-12-05,round of 16,not applicable,Doha,Qatar,Brazil,BRA,South Korea,KOR,4,1,4–1,home team win,5,3,0,1,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-55,2022-12-06,round of 16,not applicable,Al Rayyan,Qatar,Morocco,MAR,Spain,ESP,0,0,0–0,home team win,0,0,0,1,1,1,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-56,2022-12-06,round of 16,not applicable,Lusail,Qatar,Portugal,PRT,Switzerland,CHE,6,1,6–1,home team win,7,5,0,1,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-57,2022-12-09,quarter-finals,not applicable,Al Rayyan,Qatar,Croatia,HRV,Brazil,BRA,1,1,1–1,home team win,2,0,0,1,1,1,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-58,2022-12-09,quarter-finals,not applicable,Lusail,Qatar,Netherlands,NLD,Argentina,ARG,2,2,2–2,away team win,4,0,0,1,1,1,0,0,Argentina,Qatar,0,1,0
+2022,WC-2022,M-2022-59,2022-12-10,quarter-finals,not applicable,Doha,Qatar,Morocco,MAR,Portugal,PRT,1,0,1–0,home team win,1,1,0,1,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-60,2022-12-10,quarter-finals,not applicable,Al Khor,Qatar,England,ENG,France,FRA,1,2,1–2,away team win,3,1,0,1,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-61,2022-12-13,semi-finals,not applicable,Lusail,Qatar,Argentina,ARG,Croatia,HRV,3,0,3–0,home team win,3,3,0,1,0,0,0,1,Argentina,Qatar,0,1,0
+2022,WC-2022,M-2022-62,2022-12-14,semi-finals,not applicable,Al Khor,Qatar,France,FRA,Morocco,MAR,2,0,2–0,home team win,2,2,0,1,0,0,0,1,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-63,2022-12-17,third-place match,not applicable,Al Rayyan,Qatar,Croatia,HRV,Morocco,MAR,2,1,2–1,home team win,3,1,0,1,0,0,0,0,Argentina,Qatar,0,0,0
+2022,WC-2022,M-2022-64,2022-12-18,final,not applicable,Lusail,Qatar,Argentina,ARG,France,FRA,3,3,3–3,home team win,6,0,0,1,1,1,1,0,Argentina,Qatar,0,1,0
