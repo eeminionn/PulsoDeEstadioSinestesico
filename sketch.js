@@ -1083,7 +1083,7 @@ function drawInfo() {
   let html = `
     <div style="font-family:'Courier New',monospace;font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase;color:rgba(236,230,206,.62);">Monitor sinestesico</div>
     <div style="margin:12px 0 14px;font-family:Georgia,serif;font-size:38px;font-weight:900;line-height:.88;color:rgb(247,242,226);">${selectedYear}</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    <div style="display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:10px;align-items:start;">
       ${statBox("Concepto", "Pulso de estadio")}
       ${statBox("Zona sonora", audioState.zone)}
       ${statBox("Campeon", t.winner)}
@@ -1132,7 +1132,7 @@ function drawInfo() {
 function statBox(labelText, valueText) {
   return `<div style="padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(236,230,206,.08);">
     <div style="font-family:'Courier New',monospace;font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:rgba(236,230,206,.52);">${labelText}</div>
-    <div style="margin-top:4px;font-size:14px;font-weight:800;color:rgb(247,242,226);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${valueText}</div>
+    <div style="margin-top:4px;font-size:14px;font-weight:800;color:rgb(247,242,226);line-height:1.28;white-space:normal;overflow-wrap:anywhere;word-break:break-word;">${valueText}</div>
   </div>`;
 }
 
