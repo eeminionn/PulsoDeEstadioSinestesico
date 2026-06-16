@@ -72,17 +72,6 @@ function preload() {
   Tt = loadTable("tournaments_clean.csv", "csv", "header");
   Tteams = loadTable("teams_clean.csv", "csv", "header");
   Tlive = {};
-  loadJSON(
-    LIVE_JSON_REMOTE,
-    data => {
-      Tlive = data;
-    },
-    () => {
-      loadJSON("live_worldcup_2026.json", data => {
-        Tlive = data;
-      });
-    }
-  );
 }
 
 function setup() {
@@ -93,6 +82,7 @@ function setup() {
   makeTexture();
   makeUI();
   setYear(years.length - 1);
+  loadRemoteLiveData();
 }
 
 function draw() {
@@ -234,6 +224,45 @@ function mergeLiveWorldCupData(liveData) {
       goalsByMatch.get(match.id).push(g);
     }
   }
+}
+
+function loadRemoteLiveData() {
+  fetch(LIVE_JSON_REMOTE)
+    .then(response => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    })
+    .then(data => {
+      Tlive = data;
+      replaceLiveWorldCupData(data);
+    })
+    .catch(error => {
+      console.warn("No se pudo cargar el JSON remoto del Mundial 2026.", error);
+      loadJSON("live_worldcup_2026.json", data => {
+        Tlive = data;
+        replaceLiveWorldCupData(data);
+      });
+    });
+}
+
+function replaceLiveWorldCupData(liveData) {
+  const liveYear = Number((liveData && liveData.year) || 2026);
+
+  matches = matches.filter(match => !(match.year === liveYear && String(match.id).startsWith("LIVE-2026-")));
+  goals = goals.filter(goal => !(goal.year === liveYear && String(goal.matchId).startsWith("LIVE-2026-")));
+
+  for (const key of Array.from(goalsByMatch.keys())) {
+    if (String(key).startsWith("LIVE-2026-")) goalsByMatch.delete(key);
+  }
+
+  tournaments = tournaments.filter(tournament => tournament.year !== liveYear);
+  mergeLiveWorldCupData(liveData);
+  tournaments.sort((a, b) => a.year - b.year);
+  years = [...new Set(tournaments.map(t => t.year))].sort((a, b) => a - b);
+
+  const idx = years.indexOf(selectedYear);
+  if (idx >= 0) setYear(idx);
+  else setYear(years.length - 1);
 }
 
 function txt(row, key, def = "") {
