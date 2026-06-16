@@ -267,11 +267,8 @@ function replaceLiveWorldCupData(liveData) {
 }
 
 function refreshYearSlider() {
-  if (!ui.yearSlider) return;
-  ui.yearSlider.attribute("min", 0);
-  ui.yearSlider.attribute("max", years.length - 1);
-  ui.yearSlider.attribute("step", 1);
-  ui.yearSlider.value(constrain(yearIndex, 0, years.length - 1));
+  if (!ui.yearSliderMount) return;
+  createYearSlider();
   updateLabels();
 }
 
@@ -556,7 +553,11 @@ function makeUI() {
   stylePrimaryButton(ui.micButton);
 
   ui.yearLabel = label("MUNDIAL");
-  ui.yearSlider = slider(0, years.length - 1, years.length - 1, 1, () => setYear(int(ui.yearSlider.value())));
+  ui.yearSliderMount = createDiv().parent(ui.panel);
+  styleMany(ui.yearSliderMount, {
+    width: "100%"
+  });
+  createYearSlider();
 
   ui.micLabel = label("SENSIBILIDAD MIC");
   ui.micSlider = slider(0.6, 4, params.micAmp, 0.05, updateLabels);
@@ -674,6 +675,26 @@ function slider(a, b, c, step, fn) {
   });
   s.input(fn);
   return s;
+}
+
+function createYearSlider() {
+  if (!ui.yearSliderMount) return;
+  if (ui.yearSlider) ui.yearSlider.remove();
+
+  ui.yearSlider = createSlider(
+    0,
+    years.length - 1,
+    constrain(yearIndex, 0, years.length - 1),
+    1
+  ).parent(ui.yearSliderMount);
+
+  styleMany(ui.yearSlider, {
+    width: "100%",
+    margin: "6px 0 2px",
+    "accent-color": "rgb(220,176,90)"
+  });
+
+  ui.yearSlider.input(() => setYear(int(ui.yearSlider.value())));
 }
 
 function button(textValue, fn, parent) {
