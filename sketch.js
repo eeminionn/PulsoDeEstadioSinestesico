@@ -1,7 +1,6 @@
 // Sinestesia Digital · Ver el sonido
 // Repositorio: https://github.com/eeminionn/PulsoDeEstadioSinestesico
-// Hecho por eeminionn
-// Concepto: Pulso de estadio sinestesico
+// by @eeminionn 
 
 let Tm, Tg, Tt, Tteams;
 let Tlive;
