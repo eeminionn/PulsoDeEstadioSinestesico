@@ -165,6 +165,8 @@ function mergeLiveWorldCupData(liveData) {
   if (!liveData || !Array.isArray(liveData.matches) || !liveData.matches.length) return;
 
   const year = Number(liveData.year || 2026);
+  const playedMatches = liveData.matches.filter(match => match.finished || match.totalGoals > 0);
+  if (!playedMatches.length) return;
   const existingTournament = tournaments.find(t => t.year === year);
   const summary = liveData.summary || {};
 
@@ -173,17 +175,17 @@ function mergeLiveWorldCupData(liveData) {
       year,
       host: liveData.host || "United States / Mexico / Canada",
       winner: summary.currentLeader || "En juego",
-      matches: Number(summary.totalMatches || liveData.matches.length),
+      matches: Number(summary.finishedMatches || playedMatches.length),
       goals: Number(summary.totalGoals || 0)
     });
   } else {
     existingTournament.host = liveData.host || existingTournament.host;
     existingTournament.winner = summary.currentLeader || existingTournament.winner;
-    existingTournament.matches = Number(summary.totalMatches || existingTournament.matches);
+    existingTournament.matches = Number(summary.finishedMatches || existingTournament.matches);
     existingTournament.goals = Number(summary.totalGoals || existingTournament.goals);
   }
 
-  for (const match of liveData.matches) {
+  for (const match of playedMatches) {
     matches.push({
       year,
       id: String(match.id),
