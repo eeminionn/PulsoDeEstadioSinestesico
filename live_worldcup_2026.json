@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-16T17:47:33.241Z",
+  "updated_at": "2026-06-16T20:52:43.457Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -807,10 +807,10 @@
       "away": "Senegal",
       "hCode": "FRA",
       "aCode": "SEN",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 2,
+      "aScore": 0,
+      "totalGoals": 2,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -819,8 +819,21 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 66,
+          "label": "66'",
+          "team": "FRA",
+          "player": "Kilian Ambaph"
+        },
+        {
+          "minute": 82,
+          "label": "82'",
+          "team": "FRA",
+          "player": "Brdli Barkvla"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-018",
@@ -2152,13 +2165,13 @@
           "minute": 41,
           "label": "41'",
           "team": "KSA",
-          "player": "Abdallh Alamri"
+          "player": "Abdulelah Al-Amri"
         },
         {
           "minute": 80,
           "label": "80'",
           "team": "URU",
-          "player": "Maksimilianv Araivkhv"
+          "player": "Maximiliano Araújo"
         }
       ]
     },
@@ -2360,25 +2373,25 @@
           "minute": 7,
           "label": "7'",
           "team": "NZL",
-          "player": "Ali Jast"
+          "player": "Elijah Just"
         },
         {
           "minute": 32,
           "label": "32'",
           "team": "IRN",
-          "player": "Ramin Rzaiian"
+          "player": "Ramin Rezaiian"
         },
         {
           "minute": 54,
           "label": "54'",
           "team": "NZL",
-          "player": "Ali Jast"
+          "player": "Elijah Just"
         },
         {
           "minute": 64,
           "label": "64'",
           "team": "IRN",
-          "player": "Mohamed Mhbi"
+          "player": "Mohammad Mohebi"
         }
       ]
     },
