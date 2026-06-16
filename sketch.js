@@ -46,6 +46,11 @@ let audioState = {
   pulse: 0,
   zone: "pasivo"
 };
+let liveStatus = {
+  year: 2026,
+  finishedMatches: 0,
+  totalMatches: 0
+};
 
 const MAX_MIN = 130;
 const GOLDEN = Math.PI * (3 - Math.sqrt(5));
@@ -169,6 +174,9 @@ function mergeLiveWorldCupData(liveData) {
   if (!playedMatches.length) return;
   const existingTournament = tournaments.find(t => t.year === year);
   const summary = liveData.summary || {};
+  liveStatus.year = year;
+  liveStatus.finishedMatches = Number(summary.finishedMatches || playedMatches.length);
+  liveStatus.totalMatches = Number(summary.totalMatches || liveData.matches.length);
 
   if (!existingTournament) {
     tournaments.push({
@@ -1089,6 +1097,15 @@ function drawInfo() {
       ${meterRow("Agudos", audioState.treble)}
     </div>
   `;
+
+  if (selectedYear === liveStatus.year && liveStatus.totalMatches > 0) {
+    html += `
+      <div style="margin-top:14px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(236,230,206,.08);font-size:12px;line-height:1.5;color:rgba(236,230,206,.78);">
+        <strong style="color:rgb(247,242,226);">Estado del torneo:</strong><br>
+        ${liveStatus.finishedMatches} de ${liveStatus.totalMatches} partidos jugados.
+      </div>
+    `;
+  }
 
   if (orb) {
     const oddNames = orb.oddGoals.slice(0, 3).map(g => `${g.label} · ${g.team} · ${g.player || "Gol"}`).join("<br>");
