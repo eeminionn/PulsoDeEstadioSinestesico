@@ -78,11 +78,27 @@ node scripts/updateLiveWorldCup2026.mjs
 
 El script descarga partidos, equipos y estadios, normaliza los resultados y deja el JSON listo para que `sketch.js` lo lea junto con los CSV históricos.
 
+Además, el repositorio incluye un workflow de **GitHub Actions** que actualiza ese JSON automáticamente cada hora y hace commit solo si detecta cambios.
+
+Archivo del workflow:
+
+```text
+.github/workflows/update-live-worldcup-2026.yml
+```
+
+En la versión pensada para el editor web de p5, `sketch.js` intenta leer primero el JSON remoto publicado en GitHub:
+
+```text
+https://raw.githubusercontent.com/eeminionn/PulsoDeEstadioSinestesico/main/live_worldcup_2026.json
+```
+
+Si esa URL falla, usa el archivo local como respaldo.
+
 Si estás trabajando dentro del editor web de p5, el flujo recomendado es:
 
-1. Actualizar `live_worldcup_2026.json` localmente con el script.
-2. Subir o reemplazar ese JSON dentro del proyecto de p5.
-3. Volver a cargar el sketch.
+1. Dejar activo el workflow en GitHub.
+2. Mantener `sketch.js` apuntando al JSON remoto.
+3. Abrir o recargar el sketch en p5 para leer la versión más reciente.
 
 ## Contexto
 

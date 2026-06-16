@@ -50,6 +50,7 @@ let audioState = {
 const MAX_MIN = 130;
 const GOLDEN = Math.PI * (3 - Math.sqrt(5));
 const CONCEPT = "Pulso de estadio sinestesico";
+const LIVE_JSON_REMOTE = "https://raw.githubusercontent.com/eeminionn/PulsoDeEstadioSinestesico/main/live_worldcup_2026.json";
 
 const C = {
   pitch: [6, 25, 18],
@@ -70,7 +71,9 @@ function preload() {
   Tg = loadTable("goals_clean.csv", "csv", "header");
   Tt = loadTable("tournaments_clean.csv", "csv", "header");
   Tteams = loadTable("teams_clean.csv", "csv", "header");
-  Tlive = loadJSON("live_worldcup_2026.json");
+  Tlive = loadJSON(LIVE_JSON_REMOTE, "json", null, () => {
+    Tlive = loadJSON("live_worldcup_2026.json");
+  });
 }
 
 function setup() {
