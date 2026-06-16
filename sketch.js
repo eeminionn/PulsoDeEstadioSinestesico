@@ -71,7 +71,7 @@ function preload() {
   Tg = loadTable("goals_clean.csv", "csv", "header");
   Tt = loadTable("tournaments_clean.csv", "csv", "header");
   Tteams = loadTable("teams_clean.csv", "csv", "header");
-  Tlive = loadJSON(LIVE_JSON_REMOTE, "json", null, () => {
+  Tlive = loadJSON(LIVE_JSON_REMOTE, undefined, () => {
     Tlive = loadJSON("live_worldcup_2026.json");
   });
 }
