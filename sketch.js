@@ -384,16 +384,49 @@ const params = {
 function makeUI() {
   ui.panel = createDiv();
   ui.panel.position(22, 22);
-  ui.panel.class("control-panel");
-  ui.panel.style("width", "348px");
-  ui.panel.style("padding", "18px");
+  styleMany(ui.panel, {
+    width: "368px",
+    padding: "22px 22px 20px 22px",
+    "border-radius": "22px",
+    background: "linear-gradient(180deg, rgba(6,18,14,.94) 0%, rgba(8,28,21,.88) 100%)",
+    border: "1px solid rgba(236,230,206,.16)",
+    color: "rgb(236,230,206)",
+    "box-shadow": "0 22px 60px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.04)",
+    "backdrop-filter": "blur(16px)",
+    "box-sizing": "border-box"
+  });
 
-  createDiv("SINIESTESIA DIGITAL · VER EL SONIDO").parent(ui.panel).class("kicker");
-  createElement("h1", "Pulso de estadio").parent(ui.panel).class("title");
-  createP("Cada partido es un organismo visual. Las aureolas ya no siguen la linea de tiempo: los goles pares despiertan con graves y los impares con agudos del microfono.").parent(ui.panel).class("lead");
+  const kicker = createDiv("SINIESTESIA DIGITAL · VER EL SONIDO").parent(ui.panel);
+  styleMany(kicker, {
+    "font-family": "Courier New, monospace",
+    "font-size": "11px",
+    "font-weight": "900",
+    "letter-spacing": ".16em",
+    "text-transform": "uppercase",
+    color: "rgba(236,230,206,.66)"
+  });
+
+  const title = createElement("h1", "Pulso de estadio").parent(ui.panel);
+  styleMany(title, {
+    margin: "14px 0 10px",
+    "font-family": "Georgia, serif",
+    "font-size": "34px",
+    "line-height": ".94",
+    "letter-spacing": "-.05em",
+    color: "rgb(247,242,226)"
+  });
+
+  const lead = createP("Cada partido es un organismo visual. Las aureolas ya no siguen la linea de tiempo: los goles pares despiertan con graves y los impares con agudos del microfono.");
+  lead.parent(ui.panel);
+  styleMany(lead, {
+    margin: "0 0 16px",
+    "font-size": "13px",
+    "line-height": "1.55",
+    color: "rgba(236,230,206,.84)"
+  });
 
   ui.micButton = button("Activar micro + fullscreen", startMic, ui.panel);
-  ui.micButton.class("primary-button");
+  stylePrimaryButton(ui.micButton);
 
   ui.yearLabel = label("MUNDIAL");
   ui.yearSlider = slider(0, years.length - 1, years.length - 1, 1, () => setYear(int(ui.yearSlider.value())));
@@ -417,28 +450,79 @@ function makeUI() {
   ui.colorSlider = slider(0, 1, params.colorFlux, 0.01, updateLabels);
 
   const row = createDiv().parent(ui.panel);
-  row.class("button-row");
-  button("Random", () => setYear(floor(random(years.length))), row);
-  button("Reset", resetView, row);
-  button("Fullscreen", () => fullscreen(!fullscreen()), row);
+  styleMany(row, {
+    display: "grid",
+    "grid-template-columns": "1fr 1fr 1fr",
+    gap: "8px",
+    "margin-top": "14px"
+  });
+  const randomBtn = button("Random", () => setYear(floor(random(years.length))), row);
+  const resetBtn = button("Reset", resetView, row);
+  const fullBtn = button("Fullscreen", () => fullscreen(!fullscreen()), row);
+  styleMany(randomBtn, { margin: "0", padding: "10px 8px" });
+  styleMany(resetBtn, { margin: "0", padding: "10px 8px" });
+  styleMany(fullBtn, { margin: "0", padding: "10px 8px" });
 
-  createP("Inputs: mouse para orbitar y fijar partidos, rueda para zoom, teclas A/Z velocidad, L leyenda, F fullscreen, flechas cambian mundial.").parent(ui.panel).class("microcopy");
+  const microcopy = createP("Inputs: mouse para orbitar y fijar partidos, rueda para zoom, teclas A/Z velocidad, L leyenda, F fullscreen, flechas cambian mundial.").parent(ui.panel);
+  styleMany(microcopy, {
+    margin: "14px 0 0",
+    "font-size": "11px",
+    "line-height": "1.5",
+    color: "rgba(236,230,206,.68)"
+  });
 
   ui.info = createDiv();
-  ui.info.position(width - 342, 22);
-  ui.info.class("info-panel");
+  ui.info.position(width - 378, 22);
+  styleMany(ui.info, {
+    width: "356px",
+    padding: "20px",
+    "border-radius": "22px",
+    background: "linear-gradient(180deg, rgba(7,17,13,.94) 0%, rgba(9,25,19,.9) 100%)",
+    border: "1px solid rgba(236,230,206,.14)",
+    color: "rgb(236,230,206)",
+    "box-shadow": "0 22px 60px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.04)",
+    "backdrop-filter": "blur(16px)",
+    "box-sizing": "border-box"
+  });
 }
 
 function label(name) {
   const wrap = createDiv().parent(ui.panel);
-  wrap.class("label-row");
-  createSpan(name).parent(wrap).class("label-name");
-  return createSpan("—").parent(wrap).class("label-value");
+  styleMany(wrap, {
+    display: "flex",
+    "justify-content": "space-between",
+    "align-items": "center",
+    "margin-top": "14px"
+  });
+
+  const left = createSpan(name).parent(wrap);
+  styleMany(left, {
+    "font-family": "Courier New, monospace",
+    "font-size": "10px",
+    "font-weight": "900",
+    "letter-spacing": ".12em",
+    "text-transform": "uppercase",
+    color: "rgba(236,230,206,.68)"
+  });
+
+  const right = createSpan("—").parent(wrap);
+  styleMany(right, {
+    "font-family": "Courier New, monospace",
+    "font-size": "15px",
+    "font-weight": "900",
+    color: "rgb(247,242,226)"
+  });
+
+  return right;
 }
 
 function slider(a, b, c, step, fn) {
   const s = createSlider(a, b, c, step).parent(ui.panel);
-  s.class("control-slider");
+  styleMany(s, {
+    width: "100%",
+    margin: "6px 0 2px",
+    "accent-color": "rgb(220,176,90)"
+  });
   s.input(fn);
   return s;
 }
@@ -446,8 +530,38 @@ function slider(a, b, c, step, fn) {
 function button(textValue, fn, parent) {
   const b = createButton(textValue).parent(parent);
   b.mousePressed(fn);
-  b.class("control-button");
+  styleMany(b, {
+    width: "100%",
+    margin: "12px 0 0",
+    padding: "11px 12px",
+    "border-radius": "12px",
+    border: "1px solid rgba(236,230,206,.14)",
+    background: "rgba(255,255,255,.05)",
+    color: "rgb(236,230,206)",
+    "font-family": "Courier New, monospace",
+    "font-size": "11px",
+    "font-weight": "900",
+    "letter-spacing": ".06em",
+    cursor: "pointer",
+    "box-shadow": "inset 0 1px 0 rgba(255,255,255,.05)"
+  });
   return b;
+}
+
+function stylePrimaryButton(el) {
+  styleMany(el, {
+    background: "linear-gradient(135deg, rgb(214,171,88) 0%, rgb(177,116,56) 100%)",
+    color: "rgb(16,20,16)",
+    border: "1px solid rgba(255,214,130,.34)",
+    "box-shadow": "0 10px 24px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.22)"
+  });
+}
+
+function styleMany(el, styles) {
+  if (!el) return;
+  for (const [key, value] of Object.entries(styles)) {
+    el.style(key, value);
+  }
 }
 
 function readControls() {
@@ -472,9 +586,20 @@ function updateLabels() {
   ui.colorLabel.html(nf(params.colorFlux, 1, 2));
 
   if (!ui.micButton) return;
-  if (micReady) ui.micButton.html("Microfono activo");
-  else if (audioDenied) ui.micButton.html("Reintentar permiso de microfono");
-  else ui.micButton.html("Activar micro + fullscreen");
+  if (micReady) {
+    ui.micButton.html("Microfono activo");
+    stylePrimaryButton(ui.micButton);
+  } else if (audioDenied) {
+    ui.micButton.html("Reintentar permiso de microfono");
+    styleMany(ui.micButton, {
+      background: "linear-gradient(135deg, rgb(197,92,65) 0%, rgb(155,54,45) 100%)",
+      color: "rgb(247,242,226)",
+      border: "1px solid rgba(255,180,160,.24)"
+    });
+  } else {
+    ui.micButton.html("Activar micro + fullscreen");
+    stylePrimaryButton(ui.micButton);
+  }
 }
 
 async function startMic() {
@@ -738,15 +863,15 @@ function drawInfo() {
   if (!t) return;
 
   let html = `
-    <div class="kicker">MONITOR SINIESTESICO</div>
-    <div class="info-year">${selectedYear}</div>
-    <div class="stats-grid">
+    <div style="font-family:'Courier New',monospace;font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase;color:rgba(236,230,206,.62);">Monitor sinestesico</div>
+    <div style="margin:12px 0 14px;font-family:Georgia,serif;font-size:38px;font-weight:900;line-height:.88;color:rgb(247,242,226);">${selectedYear}</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
       ${statBox("Concepto", "Pulso de estadio")}
       ${statBox("Zona sonora", audioState.zone)}
       ${statBox("Campeon", t.winner)}
       ${statBox("Sede", t.host)}
     </div>
-    <div class="meter-stack">
+    <div style="margin-top:14px;">
       ${meterRow("Volumen", audioState.level)}
       ${meterRow("Graves", audioState.bass)}
       ${meterRow("Medios", audioState.mid)}
@@ -759,18 +884,18 @@ function drawInfo() {
     const evenNames = orb.evenGoals.slice(0, 3).map(g => `${g.label} · ${g.team} · ${g.player || "Gol"}`).join("<br>");
 
     html += `
-      <div class="divider"></div>
-      <div class="pin-state">${pinned ? "PARTIDO FIJADO" : "PARTIDO EXPLORADO"}</div>
-      <div class="match-score">${orb.m.hCode} ${orb.m.hScore}-${orb.m.aScore} ${orb.m.aCode}</div>
-      <div class="match-sub">${orb.m.home} vs ${orb.m.away}</div>
-      <div class="match-meta">${orb.m.stage}<br>${orb.m.city}, ${orb.m.country}<br>${orb.m.date}</div>
-      <div class="match-meta"><strong>Pares:</strong> ${orb.evenGoals.length} goles<br>${evenNames || "Sin goles pares."}</div>
-      <div class="match-meta"><strong>Impares:</strong> ${orb.oddGoals.length} goles<br>${oddNames || "Sin goles impares."}</div>
+      <div style="margin:16px 0 14px;border-top:1px solid rgba(236,230,206,.12);"></div>
+      <div style="font-family:'Courier New',monospace;font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:rgba(236,230,206,.58);">${pinned ? "Partido fijado" : "Partido explorado"}</div>
+      <div style="margin-top:8px;font-size:24px;font-weight:900;color:rgb(247,242,226);">${orb.m.hCode} ${orb.m.hScore}-${orb.m.aScore} ${orb.m.aCode}</div>
+      <div style="margin-top:4px;font-size:14px;font-weight:700;color:rgba(236,230,206,.88);">${orb.m.home} vs ${orb.m.away}</div>
+      <div style="margin-top:10px;font-size:12px;line-height:1.45;color:rgba(236,230,206,.68);">${orb.m.stage}<br>${orb.m.city}, ${orb.m.country}<br>${orb.m.date}</div>
+      <div style="margin-top:12px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(236,230,206,.08);font-size:12px;line-height:1.5;color:rgba(236,230,206,.8);"><strong style="color:rgb(226,186,98);">Pares:</strong> ${orb.evenGoals.length} goles<br>${evenNames || "Sin goles pares."}</div>
+      <div style="margin-top:10px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(236,230,206,.08);font-size:12px;line-height:1.5;color:rgba(236,230,206,.8);"><strong style="color:rgb(135,173,255);">Impares:</strong> ${orb.oddGoals.length} goles<br>${oddNames || "Sin goles impares."}</div>
     `;
   } else {
     html += `
-      <div class="divider"></div>
-      <div class="match-meta">Pasa el mouse sobre una pelota para leer el partido. Con click lo fijas, y con el microfono abierto puedes ver como cambian sus aureolas segun graves y agudos.</div>
+      <div style="margin:16px 0 14px;border-top:1px solid rgba(236,230,206,.12);"></div>
+      <div style="padding:14px 15px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(236,230,206,.08);font-size:12px;line-height:1.55;color:rgba(236,230,206,.74);">Pasa el mouse sobre una pelota para leer el partido. Con click lo fijas, y con el microfono abierto puedes ver como cambian sus aureolas segun graves y agudos.</div>
     `;
   }
 
@@ -778,17 +903,19 @@ function drawInfo() {
 }
 
 function statBox(labelText, valueText) {
-  return `<div class="stat-box">
-    <div class="stat-label">${labelText}</div>
-    <div class="stat-value">${valueText}</div>
+  return `<div style="padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(236,230,206,.08);">
+    <div style="font-family:'Courier New',monospace;font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:rgba(236,230,206,.52);">${labelText}</div>
+    <div style="margin-top:4px;font-size:14px;font-weight:800;color:rgb(247,242,226);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${valueText}</div>
   </div>`;
 }
 
 function meterRow(labelText, value) {
   const pct = constrain(value, 0, 1) * 100;
-  return `<div class="meter-row">
-    <div class="meter-label">${labelText}</div>
-    <div class="meter-bar"><span style="width:${pct}%"></span></div>
+  return `<div style="display:grid;grid-template-columns:70px 1fr;gap:10px;align-items:center;margin-top:9px;">
+    <div style="font-family:'Courier New',monospace;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:rgba(236,230,206,.6);">${labelText}</div>
+    <div style="height:9px;border-radius:999px;background:rgba(236,230,206,.1);overflow:hidden;">
+      <span style="display:block;height:100%;width:${pct}%;border-radius:999px;background:linear-gradient(90deg,#DDB56A 0%, #7CCAA7 52%, #86A9FF 100%);"></span>
+    </div>
   </div>`;
 }
 
@@ -940,6 +1067,6 @@ function poly(x, y, r, sides) {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   makeTexture();
-  if (ui.info) ui.info.position(width - 342, 22);
+  if (ui.info) ui.info.position(width - 378, 22);
   setYear(yearIndex);
 }
