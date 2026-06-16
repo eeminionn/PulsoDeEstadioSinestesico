@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-16T20:52:43.457Z",
+  "updated_at": "2026-06-16T22:53:50.968Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 16,
-    "totalGoals": 46,
-    "currentLeader": "En juego · 16/104 partidos cerrados"
+    "finishedMatches": 17,
+    "totalGoals": 50,
+    "currentLeader": "En juego · 17/104 partidos cerrados"
   },
   "matches": [
     {
@@ -807,9 +807,9 @@
       "away": "Senegal",
       "hCode": "FRA",
       "aCode": "SEN",
-      "hScore": 2,
-      "aScore": 0,
-      "totalGoals": 2,
+      "hScore": 3,
+      "aScore": 1,
+      "totalGoals": 4,
       "margin": 2,
       "extra": 0,
       "pens": 0,
@@ -818,20 +818,32 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
+        {
+          "minute": 5,
+          "label": "5'",
+          "team": "SEN",
+          "player": "I. Mbaye 90+"
+        },
+        {
+          "minute": 6,
+          "label": "6'",
+          "team": "FRA",
+          "player": "K. Mbappé 90+"
+        },
         {
           "minute": 66,
           "label": "66'",
           "team": "FRA",
-          "player": "Kilian Ambaph"
+          "player": "K. Mbappé"
         },
         {
           "minute": 82,
           "label": "82'",
           "team": "FRA",
-          "player": "Brdli Barkvla"
+          "player": "B. Barcola"
         }
       ]
     },
@@ -846,9 +858,9 @@
       "away": "Norway",
       "hCode": "IRQ",
       "aCode": "NOR",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": 1,
+      "aScore": 2,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -858,8 +870,27 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 29,
+          "label": "29'",
+          "team": "NOR",
+          "player": "Arling Halnd"
+        },
+        {
+          "minute": 39,
+          "label": "39'",
+          "team": "IRQ",
+          "player": "Aimn Hsin"
+        },
+        {
+          "minute": 43,
+          "label": "43'",
+          "team": "NOR",
+          "player": "Arling Halnd"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-021",
@@ -2186,9 +2217,9 @@
       "away": "Jordan",
       "hCode": "AUT",
       "aCode": "JOR",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2406,9 +2437,9 @@
       "away": "Algeria",
       "hCode": "ARG",
       "aCode": "ALG",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
