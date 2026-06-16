@@ -259,10 +259,20 @@ function replaceLiveWorldCupData(liveData) {
   mergeLiveWorldCupData(liveData);
   tournaments.sort((a, b) => a.year - b.year);
   years = [...new Set(tournaments.map(t => t.year))].sort((a, b) => a - b);
+  refreshYearSlider();
 
   const idx = years.indexOf(selectedYear);
   if (idx >= 0) setYear(idx);
   else setYear(years.length - 1);
+}
+
+function refreshYearSlider() {
+  if (!ui.yearSlider) return;
+  ui.yearSlider.attribute("min", 0);
+  ui.yearSlider.attribute("max", years.length - 1);
+  ui.yearSlider.attribute("step", 1);
+  ui.yearSlider.value(constrain(yearIndex, 0, years.length - 1));
+  updateLabels();
 }
 
 function txt(row, key, def = "") {
