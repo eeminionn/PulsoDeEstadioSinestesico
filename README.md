@@ -66,6 +66,24 @@ http://localhost:8000
 
 Acepta el permiso del micrófono en el navegador y activa el botón de audio desde la interfaz.
 
+## Actualización del Mundial 2026
+
+El proyecto incluye un archivo local llamado `live_worldcup_2026.json` para incorporar el Mundial 2026 que se está jugando actualmente.
+
+Ese archivo se puede regenerar con:
+
+```bash
+node scripts/updateLiveWorldCup2026.mjs
+```
+
+El script descarga partidos, equipos y estadios, normaliza los resultados y deja el JSON listo para que `sketch.js` lo lea junto con los CSV históricos.
+
+Si estás trabajando dentro del editor web de p5, el flujo recomendado es:
+
+1. Actualizar `live_worldcup_2026.json` localmente con el script.
+2. Subir o reemplazar ese JSON dentro del proyecto de p5.
+3. Volver a cargar el sketch.
+
 ## Contexto
 
 Esta pieza nace de una visualización previa de datos de mundiales y fue adaptada hacia una entrega final centrada en la idea de **ver el sonido** por medio de color, forma y movimiento. El resultado mantiene el archivo futbolero como materia prima, pero lo desplaza hacia una experiencia performática y sinestésica en tiempo real.

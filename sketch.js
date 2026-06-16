@@ -4,6 +4,7 @@
 // Concepto: Pulso de estadio sinestesico
 
 let Tm, Tg, Tt, Tteams;
+let Tlive;
 let tournaments = [];
 let matches = [];
 let goals = [];
@@ -69,6 +70,7 @@ function preload() {
   Tg = loadTable("goals_clean.csv", "csv", "header");
   Tt = loadTable("tournaments_clean.csv", "csv", "header");
   Tteams = loadTable("teams_clean.csv", "csv", "header");
+  Tlive = loadJSON("live_worldcup_2026.json");
 }
 
 function setup() {
@@ -150,6 +152,75 @@ function parseCSV() {
     goals.push(g);
     if (!goalsByMatch.has(g.matchId)) goalsByMatch.set(g.matchId, []);
     goalsByMatch.get(g.matchId).push(g);
+  }
+
+  mergeLiveWorldCupData(Tlive);
+  tournaments.sort((a, b) => a.year - b.year);
+  years = [...new Set(tournaments.map(t => t.year))].sort((a, b) => a - b);
+}
+
+function mergeLiveWorldCupData(liveData) {
+  if (!liveData || !Array.isArray(liveData.matches) || !liveData.matches.length) return;
+
+  const year = Number(liveData.year || 2026);
+  const existingTournament = tournaments.find(t => t.year === year);
+  const summary = liveData.summary || {};
+
+  if (!existingTournament) {
+    tournaments.push({
+      year,
+      host: liveData.host || "United States / Mexico / Canada",
+      winner: summary.currentLeader || "En juego",
+      matches: Number(summary.totalMatches || liveData.matches.length),
+      goals: Number(summary.totalGoals || 0)
+    });
+  } else {
+    existingTournament.host = liveData.host || existingTournament.host;
+    existingTournament.winner = summary.currentLeader || existingTournament.winner;
+    existingTournament.matches = Number(summary.totalMatches || existingTournament.matches);
+    existingTournament.goals = Number(summary.totalGoals || existingTournament.goals);
+  }
+
+  for (const match of liveData.matches) {
+    matches.push({
+      year,
+      id: String(match.id),
+      date: String(match.date || ""),
+      stage: String(match.stage || ""),
+      city: String(match.city || ""),
+      country: String(match.country || ""),
+      home: String(match.home || ""),
+      away: String(match.away || ""),
+      hCode: String(match.hCode || "TBD"),
+      aCode: String(match.aCode || "TBD"),
+      hScore: Number(match.hScore || 0),
+      aScore: Number(match.aScore || 0),
+      totalGoals: Number(match.totalGoals || 0),
+      margin: max(1, Number(match.margin || 1)),
+      extra: Number(match.extra || 0),
+      pens: Number(match.pens || 0),
+      final: Number(match.final || 0),
+      semi: Number(match.semi || 0),
+      ko: Number(match.ko || 0),
+      champion: Number(match.champion || 0),
+      hostTeam: Number(match.hostTeam || 0)
+    });
+
+    if (!goalsByMatch.has(match.id)) goalsByMatch.set(match.id, []);
+    const liveGoals = Array.isArray(match.goals) ? match.goals : [];
+    for (const goal of liveGoals) {
+      const g = {
+        year,
+        matchId: String(match.id),
+        minute: Number(goal.minute || 0),
+        label: String(goal.label || ""),
+        team: String(goal.team || ""),
+        player: String(goal.player || "")
+      };
+
+      goals.push(g);
+      goalsByMatch.get(match.id).push(g);
+    }
   }
 }
 
