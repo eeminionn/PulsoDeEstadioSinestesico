@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-17T00:18:01.494Z",
+  "updated_at": "2026-06-17T06:13:10.451Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 18,
-    "totalGoals": 55,
-    "currentLeader": "En juego · 18/104 partidos cerrados"
+    "finishedMatches": 20,
+    "totalGoals": 62,
+    "currentLeader": "En juego · 20/104 partidos cerrados"
   },
   "matches": [
     {
@@ -876,31 +876,31 @@
           "minute": 7,
           "label": "7'",
           "team": "NOR",
-          "player": "Aimn Hsin 90+"
+          "player": "Aymen Hussein 90+"
         },
         {
           "minute": 29,
           "label": "29'",
           "team": "NOR",
-          "player": "Arling Halnd"
+          "player": "Erling Haaland"
         },
         {
           "minute": 39,
           "label": "39'",
           "team": "IRQ",
-          "player": "Aimn Hsin"
+          "player": "Aymen Hussein"
         },
         {
           "minute": 43,
           "label": "43'",
           "team": "NOR",
-          "player": "Arling Halnd"
+          "player": "Erling Haaland"
         },
         {
           "minute": 76,
           "label": "76'",
           "team": "NOR",
-          "player": "Liv Avstigard"
+          "player": "Leo Østigård"
         }
       ]
     },
@@ -2229,10 +2229,10 @@
       "away": "Jordan",
       "hCode": "AUT",
       "aCode": "JOR",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 3,
+      "aScore": 1,
+      "totalGoals": 4,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -2240,9 +2240,28 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 21,
+          "label": "21'",
+          "team": "AUT",
+          "player": "Rvmanv Ashmid"
+        },
+        {
+          "minute": 50,
+          "label": "50'",
+          "team": "JOR",
+          "player": "Ali Avlvan"
+        },
+        {
+          "minute": 76,
+          "label": "76'",
+          "team": "AUT",
+          "player": "Izn Alarb"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-023",
@@ -2449,10 +2468,10 @@
       "away": "Algeria",
       "hCode": "ARG",
       "aCode": "ALG",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 3,
+      "aScore": 0,
+      "totalGoals": 3,
+      "margin": 3,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -2460,9 +2479,28 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 17,
+          "label": "17'",
+          "team": "ARG",
+          "player": "Lionel Messi"
+        },
+        {
+          "minute": 60,
+          "label": "60'",
+          "team": "ARG",
+          "player": "Lionel Messi"
+        },
+        {
+          "minute": 76,
+          "label": "76'",
+          "team": "ARG",
+          "player": "Lionel Messi"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-024",
