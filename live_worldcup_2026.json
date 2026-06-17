@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-17T15:33:27.212Z",
+  "updated_at": "2026-06-17T18:19:15.546Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -914,9 +914,9 @@
       "away": "Democratic Republic of the Congo",
       "hCode": "POR",
       "aCode": "COD",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": 1,
+      "aScore": 1,
+      "totalGoals": 2,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -926,8 +926,21 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 5,
+          "label": "5'",
+          "team": "COD",
+          "player": "Y. Wissa 45+"
+        },
+        {
+          "minute": 6,
+          "label": "6'",
+          "team": "POR",
+          "player": "J. Neves"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-022",
