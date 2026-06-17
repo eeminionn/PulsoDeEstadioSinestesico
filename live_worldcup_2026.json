@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-17T18:19:15.546Z",
+  "updated_at": "2026-06-17T21:08:21.707Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 20,
-    "totalGoals": 62,
-    "currentLeader": "En juego · 20/104 partidos cerrados"
+    "finishedMatches": 21,
+    "totalGoals": 64,
+    "currentLeader": "En juego · 21/104 partidos cerrados"
   },
   "matches": [
     {
@@ -925,8 +925,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 5,
@@ -953,9 +953,9 @@
       "away": "Croatia",
       "hCode": "ENG",
       "aCode": "CRO",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": 2,
+      "aScore": 2,
+      "totalGoals": 4,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -965,8 +965,27 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 5,
+          "label": "5'",
+          "team": "CRO",
+          "player": "Ptar Mvsa 45+"
+        },
+        {
+          "minute": 36,
+          "label": "36'",
+          "team": "CRO",
+          "player": "Martin Batvrina"
+        },
+        {
+          "minute": 42,
+          "label": "42'",
+          "team": "ENG",
+          "player": "Hri Kin"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-023",
@@ -979,9 +998,9 @@
       "away": "Colombia",
       "hCode": "UZB",
       "aCode": "COL",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1005,9 +1024,9 @@
       "away": "Panama",
       "hCode": "GHA",
       "aCode": "PAN",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
