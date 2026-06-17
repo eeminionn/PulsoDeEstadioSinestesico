@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-16T22:53:50.968Z",
+  "updated_at": "2026-06-17T00:18:01.494Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 17,
-    "totalGoals": 50,
-    "currentLeader": "En juego · 17/104 partidos cerrados"
+    "finishedMatches": 18,
+    "totalGoals": 55,
+    "currentLeader": "En juego · 18/104 partidos cerrados"
   },
   "matches": [
     {
@@ -859,9 +859,9 @@
       "hCode": "IRQ",
       "aCode": "NOR",
       "hScore": 1,
-      "aScore": 2,
-      "totalGoals": 3,
-      "margin": 1,
+      "aScore": 4,
+      "totalGoals": 5,
+      "margin": 3,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -869,9 +869,15 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
+        {
+          "minute": 7,
+          "label": "7'",
+          "team": "NOR",
+          "player": "Aimn Hsin 90+"
+        },
         {
           "minute": 29,
           "label": "29'",
@@ -889,6 +895,12 @@
           "label": "43'",
           "team": "NOR",
           "player": "Arling Halnd"
+        },
+        {
+          "minute": 76,
+          "label": "76'",
+          "team": "NOR",
+          "player": "Liv Avstigard"
         }
       ]
     },
