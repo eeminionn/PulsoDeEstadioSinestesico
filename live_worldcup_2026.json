@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-18T16:34:05.516Z",
+  "updated_at": "2026-06-18T19:29:34.457Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 24,
-    "totalGoals": 75,
-    "currentLeader": "En juego · 24/104 partidos cerrados"
+    "finishedMatches": 25,
+    "totalGoals": 77,
+    "currentLeader": "En juego · 25/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1138,7 +1138,7 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
@@ -1178,9 +1178,9 @@
       "away": "South Africa",
       "hCode": "CZE",
       "aCode": "RSA",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": 1,
+      "aScore": 1,
+      "totalGoals": 2,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1189,9 +1189,16 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 6,
+          "label": "6'",
+          "team": "CZE",
+          "player": "mikhal Sadilk"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-029",
