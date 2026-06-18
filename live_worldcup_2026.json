@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-17T23:25:22.852Z",
+  "updated_at": "2026-06-18T04:04:17.255Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 22,
-    "totalGoals": 70,
-    "currentLeader": "En juego · 22/104 partidos cerrados"
+    "finishedMatches": 24,
+    "totalGoals": 75,
+    "currentLeader": "En juego · 24/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1016,10 +1016,10 @@
       "away": "Colombia",
       "hCode": "UZB",
       "aCode": "COL",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 1,
+      "aScore": 3,
+      "totalGoals": 4,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1027,9 +1027,34 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 9,
+          "label": "9'",
+          "team": "COL",
+          "player": "Khamintvn Kampaz 90+"
+        },
+        {
+          "minute": 40,
+          "label": "40'",
+          "team": "COL",
+          "player": "Dnil Mvnvz"
+        },
+        {
+          "minute": 60,
+          "label": "60'",
+          "team": "UZB",
+          "player": "Abas Bk Fiz Allh Af"
+        },
+        {
+          "minute": 65,
+          "label": "65'",
+          "team": "COL",
+          "player": "Lviiz Diaz"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-024",
@@ -1042,9 +1067,9 @@
       "away": "Panama",
       "hCode": "GHA",
       "aCode": "PAN",
-      "hScore": 0,
+      "hScore": 1,
       "aScore": 0,
-      "totalGoals": 0,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1053,9 +1078,16 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 5,
+          "label": "5'",
+          "team": "GHA",
+          "player": "Kalb Iirnki 90+"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-025",
