@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-18T19:29:34.457Z",
+  "updated_at": "2026-06-18T22:09:47.897Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 25,
-    "totalGoals": 77,
-    "currentLeader": "En juego · 25/104 partidos cerrados"
+    "finishedMatches": 26,
+    "totalGoals": 82,
+    "currentLeader": "En juego · 26/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1126,10 +1126,10 @@
       "away": "Bosnia and Herzegovina",
       "hCode": "SUI",
       "aCode": "BIH",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
-      "margin": 1,
+      "hScore": 4,
+      "aScore": 1,
+      "totalGoals": 5,
+      "margin": 3,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1137,9 +1137,34 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 3,
+          "label": "3'",
+          "team": "BIH",
+          "player": "Armin Mhmich 90+"
+        },
+        {
+          "minute": 74,
+          "label": "74'",
+          "team": "SUI",
+          "player": "Jvhan Mnzambi"
+        },
+        {
+          "minute": 84,
+          "label": "84'",
+          "team": "SUI",
+          "player": "Rvbn Vargas"
+        },
+        {
+          "minute": 90,
+          "label": "90'",
+          "team": "SUI",
+          "player": "Jvhan Mnzambi"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-027",
@@ -1164,7 +1189,7 @@
       "champion": 0,
       "hostTeam": 1,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
@@ -1196,7 +1221,7 @@
           "minute": 6,
           "label": "6'",
           "team": "CZE",
-          "player": "mikhal Sadilk"
+          "player": "‫mikhal Sadilk"
         }
       ]
     },
