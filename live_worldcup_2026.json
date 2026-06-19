@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-18T22:09:47.897Z",
+  "updated_at": "2026-06-19T00:27:43.048Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 26,
-    "totalGoals": 82,
-    "currentLeader": "En juego · 26/104 partidos cerrados"
+    "finishedMatches": 27,
+    "totalGoals": 88,
+    "currentLeader": "En juego · 27/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1100,9 +1100,9 @@
       "away": "South Korea",
       "hCode": "MEX",
       "aCode": "KOR",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1177,10 +1177,10 @@
       "away": "Qatar",
       "hCode": "CAN",
       "aCode": "QAT",
-      "hScore": 0,
+      "hScore": 6,
       "aScore": 0,
-      "totalGoals": 0,
-      "margin": 1,
+      "totalGoals": 6,
+      "margin": 6,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1188,9 +1188,46 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 1,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 2,
+          "label": "2'",
+          "team": "CAN",
+          "player": "Jonathan David 90+"
+        },
+        {
+          "minute": 3,
+          "label": "3'",
+          "team": "CAN",
+          "player": "Jonathan David 45+"
+        },
+        {
+          "minute": 16,
+          "label": "16'",
+          "team": "CAN",
+          "player": "Kail Larin"
+        },
+        {
+          "minute": 29,
+          "label": "29'",
+          "team": "CAN",
+          "player": "Jonathan David"
+        },
+        {
+          "minute": 64,
+          "label": "64'",
+          "team": "CAN",
+          "player": "Nathan Saliba"
+        },
+        {
+          "minute": 75,
+          "label": "75'",
+          "team": "CAN",
+          "player": "Mohamed Almnai"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-028",
