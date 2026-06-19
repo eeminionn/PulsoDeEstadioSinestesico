@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-19T00:27:43.048Z",
+  "updated_at": "2026-06-19T06:21:07.124Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 27,
-    "totalGoals": 88,
-    "currentLeader": "En juego · 27/104 partidos cerrados"
+    "finishedMatches": 28,
+    "totalGoals": 89,
+    "currentLeader": "En juego · 28/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1100,9 +1100,9 @@
       "away": "South Korea",
       "hCode": "MEX",
       "aCode": "KOR",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 1,
+      "aScore": 0,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1111,9 +1111,16 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 1,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 50,
+          "label": "50'",
+          "team": "MEX",
+          "player": "Luis Romo"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-026",
