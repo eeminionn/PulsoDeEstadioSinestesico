@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-20T00:17:22.372Z",
+  "updated_at": "2026-06-20T05:15:30.426Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 30,
-    "totalGoals": 92,
-    "currentLeader": "En juego · 30/104 partidos cerrados"
+    "finishedMatches": 32,
+    "totalGoals": 96,
+    "currentLeader": "En juego · 32/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1280,10 +1280,10 @@
       "away": "Haiti",
       "hCode": "BRA",
       "aCode": "HAI",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 3,
+      "aScore": 0,
+      "totalGoals": 3,
+      "margin": 3,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1291,9 +1291,28 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 3,
+          "label": "3'",
+          "team": "BRA",
+          "player": "Vinícius Júnior 45+"
+        },
+        {
+          "minute": 23,
+          "label": "23'",
+          "team": "BRA",
+          "player": "Matheus Cunha"
+        },
+        {
+          "minute": 36,
+          "label": "36'",
+          "team": "BRA",
+          "player": "Matheus Cunha"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-030",
@@ -1378,9 +1397,9 @@
       "away": "Paraguay",
       "hCode": "TUR",
       "aCode": "PAR",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 1,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1389,9 +1408,16 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 2,
+          "label": "2'",
+          "team": "PAR",
+          "player": "Matías Galarza"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-033",
