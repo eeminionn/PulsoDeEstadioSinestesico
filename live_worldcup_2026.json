@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-20T18:13:09.704Z",
+  "updated_at": "2026-06-20T20:15:44.762Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 32,
-    "totalGoals": 96,
-    "currentLeader": "En juego · 32/104 partidos cerrados"
+    "finishedMatches": 33,
+    "totalGoals": 102,
+    "currentLeader": "En juego · 33/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1442,7 +1442,7 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
@@ -1456,9 +1456,9 @@
       "away": "Curaçao",
       "hCode": "ECU",
       "aCode": "CUW",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1482,10 +1482,10 @@
       "away": "Sweden",
       "hCode": "NED",
       "aCode": "SWE",
-      "hScore": 3,
-      "aScore": 0,
-      "totalGoals": 3,
-      "margin": 3,
+      "hScore": 5,
+      "aScore": 1,
+      "totalGoals": 6,
+      "margin": 4,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1493,8 +1493,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 5,
@@ -1513,6 +1513,24 @@
           "label": "47'",
           "team": "NED",
           "player": "Kvdi Khakpv"
+        },
+        {
+          "minute": 54,
+          "label": "54'",
+          "team": "NED",
+          "player": "Kvdi Khakpv"
+        },
+        {
+          "minute": 59,
+          "label": "59'",
+          "team": "SWE",
+          "player": "Anthony Elanga"
+        },
+        {
+          "minute": 89,
+          "label": "89'",
+          "team": "NED",
+          "player": "Crysencio Summerville"
         }
       ]
     },
@@ -1527,9 +1545,9 @@
       "away": "Japan",
       "hCode": "TUN",
       "aCode": "JPN",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
