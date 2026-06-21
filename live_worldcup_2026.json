@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-20T20:15:44.762Z",
+  "updated_at": "2026-06-21T00:07:44.213Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 33,
-    "totalGoals": 102,
-    "currentLeader": "En juego · 33/104 partidos cerrados"
+    "finishedMatches": 34,
+    "totalGoals": 105,
+    "currentLeader": "En juego · 34/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1430,6 +1430,51 @@
       "away": "Ivory Coast",
       "hCode": "GER",
       "aCode": "CIV",
+      "hScore": 2,
+      "aScore": 1,
+      "totalGoals": 3,
+      "margin": 1,
+      "extra": 0,
+      "pens": 0,
+      "final": 0,
+      "semi": 0,
+      "ko": 0,
+      "champion": 0,
+      "hostTeam": 0,
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 4,
+          "label": "4'",
+          "team": "GER",
+          "player": "Dniz Avndav 90+"
+        },
+        {
+          "minute": 30,
+          "label": "30'",
+          "team": "CIV",
+          "player": "Franck Kessié"
+        },
+        {
+          "minute": 68,
+          "label": "68'",
+          "team": "GER",
+          "player": "Dniz Avndav"
+        }
+      ]
+    },
+    {
+      "id": "LIVE-2026-034",
+      "sourceId": "34",
+      "date": "2026-06-20 19:00",
+      "stage": "group E",
+      "city": "Kansas City",
+      "country": "United States",
+      "home": "Ecuador",
+      "away": "Curaçao",
+      "hCode": "ECU",
+      "aCode": "CUW",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
@@ -1443,32 +1488,6 @@
       "hostTeam": 0,
       "finished": false,
       "liveState": "live",
-      "goals": []
-    },
-    {
-      "id": "LIVE-2026-034",
-      "sourceId": "34",
-      "date": "2026-06-20 19:00",
-      "stage": "group E",
-      "city": "Kansas City",
-      "country": "United States",
-      "home": "Ecuador",
-      "away": "Curaçao",
-      "hCode": "ECU",
-      "aCode": "CUW",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
-      "extra": 0,
-      "pens": 0,
-      "final": 0,
-      "semi": 0,
-      "ko": 0,
-      "champion": 0,
-      "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
       "goals": []
     },
     {
