@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-21T19:43:20.248Z",
+  "updated_at": "2026-06-21T23:14:19.407Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 36,
-    "totalGoals": 109,
-    "currentLeader": "En juego · 36/104 partidos cerrados"
+    "finishedMatches": 38,
+    "totalGoals": 113,
+    "currentLeader": "En juego · 38/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1615,9 +1615,9 @@
       "away": "Iran",
       "hCode": "BEL",
       "aCode": "IRN",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 0,
+      "totalGoals": 0,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1626,8 +1626,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
+      "finished": true,
+      "liveState": "finished",
       "goals": []
     },
     {
@@ -1641,9 +1641,9 @@
       "away": "Egypt",
       "hCode": "NZL",
       "aCode": "EGY",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1667,10 +1667,10 @@
       "away": "Saudi Arabia",
       "hCode": "ESP",
       "aCode": "KSA",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 4,
+      "aScore": 0,
+      "totalGoals": 4,
+      "margin": 4,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1678,9 +1678,34 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 10,
+          "label": "10'",
+          "team": "ESP",
+          "player": "Lamine Yamal"
+        },
+        {
+          "minute": 21,
+          "label": "21'",
+          "team": "ESP",
+          "player": "Mikel Oyarzabal"
+        },
+        {
+          "minute": 24,
+          "label": "24'",
+          "team": "ESP",
+          "player": "Mikel Oyarzabal"
+        },
+        {
+          "minute": 49,
+          "label": "49'",
+          "team": "ESP",
+          "player": "Hassan Mohamed Altmbkti"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-040",
@@ -1693,9 +1718,9 @@
       "away": "Cape Verde",
       "hCode": "URU",
       "aCode": "CPV",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": 2,
+      "aScore": 1,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1705,8 +1730,27 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 6,
+          "label": "6'",
+          "team": "URU",
+          "player": "Agustín Canobbio 45+"
+        },
+        {
+          "minute": 21,
+          "label": "21'",
+          "team": "CPV",
+          "player": "Kevin Pina"
+        },
+        {
+          "minute": 44,
+          "label": "44'",
+          "team": "URU",
+          "player": "Maximiliano Araújo"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-041",
