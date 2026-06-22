@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-22T19:29:12.829Z",
+  "updated_at": "2026-06-22T22:03:18.537Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -1794,9 +1794,9 @@
       "away": "Iraq",
       "hCode": "FRA",
       "aCode": "IRQ",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 1,
+      "aScore": 0,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1806,8 +1806,15 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 14,
+          "label": "14'",
+          "team": "FRA",
+          "player": "Kylian Mbappé"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-042",
@@ -1820,9 +1827,9 @@
       "away": "Senegal",
       "hCode": "NOR",
       "aCode": "SEN",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1885,9 +1892,9 @@
       "away": "Algeria",
       "hCode": "JOR",
       "aCode": "ALG",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
