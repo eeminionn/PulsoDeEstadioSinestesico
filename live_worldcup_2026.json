@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-22T15:52:48.362Z",
+  "updated_at": "2026-06-22T19:29:12.829Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 40,
-    "totalGoals": 121,
-    "currentLeader": "En juego · 40/104 partidos cerrados"
+    "finishedMatches": 41,
+    "totalGoals": 123,
+    "currentLeader": "En juego · 41/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1846,10 +1846,10 @@
       "away": "Austria",
       "hCode": "ARG",
       "aCode": "AUT",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 2,
+      "aScore": 0,
+      "totalGoals": 2,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1857,9 +1857,22 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 5,
+          "label": "5'",
+          "team": "ARG",
+          "player": "Lionel Messi 90+"
+        },
+        {
+          "minute": 38,
+          "label": "38'",
+          "team": "ARG",
+          "player": "Lionel Messi"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-044",
