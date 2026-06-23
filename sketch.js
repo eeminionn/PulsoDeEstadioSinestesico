@@ -2,7 +2,7 @@
 // Repositorio: https://github.com/eeminionn/PulsoDeEstadioSinestesico
 // Hecho por eeminionn
 
-let Tm, Tg, Tt, Tteams;
+let Tm, Tg, Tt;
 let Tlive;
 let tournaments = [];
 let matches = [];
@@ -61,6 +61,7 @@ const GOLDEN = Math.PI * (3 - Math.sqrt(5));
 const CONCEPT = "La Copa Resonante";
 const GAME_TITLE = "La Copa Resonante";
 const GOALS_TO_WIN = 5;
+const DATA_BASE_URL = "https://raw.githubusercontent.com/eeminionn/PulsoDeEstadioSinestesico/main";
 const LIVE_JSON_REMOTE = "https://raw.githubusercontent.com/eeminionn/PulsoDeEstadioSinestesico/main/live_worldcup_2026.json";
 
 const C = {
@@ -78,10 +79,9 @@ const C = {
 };
 
 function preload() {
-  Tm = loadTable("matches_clean.csv", "csv", "header");
-  Tg = loadTable("goals_clean.csv", "csv", "header");
-  Tt = loadTable("tournaments_clean.csv", "csv", "header");
-  Tteams = loadTable("teams_clean.csv", "csv", "header");
+  Tm = loadTable(`${DATA_BASE_URL}/matches_clean.csv`, "csv", "header");
+  Tg = loadTable(`${DATA_BASE_URL}/goals_clean.csv`, "csv", "header");
+  Tt = loadTable(`${DATA_BASE_URL}/tournaments_clean.csv`, "csv", "header");
   Tlive = {};
 }
 
