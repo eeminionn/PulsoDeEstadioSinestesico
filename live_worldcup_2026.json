@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-23T00:07:07.180Z",
+  "updated_at": "2026-06-23T05:01:50.698Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 41,
-    "totalGoals": 123,
-    "currentLeader": "En juego · 41/104 partidos cerrados"
+    "finishedMatches": 43,
+    "totalGoals": 131,
+    "currentLeader": "En juego · 43/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1794,10 +1794,10 @@
       "away": "Iraq",
       "hCode": "FRA",
       "aCode": "IRQ",
-      "hScore": 1,
+      "hScore": 3,
       "aScore": 0,
-      "totalGoals": 1,
-      "margin": 1,
+      "totalGoals": 3,
+      "margin": 3,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1805,14 +1805,26 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 14,
           "label": "14'",
           "team": "FRA",
           "player": "Kylian Mbappé"
+        },
+        {
+          "minute": 54,
+          "label": "54'",
+          "team": "FRA",
+          "player": "Kylian Mbappé"
+        },
+        {
+          "minute": 66,
+          "label": "66'",
+          "team": "FRA",
+          "player": "Ousmane Dembélé"
         }
       ]
     },
@@ -1827,9 +1839,9 @@
       "away": "Senegal",
       "hCode": "NOR",
       "aCode": "SEN",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": 3,
+      "aScore": 2,
+      "totalGoals": 5,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1838,9 +1850,40 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 3,
+          "label": "3'",
+          "team": "SEN",
+          "player": "Ismaïla Sarr 90+"
+        },
+        {
+          "minute": 43,
+          "label": "43'",
+          "team": "NOR",
+          "player": "Markvs Hlmgrn Pdrsn"
+        },
+        {
+          "minute": 48,
+          "label": "48'",
+          "team": "NOR",
+          "player": "Erling Haaland"
+        },
+        {
+          "minute": 53,
+          "label": "53'",
+          "team": "SEN",
+          "player": "Ismaïla Sarr"
+        },
+        {
+          "minute": 58,
+          "label": "58'",
+          "team": "NOR",
+          "player": "Erling Haaland"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-043",
@@ -1892,9 +1935,9 @@
       "away": "Algeria",
       "hCode": "JOR",
       "aCode": "ALG",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 1,
+      "aScore": 2,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1904,8 +1947,27 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 36,
+          "label": "36'",
+          "team": "JOR",
+          "player": "Al Rashdan"
+        },
+        {
+          "minute": 69,
+          "label": "69'",
+          "team": "ALG",
+          "player": "Nzir Bnbvali"
+        },
+        {
+          "minute": 82,
+          "label": "82'",
+          "team": "ALG",
+          "player": "Amine Gouiri"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-045",
