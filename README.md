@@ -1,105 +1,87 @@
-# PulsoDeEstadioSinestesico
+# La Copa Resonante
 
-Pieza interactiva en **p5.js** para **Sinestesia Digital: Ver el Sonido**, construida a partir del concepto de un **pulso de estadio sinestésico**, donde los datos del Mundial se transforman en una visualización viva impulsada por el micrófono.
+Pieza interactiva en **p5.js** para **Sinestesia Digital: Ver el Sonido**, creada por **eeminionn**. El proyecto transforma el estadio y la memoria de los Mundiales en un instrumento audiovisual que se juega con la voz.
 
-El proyecto convierte partidos de la FIFA World Cup en entidades reactivas: cada partido aparece como una órbita sobre la cancha y sus aureolas ya no responden a una línea de tiempo. Ahora, los **goles pares reaccionan a los graves** y los **goles impares reaccionan a los agudos**, usando el sonido en vivo como motor visual.
+La experiencia deja el análisis de datos en segundo plano: los partidos históricos ya no son el contenido que el usuario debe estudiar, sino las memorias que despierta al jugar. El objetivo es completar una secuencia sonora y marcar cinco goles para levantar la Copa del Mundial seleccionado.
 
 ## Concepto
 
-**Pulso de estadio sinestésico** explora la tensión colectiva del fútbol como si el estadio fuera un organismo. El sistema visual trata los partidos como cuerpos, los goles como capas de memoria y el sonido como la fuerza que los activa.
+**La Copa Resonante** imagina el estadio como un organismo colectivo. La tribuna respira, la pelota escucha y cada frecuencia cumple un rol dentro de un ataque de fútbol:
 
-- **Graves**: despiertan aureolas ligadas a goles pares.
-- **Agudos**: despiertan aureolas ligadas a goles impares.
-- **Medios**: alteran la deriva, el movimiento orbital y la inestabilidad visual.
-- **Volumen**: amplifica la presión general de la escena.
+- **Graves — cargar:** una voz baja, un golpe o un bombo acumulan presión, expanden aureolas de goles pares y hacen vibrar la tribuna.
+- **Medios — construir:** hablar, cantar o tararear conduce la pelota, acelera las órbitas y dibuja la trayectoria de la jugada.
+- **Agudos — rematar:** un aplauso, silbido o sonido agudo dispara la pelota, activa los goles impares y provoca la celebración.
+- **Volumen — atmósfera:** la intensidad general abre las luces, modifica el campo y aumenta la presencia de todos los organismos visuales.
 
-## Características
+La secuencia **graves → medios → agudos** representa la estructura emocional de un gol: expectativa, construcción y liberación.
 
-- Entrada en vivo por micrófono con sensibilidad ajustable.
-- Análisis FFT para **graves**, **medios** y **agudos**.
-- Clase principal reactiva con múltiples instancias y variaciones de comportamiento.
-- Controles en tiempo real para sensibilidad, umbrales, escala de aureolas, velocidad y flujo de color.
-- Activación y desactivación de bandas sonoras con checkboxes.
-- Leyenda visible u oculta con la tecla `L`.
-- Ejecución apta para fullscreen en contexto de entrega o exhibición.
-- Estructura basada en datasets históricos del Mundial.
+## Objetivos
 
-## Controles
+1. Convertir el audio en una mecánica comprensible y no solamente en un efecto decorativo.
+2. Dar al usuario una meta clara: completar cinco ataques sonoros y conquistar la Copa.
+3. Mantener el vínculo con los Mundiales mediante años, sedes, campeones, partidos y goleadores reales.
+4. Diferenciar visualmente cada rango de frecuencia por color, forma, movimiento y función.
+5. Mantener la pieza atractiva en estado pasivo mediante la respiración del campo, las órbitas y la tribuna luminosa.
+
+## Sistema visual
+
+Cada partido del Mundial seleccionado es una instancia de la clase `MatchOrb`. Las instancias varían según etapa, cantidad de goles, presencia del campeón y condición de anfitrión. Todas reaccionan al análisis FFT, pero sus aureolas se comportan de manera diferente según la paridad de sus goles.
+
+La clase `ResonantCupGame` interpreta esas frecuencias como estados del juego. Al marcar, selecciona una memoria real del dataset, ilumina su partido y muestra marcador, goleador, minuto y fase. Así, los datos funcionan como archivo afectivo del Mundial y no como dashboard.
+
+## Interacción
 
 | Input | Acción |
 | --- | --- |
+| Sonido grave | Cargar la energía de la tribuna |
+| Sonido medio | Construir la jugada y conducir la pelota |
+| Sonido agudo | Rematar y marcar |
+| Movimiento del mouse | Apuntar el remate |
+| Click / drag | Explorar y orbitar las memorias |
+| Rueda del mouse | Acercar o alejar el estadio |
+| `1 / 2 / 3` | Probar graves, medios y agudos sin micrófono |
 | `L` | Mostrar u ocultar la leyenda |
 | `F` | Activar o desactivar fullscreen |
-| `A / Z` | Aumentar o disminuir la velocidad |
-| `Left / Right` | Cambiar de Mundial |
-| Drag con mouse | Orbitar la cancha |
-| Rueda del mouse | Zoom |
-| Click sobre una órbita | Fijar información del partido |
-| Sliders | Ajustar sensibilidad, umbrales, escala, velocidad y color |
-| Checkboxes | Activar o desactivar graves, medios y agudos |
+| `R` | Empezar una Copa nueva |
+| `A / Z` | Aumentar o disminuir el ritmo |
+| Flechas | Cambiar de Mundial |
 
-## Archivos
+Los sliders permiten ajustar sensibilidad del micrófono, umbrales independientes para graves, medios y agudos, respuesta visual, ritmo de juego y mezcla de color. Los checkboxes permiten aislar cada banda.
+
+## Archivos principales
 
 | Archivo | Función |
 | --- | --- |
-| `index.html` | Punto de entrada |
-| `style.css` | Estilos base de interfaz |
-| `sketch.js` | Lógica principal de visualización y reacción al audio |
-| `matches_clean.csv` | Dataset de partidos |
-| `goals_clean.csv` | Dataset de goles |
-| `teams_clean.csv` | Metadatos de equipos |
-| `tournaments_clean.csv` | Metadatos de torneos |
+| `index.html` | Punto de entrada y librerías de p5 |
+| `style.css` | Sistema visual y acabado de la interfaz |
+| `sketch.js` | Juego, clases, visualización y análisis sonoro |
+| `matches_clean.csv` | Archivo histórico de partidos |
+| `goals_clean.csv` | Archivo histórico de goles |
+| `tournaments_clean.csv` | Sedes, campeones y datos de torneos |
+| `live_worldcup_2026.json` | Estado actualizado del Mundial 2026 |
 
 ## Ejecución local
 
-Como la pieza usa micrófono, conviene abrirla desde un servidor local y no directamente desde el sistema de archivos.
+Como la pieza usa micrófono, debe abrirse desde un servidor local:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Luego abre:
+Luego abre `http://localhost:8000`, acepta el permiso del micrófono y presiona **Entrar al estadio**.
 
-```text
-http://localhost:8000
-```
+## Mundial 2026 en vivo
 
-Acepta el permiso del micrófono en el navegador y activa el botón de audio desde la interfaz.
-
-## Actualización del Mundial 2026
-
-El proyecto incluye un archivo local llamado `live_worldcup_2026.json` para incorporar el Mundial 2026 que se está jugando actualmente.
-
-Ese archivo se puede regenerar con:
+El archivo `live_worldcup_2026.json` se regenera con:
 
 ```bash
 node scripts/updateLiveWorldCup2026.mjs
 ```
 
-El script descarga partidos, equipos y estadios, normaliza los resultados y deja el JSON listo para que `sketch.js` lo lea junto con los CSV históricos.
-
-Además, el repositorio incluye un workflow de **GitHub Actions** que actualiza ese JSON automáticamente cada hora y hace commit solo si detecta cambios.
-
-Archivo del workflow:
-
-```text
-.github/workflows/update-live-worldcup-2026.yml
-```
-
-En la versión pensada para el editor web de p5, `sketch.js` intenta leer primero el JSON remoto publicado en GitHub:
+El workflow `.github/workflows/update-live-worldcup-2026.yml` ejecuta esa actualización cada hora y hace commit solo cuando encuentra cambios. En el editor web de p5, `sketch.js` intenta leer primero:
 
 ```text
 https://raw.githubusercontent.com/eeminionn/PulsoDeEstadioSinestesico/main/live_worldcup_2026.json
 ```
 
-Si esa URL falla, usa el archivo local como respaldo.
-
-Si estás trabajando dentro del editor web de p5, el flujo recomendado es:
-
-1. Dejar activo el workflow en GitHub.
-2. Mantener `sketch.js` apuntando al JSON remoto.
-3. Abrir o recargar el sketch en p5 para leer la versión más reciente.
-
-## Contexto
-
-Esta pieza nace de una visualización previa de datos de mundiales y fue adaptada hacia una entrega final centrada en la idea de **ver el sonido** por medio de color, forma y movimiento. El resultado mantiene el archivo futbolero como materia prima, pero lo desplaza hacia una experiencia performática y sinestésica en tiempo real.
+Si la URL remota falla, usa el JSON local como respaldo. Solo se incorporan partidos que ya tienen un resultado confirmado.
