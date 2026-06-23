@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-23T17:56:43.752Z",
+  "updated_at": "2026-06-23T20:11:38.642Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 44,
-    "totalGoals": 134,
-    "currentLeader": "En juego · 44/104 partidos cerrados"
+    "finishedMatches": 45,
+    "totalGoals": 139,
+    "currentLeader": "En juego · 45/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1980,10 +1980,10 @@
       "away": "Uzbekistan",
       "hCode": "POR",
       "aCode": "UZB",
-      "hScore": 3,
+      "hScore": 5,
       "aScore": 0,
-      "totalGoals": 3,
-      "margin": 3,
+      "totalGoals": 5,
+      "margin": 5,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1991,8 +1991,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 6,
@@ -2011,6 +2011,18 @@
           "label": "39'",
           "team": "POR",
           "player": "Cristiano Ronaldo"
+        },
+        {
+          "minute": 60,
+          "label": "60'",
+          "team": "POR",
+          "player": "Abdalvhid Namtvf"
+        },
+        {
+          "minute": 87,
+          "label": "87'",
+          "team": "POR",
+          "player": "Rafael Leão"
         }
       ]
     },
@@ -2077,9 +2089,9 @@
       "away": "Ghana",
       "hCode": "ENG",
       "aCode": "GHA",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 0,
+      "totalGoals": 0,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2089,7 +2101,7 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
