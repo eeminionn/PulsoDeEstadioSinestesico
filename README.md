@@ -2,11 +2,11 @@
 
 Juego audiovisual en **p5.js** creado por **eeminionn** para **Sinestesia Digital: Ver el Sonido**.
 
-La pieza presenta un único balón mundialista monumental que está vivo: respira, rebota, gira y cambia su anatomía según las frecuencias captadas por el micrófono. Ya no funciona como análisis o visualización de datos; el sonido es directamente el control del juego.
+La pieza presenta un único balón mundialista monumental que comienza con una geometría clásica y se deforma progresivamente con el sonido y los toques. Ya no funciona como análisis o visualización de datos; el sonido es directamente el control del juego.
 
 ## Concepto
 
-**Mundial Infinito** convierte el balón clásico blanco y negro en un organismo sonoro. El usuario debe mantenerlo en el aire alternando dos tipos de toque:
+**Mundial Infinito** convierte el balón clásico blanco y negro en un organismo sonoro. El usuario debe mantenerlo en el aire alternando dos tipos de toque. Cada toque conserva parte de su deformación hasta romper la geometría original:
 
 - **Graves:** deforman y expanden los paneles negros. Funcionan como un golpe pesado que eleva el balón.
 - **Agudos:** estiran e iluminan los paneles blancos. Funcionan como la devolución rápida del toque.
@@ -17,14 +17,14 @@ La alternancia entre negro y blanco representa el ritmo de una pelota que pasa d
 
 ## Objetivo del juego
 
-El jugador dispone de **45 segundos** para completar **11 toques alternados**, uno por cada jugador de una selección. Al completar el equipo aparece la Copa y el estadio entra en celebración.
+El jugador dispone de **45 segundos** para completar **4 toques alternados**. El cuarto toque produce el gol, transforma por completo el balón y activa la celebración del estadio.
 
 La experiencia está relacionada con los Mundiales mediante:
 
 - El balón clásico como protagonista absoluto.
-- La estructura de once jugadores.
+- La secuencia de cuatro toques como construcción de una jugada.
 - El reloj de partido y las rachas de toques.
-- La Copa como estado final.
+- El gol como estado final y liberación de la tensión.
 - Atmósferas inspiradas en México 70, Italia 90, Brasil 2014 y Norteamérica 2026.
 - El estadio, la hinchada, los focos y el lenguaje gráfico de transmisión deportiva.
 

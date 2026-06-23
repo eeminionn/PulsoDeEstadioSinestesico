@@ -26,7 +26,7 @@ let audioState = {
 };
 
 const GAME_TITLE = "Mundial Infinito";
-const TARGET_TOUCHES = 11;
+const TARGET_TOUCHES = 4;
 const MATCH_SECONDS = 45;
 
 const C = {
@@ -175,7 +175,7 @@ class InfiniteWorldCupGame {
         this.combo = 0;
       }
 
-      if (frameCount - this.lastHitFrame > 12) {
+      if (frameCount - this.lastHitFrame > 7) {
         if (this.expected === "bass" && bassRise) this.correctTouch("bass");
         else if (this.expected === "treble" && trebleRise) this.correctTouch("treble");
         else if (this.expected === "bass" && trebleRise) this.wrongTouch("bass");
@@ -230,14 +230,14 @@ class InfiniteWorldCupGame {
 
   win() {
     this.state = "won";
-    this.message = "Once toques. Tu sonido completo la seleccion";
+    this.message = "Cuatro toques. La geometria se rompe y nace el gol";
     this.flash = 1;
     launchChampionship();
     sonicWaves.push(new SonicWave(C.gold, 1.8));
   }
 
   expectedLabel() {
-    if (this.state === "won") return "COPA CONQUISTADA";
+    if (this.state === "won") return "GOL SONORO";
     if (this.state === "lost") return "FIN DEL PARTIDO";
     return this.expected === "bass" ? "PANEL NEGRO · GRAVE" : "PANEL BLANCO · AGUDO";
   }
@@ -257,15 +257,19 @@ class BallPanel {
 
   update(audio) {
     const target = this.kind === "black" ? audio.bass : audio.treble;
-    this.energy = lerp(this.energy, target, this.kind === "black" ? 0.16 : 0.23);
+    this.energy = lerp(this.energy, target, this.kind === "black" ? 0.68 : 0.76);
   }
 
   position(cx, cy, radius) {
+    const mutation = game ? game.touches / TARGET_TOUCHES : 0;
     const a = this.angle + rotation * (0.8 + this.distance * 0.35);
-    const squash = 0.88 + cos(a + tilt) * 0.06;
-    const push = this.kind === "black" ? this.energy * radius * 0.045 : 0;
-    this.x = cx + cos(a) * (this.distance * radius + push);
-    this.y = cy + sin(a) * this.distance * radius * squash;
+    const squash = 0.92 + cos(a + tilt) * 0.035;
+    const audioPush = this.kind === "black" ? this.energy * radius * 0.065 : this.energy * radius * 0.025;
+    const touchPush = sin(this.phase * 2.7 + game.touches * 1.3) * mutation * radius * 0.075;
+    const tangentPush = cos(this.phase * 1.9 + game.touches) * mutation * radius * 0.04;
+    const radialDistance = this.distance * radius + audioPush + touchPush;
+    this.x = cx + cos(a) * radialDistance + cos(a + HALF_PI) * tangentPush;
+    this.y = cy + sin(a) * radialDistance * squash + sin(a + HALF_PI) * tangentPush;
     return { x: this.x, y: this.y };
   }
 
@@ -274,9 +278,10 @@ class BallPanel {
     const p = this.position(cx, cy, radius);
     const sides = this.kind === "black" ? 5 : 6;
     const baseSize = radius * this.size;
+    const mutation = game.touches / TARGET_TOUCHES;
     const scalePulse = this.kind === "black"
-      ? 1 + this.energy * 0.46 * params.deformation
-      : 1 + this.energy * 0.2 * params.deformation;
+      ? 1 + this.energy * 0.62 * params.deformation + mutation * 0.08
+      : 1 + this.energy * 0.38 * params.deformation + mutation * 0.05;
 
     push();
     translate(p.x, p.y);
@@ -301,10 +306,11 @@ class BallPanel {
       const a = -HALF_PI + i * TWO_PI / sides;
       let pointScale = scalePulse;
       if (this.kind === "white") {
-        pointScale += max(0, sin(frameCount * 0.08 + i * 2.1 + this.phase)) * this.energy * 0.48 * params.deformation;
+        pointScale += max(0, sin(frameCount * 0.11 + i * 2.1 + this.phase)) * this.energy * 0.58 * params.deformation;
       } else {
-        pointScale += sin(frameCount * 0.045 + i + this.phase) * this.energy * 0.08;
+        pointScale += sin(frameCount * 0.075 + i + this.phase) * this.energy * 0.14;
       }
+      pointScale += sin(i * 1.73 + this.phase * 2.2 + game.touches * 0.9) * mutation * 0.16 * params.deformation;
       vertex(cos(a) * baseSize * pointScale, sin(a) * baseSize * pointScale);
     }
     endShape(CLOSE);
@@ -378,19 +384,23 @@ class SonicWave {
 
 function makeBallPanels() {
   ballPanels = [];
-  ballPanels.push(new BallPanel("black", 0, 0, 0.17, 0));
-
-  for (let i = 0; i < 5; i++) {
-    const a = -HALF_PI + i * TWO_PI / 5;
-    ballPanels.push(new BallPanel("black", a, 0.48, 0.13, a + 0.25));
-  }
 
   for (let i = 0; i < 10; i++) {
     const a = -HALF_PI + PI / 10 + i * TWO_PI / 10;
-    const distance = i % 2 === 0 ? 0.3 : 0.7;
-    const size = i % 2 === 0 ? 0.13 : 0.105;
-    ballPanels.push(new BallPanel("white", a, distance, size, a));
+    ballPanels.push(new BallPanel("white", a, 0.79, 0.11, a));
   }
+
+  for (let i = 0; i < 5; i++) {
+    const a = -HALF_PI + PI / 5 + i * TWO_PI / 5;
+    ballPanels.push(new BallPanel("white", a, 0.32, 0.19, a + PI / 6));
+  }
+
+  for (let i = 0; i < 5; i++) {
+    const a = -HALF_PI + i * TWO_PI / 5;
+    ballPanels.push(new BallPanel("black", a, 0.61, 0.145, a + 0.25));
+  }
+
+  ballPanels.push(new BallPanel("black", 0, 0, 0.18, 0));
 }
 
 function updateMotion() {
@@ -483,6 +493,7 @@ function drawLivingBall() {
   const cy = ballY();
   const radius = ballRadius();
   const skin = WORLD_SKINS[skinIndex];
+  const mutation = game.touches / TARGET_TOUCHES;
 
   noStroke();
   fill(0, 0, 0, 95);
@@ -505,11 +516,12 @@ function drawLivingBall() {
   const vertices = 120;
   for (let i = 0; i < vertices; i++) {
     const a = i * TWO_PI / vertices;
-    const lowWave = sin(a * 5 + frameCount * 0.025) * audioState.bass * 0.1;
-    const highWave = max(0, sin(a * 14 - frameCount * 0.07)) * audioState.treble * 0.09;
-    const midWave = sin(a * 3 + rotation * 2) * audioState.mid * 0.035;
-    const idleBreath = sin(frameCount * 0.018 + a * 2) * 0.008;
-    const deform = (lowWave + highWave + midWave) * params.deformation + idleBreath;
+    const lowWave = sin(a * 5 + frameCount * 0.04) * audioState.bass * 0.145;
+    const highWave = max(0, sin(a * 14 - frameCount * 0.11)) * audioState.treble * 0.135;
+    const midWave = sin(a * 3 + rotation * 2) * audioState.mid * 0.055;
+    const touchWave = mutation * (sin(a * (3 + game.touches) + 0.8) * 0.05 + sin(a * 7 - game.touches) * 0.025);
+    const idleBreath = sin(frameCount * 0.018 + a * 2) * 0.003;
+    const deform = (lowWave + highWave + midWave + touchWave) * params.deformation + idleBreath;
     const r = radius * (1 + deform);
     vertex(cx + cos(a) * r, cy + sin(a) * r);
   }
@@ -524,35 +536,45 @@ function drawLivingBall() {
   strokeWeight(2 + game.flash * 3);
   circle(cx, cy, radius * 2.02);
 
-  if (game.state === "won") drawCupMark(cx, cy, radius * 0.68);
+  if (game.state === "won") drawGoalMark(cx, cy, radius * 0.68);
 }
 
 function drawSeams(cx, cy, radius) {
-  stroke(C.ink[0], C.ink[1], C.ink[2], 65 + audioState.mid * 95);
-  strokeWeight(1 + audioState.mid * 1.2);
+  const mutation = game.touches / TARGET_TOUCHES;
+  stroke(C.ink[0], C.ink[1], C.ink[2], 78 + audioState.mid * 110);
+  strokeWeight(1 + audioState.mid * 1.5);
   noFill();
 
-  for (let i = 1; i < ballPanels.length; i++) {
-    const panel = ballPanels[i];
-    const p = panel.position(cx, cy, radius);
-    const bend = audioState.mid * radius * 0.12;
-    bezier(cx, cy, cx + sin(panel.angle) * bend, cy - cos(panel.angle) * bend, p.x * 0.82 + cx * 0.18, p.y * 0.82 + cy * 0.18, p.x, p.y);
+  const positions = ballPanels.map(panel => panel.position(cx, cy, radius));
+  const connectionDistance = radius * (0.43 + mutation * 0.06);
+  for (let i = 0; i < positions.length; i++) {
+    for (let j = i + 1; j < positions.length; j++) {
+      const a = positions[i];
+      const b = positions[j];
+      if (dist(a.x, a.y, b.x, b.y) > connectionDistance) continue;
+      const bend = (audioState.mid * 0.12 + mutation * 0.045) * radius;
+      const mx = (a.x + b.x) * 0.5 + sin(i * 2.1 + j + rotation) * bend;
+      const my = (a.y + b.y) * 0.5 + cos(i + j * 1.7 + rotation) * bend;
+      bezier(a.x, a.y, mx, my, mx, my, b.x, b.y);
+    }
   }
 }
 
-function drawCupMark(x, y, size) {
+function drawGoalMark(x, y, size) {
   push();
   translate(x, y);
   noStroke();
-  fill(C.gold[0], C.gold[1], C.gold[2], 225);
-  arc(0, -size * 0.08, size * 0.5, size * 0.54, 0, PI, CHORD);
-  rect(-size * 0.07, size * 0.1, size * 0.14, size * 0.25, size * 0.03);
-  rect(-size * 0.22, size * 0.31, size * 0.44, size * 0.09, size * 0.02);
-  noFill();
-  stroke(C.gold[0], C.gold[1], C.gold[2], 220);
-  strokeWeight(size * 0.04);
-  arc(-size * 0.25, -size * 0.03, size * 0.27, size * 0.28, HALF_PI, PI + HALF_PI);
-  arc(size * 0.25, -size * 0.03, size * 0.27, size * 0.28, -HALF_PI, HALF_PI);
+  fill(C.ink[0], C.ink[1], C.ink[2], 185);
+  circle(0, 0, size * 1.05);
+  fill(C.gold[0], C.gold[1], C.gold[2]);
+  textAlign(CENTER, CENTER);
+  textFont("Bodoni Moda");
+  textStyle(BOLD);
+  textSize(size * 0.3);
+  text("GOL", 0, -size * 0.01);
+  textFont("Space Mono");
+  textSize(size * 0.065);
+  text("CUATRO TOQUES", 0, size * 0.19);
   pop();
 }
 
@@ -638,7 +660,7 @@ function drawLegend() {
   textFont("DM Sans");
   textStyle(NORMAL);
   textSize(12);
-  text("Un balon mundialista vivo que solo permanece en el aire cuando\nel jugador alterna frecuencias. Once toques forman una seleccion.", x + 22, y + 80);
+  text("El balon comienza como una geometria clasica. Cada frecuencia\ny cada toque lo deforman hasta romper su forma en el gol.", x + 22, y + 80);
   textFont("Space Mono");
   textStyle(BOLD);
   textSize(10);
@@ -657,7 +679,7 @@ function makeUI() {
   ui.panel.position(22, 22);
   stylePanel(ui.panel, 326);
 
-  const kicker = createDiv("JUEGO SONORO · 11 TOQUES").parent(ui.panel);
+  const kicker = createDiv("JUEGO SONORO · 4 TOQUES = GOL").parent(ui.panel);
   styleKicker(kicker);
 
   const title = createElement("h1", GAME_TITLE).parent(ui.panel);
@@ -670,7 +692,7 @@ function makeUI() {
     color: "rgb(246,240,218)"
   });
 
-  const lead = createP("Mantén un balón monumental en el aire alternando graves y agudos. Los medios encienden la hinchada. Completa once toques y forma tu selección.").parent(ui.panel);
+  const lead = createP("El balón comienza perfecto y cada toque rompe su geometría. Alterna graves y agudos cuatro veces para marcar el gol.").parent(ui.panel);
   styleMany(lead, {
     margin: "0 0 14px",
     "font-size": "12px",
@@ -880,14 +902,14 @@ function drawInfo() {
   const expectedTone = game.expected === "bass" ? C.bass : C.treble;
   const touchPct = game.touches / TARGET_TOUCHES * 100;
   const timeText = nf(ceil(game.timeLeft), 2);
-  const stateTitle = game.state === "won" ? "CAMPEON" : game.state === "lost" ? "TIEMPO" : game.state === "ready" ? "EN ESPERA" : "EN JUEGO";
+  const stateTitle = game.state === "won" ? "GOL" : game.state === "lost" ? "TIEMPO" : game.state === "ready" ? "EN ESPERA" : "EN JUEGO";
 
   ui.info.html(`
     <div style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.14em;color:rgba(246,240,218,.5);">PARTIDO SONORO · ${stateTitle}</div>
     <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:12px;">
       <div>
         <div style="font-family:'Bodoni Moda',Georgia,serif;font-size:52px;font-weight:900;line-height:.82;color:rgb(246,240,218);">${game.touches}<span style="font-size:19px;color:rgba(246,240,218,.38);">/${TARGET_TOUCHES}</span></div>
-        <div style="margin-top:8px;font-family:'Space Mono',monospace;font-size:9px;color:rgba(246,240,218,.52);">TOQUES · 11 JUGADORES</div>
+        <div style="margin-top:8px;font-family:'Space Mono',monospace;font-size:9px;color:rgba(246,240,218,.52);">TOQUES · 4 = GOL</div>
       </div>
       <div style="text-align:right;">
         <div style="font-family:'Bodoni Moda',Georgia,serif;font-size:36px;font-weight:900;color:rgb(246,240,218);">0:${timeText}</div>
@@ -937,7 +959,7 @@ async function startMic() {
     await userStartAudio();
     mic = new p5.AudioIn();
     await mic.start();
-    fft = new p5.FFT(0.78, 1024);
+    fft = new p5.FFT(0.32, 1024);
     fft.setInput(mic);
     micReady = true;
     audioDenied = false;
@@ -951,9 +973,9 @@ async function startMic() {
 }
 
 function updateAudioState() {
-  simulatedBand.bass *= 0.84;
-  simulatedBand.mid *= 0.84;
-  simulatedBand.treble *= 0.84;
+  simulatedBand.bass *= 0.72;
+  simulatedBand.mid *= 0.72;
+  simulatedBand.treble *= 0.72;
 
   const hasMic = micReady && mic && fft;
   let level = max(simulatedBand.bass, simulatedBand.mid, simulatedBand.treble) * 0.16;
@@ -974,10 +996,10 @@ function updateAudioState() {
   mid = params.midEnabled ? constrain(mid, 0, 1) : 0;
   treble = params.trebleEnabled ? constrain(treble, 0, 1) : 0;
 
-  audioState.level = lerp(audioState.level, constrain(level * params.micAmp * 7, 0, 1.5), 0.18);
-  audioState.bass = lerp(audioState.bass, bass, 0.22);
-  audioState.mid = lerp(audioState.mid, mid, 0.2);
-  audioState.treble = lerp(audioState.treble, treble, 0.24);
+  audioState.level = lerp(audioState.level, constrain(level * params.micAmp * 7, 0, 1.5), 0.52);
+  audioState.bass = lerp(audioState.bass, bass, 0.58);
+  audioState.mid = lerp(audioState.mid, mid, 0.52);
+  audioState.treble = lerp(audioState.treble, treble, 0.64);
 
   if (audioState.bass > params.bassGate && audioState.treble > params.trebleGate) audioState.zone = "mixto";
   else if (audioState.bass > params.bassGate) audioState.zone = "grave";
