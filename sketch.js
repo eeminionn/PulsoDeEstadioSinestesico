@@ -1,6 +1,6 @@
 // Sinestesia Digital · Ver el sonido
 // Repositorio: https://github.com/eeminionn/PulsoDeEstadioSinestesico
-// by @eeminionn 
+// Hecho por eeminionn
 
 let Tm, Tg, Tt, Tteams;
 let Tlive;
@@ -29,7 +29,12 @@ let targetZoom = 1;
 
 let grass = [];
 let ui = {};
-let legendVisible = true;
+let legendVisible = false;
+let demoMode = false;
+let soundGame = null;
+let celebrationParticles = [];
+let sonicWaves = [];
+let simulatedBand = { bass: 0, mid: 0, treble: 0 };
 
 let mic = null;
 let fft = null;
@@ -53,7 +58,9 @@ let liveStatus = {
 
 const MAX_MIN = 130;
 const GOLDEN = Math.PI * (3 - Math.sqrt(5));
-const CONCEPT = "Pulso de estadio sinestesico";
+const CONCEPT = "La Copa Resonante";
+const GAME_TITLE = "La Copa Resonante";
+const GOALS_TO_WIN = 5;
 const LIVE_JSON_REMOTE = "https://raw.githubusercontent.com/eeminionn/PulsoDeEstadioSinestesico/main/live_worldcup_2026.json";
 
 const C = {
@@ -81,21 +88,25 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   pixelDensity(min(2, displayDensity()));
-  textFont("Georgia");
+  textFont("DM Sans");
   parseCSV();
   makeTexture();
   makeUI();
   setYear(years.length - 1);
+  soundGame = new ResonantCupGame();
   loadRemoteLiveData();
 }
 
 function draw() {
   readControls();
   updateAudioState();
+  if (soundGame) soundGame.update(audioState);
   updateCamera();
   drawField();
   drawAtmosphere();
   drawMap();
+  drawGameCore();
+  drawCelebration();
   drawGuideGrid();
   drawLegend();
   drawInfo();
@@ -256,6 +267,7 @@ function loadRemoteLiveData() {
 
 function replaceLiveWorldCupData(liveData) {
   const liveYear = Number((liveData && liveData.year) || 2026);
+  const selectedWasLatest = years.length > 0 && selectedYear === max(years);
 
   matches = matches.filter(match => !(match.year === liveYear && String(match.id).startsWith("LIVE-2026-")));
   goals = goals.filter(goal => !(goal.year === liveYear && String(goal.matchId).startsWith("LIVE-2026-")));
@@ -270,7 +282,8 @@ function replaceLiveWorldCupData(liveData) {
   years = [...new Set(tournaments.map(t => t.year))].sort((a, b) => a - b);
   refreshYearSlider();
 
-  const idx = years.indexOf(selectedYear);
+  const preferredYear = selectedWasLatest && years.includes(liveYear) ? liveYear : selectedYear;
+  const idx = years.indexOf(preferredYear);
   if (idx >= 0) setYear(idx);
   else setYear(years.length - 1);
 }
@@ -299,6 +312,8 @@ function setYear(i) {
 
   const selected = matches.filter(m => m.year === selectedYear);
   matchOrbs = selected.map((m, idx) => new MatchOrb(m, goalsByMatch.get(m.id) || [], idx, selected.length));
+
+  if (soundGame) soundGame.changeWorldCup();
 
   if (ui.yearSlider) ui.yearSlider.value(yearIndex);
   updateLabels();
@@ -331,6 +346,8 @@ class MatchOrb {
     this.glowEven = 0;
     this.glowOdd = 0;
     this.presence = 0;
+    this.memoryGlow = 0;
+    this.memoryLabel = "";
 
     const radius = map(this.power, 0, 1, min(width, height) * 0.34, min(width, height) * 0.08);
     const angle = index * GOLDEN + selectedYear * 0.024;
@@ -346,15 +363,21 @@ class MatchOrb {
     const trebleGain = this.oddGoals.length / max(1, this.gs.length);
     const activeBass = max(0, audio.bass - params.bassGate) * params.micAmp * 2.6;
     const activeTreble = max(0, audio.treble - params.trebleGate) * params.micAmp * 2.8;
-    const midDrift = audio.mid * params.speed * (0.4 + this.power * 0.9);
+    const midDrift = max(0, audio.mid - params.midGate) * params.speed * (1.2 + this.power * 1.8);
 
     this.glowEven = lerp(this.glowEven, constrain(activeBass * bassGain, 0, 2.2), 0.16);
     this.glowOdd = lerp(this.glowOdd, constrain(activeTreble * trebleGain, 0, 2.2), 0.18);
     this.presence = lerp(this.presence, constrain(audio.level * 2.4 + this.glowEven + this.glowOdd, 0, 3), 0.12);
+    this.memoryGlow *= 0.975;
 
     this.x = this.baseX + (noise(this.seed, frameCount * 0.006 * params.speed) - 0.5) * 26 * (1 + midDrift);
     this.y = this.baseY + (noise(this.seed + 13, frameCount * 0.006 * params.speed) - 0.5) * 26 * (1 + midDrift * 0.8);
-    this.spin += 0.006 + midDrift * 0.01 + this.glowOdd * 0.015;
+    this.spin += 0.006 + midDrift * 0.055 + this.glowOdd * 0.02;
+  }
+
+  ignite(labelText) {
+    this.memoryGlow = 1;
+    this.memoryLabel = labelText || "Memoria del Mundial";
   }
 
   draw() {
@@ -364,9 +387,22 @@ class MatchOrb {
     this.drawShadow(size);
     this.drawBassHalos(size);
     this.drawTrebleHalos(size);
+    this.drawMemoryBeacon(size);
     this.drawCore(size, active);
 
     if (active) this.drawTag(size);
+  }
+
+  drawMemoryBeacon(size) {
+    if (this.memoryGlow < 0.01) return;
+
+    const glow = easeOutCubic(this.memoryGlow);
+    noFill();
+    stroke(C.core[0], C.core[1], C.core[2], 90 * glow);
+    strokeWeight((1 + glow * 2) / zoom);
+    circle(this.x, this.y, size * (2.4 + (1 - this.memoryGlow) * 4));
+    stroke(C.bass[0], C.bass[1], C.bass[2], 150 * glow);
+    line(this.x, this.y - size, this.x, this.y - size * (2.6 + glow * 2));
   }
 
   drawShadow(size) {
@@ -486,7 +522,7 @@ class MatchOrb {
     noStroke();
     fill(C.line[0], C.line[1], C.line[2], 240);
     textAlign(CENTER);
-    textFont("monospace");
+    textFont("Space Mono");
     textSize(10 / zoom);
     textStyle(BOLD);
     text(`${this.m.hCode} ${this.m.hScore}-${this.m.aScore} ${this.m.aCode}`, this.x, this.y - size * 0.9);
@@ -502,9 +538,205 @@ class MatchOrb {
   }
 }
 
+class ResonantCupGame {
+  constructor() {
+    this.score = 0;
+    this.streak = 0;
+    this.phase = "carga";
+    this.bassCharge = 0;
+    this.midCharge = 0;
+    this.goalFlash = 0;
+    this.shotT = 0;
+    this.celebrateFrames = 0;
+    this.readyAt = 0;
+    this.previousTreble = 0;
+    this.lastMemory = null;
+    this.feedback = "Haz vibrar la tribuna con un sonido grave";
+  }
+
+  update(audio) {
+    this.goalFlash *= 0.92;
+
+    if (this.celebrateFrames > 0) {
+      this.celebrateFrames--;
+      this.shotT = min(1, this.shotT + 0.065);
+      if (this.celebrateFrames === 0 && this.phase === "gol") this.resetRound();
+      this.previousTreble = audio.treble;
+      return;
+    }
+
+    if (this.phase === "campeon") {
+      this.previousTreble = audio.treble;
+      return;
+    }
+
+    const bassSignal = normalizedBand(audio.bass, params.bassGate, 0.48);
+    const midSignal = normalizedBand(audio.mid, params.midGate, 0.42);
+    const trebleSignal = normalizedBand(audio.treble, params.trebleGate, 0.5);
+
+    if (this.phase === "carga") {
+      this.bassCharge = constrain(this.bassCharge + bassSignal * 0.018 * params.speed, 0, 1);
+      this.feedback = bassSignal > 0.04
+        ? "La tribuna esta cargando el pulso"
+        : "Haz un sonido grave: voz baja, golpe o bombo";
+
+      if (this.bassCharge >= 0.995) {
+        this.phase = "jugada";
+        this.feedback = "Sostiene un tono medio para construir la jugada";
+        addSonicWave(C.bass, 0.75);
+      }
+    } else if (this.phase === "jugada") {
+      this.midCharge = constrain(this.midCharge + midSignal * 0.019 * params.speed, 0, 1);
+      this.feedback = midSignal > 0.04
+        ? "La pelota avanza con tu voz"
+        : "Ahora usa medios: canta, habla o tararea";
+
+      if (this.midCharge >= 0.995) {
+        this.phase = "remate";
+        this.readyAt = frameCount;
+        this.feedback = "Remata con un aplauso, silbido o sonido agudo";
+        addSonicWave(C.mid, 0.85);
+      }
+    } else if (this.phase === "remate") {
+      this.feedback = trebleSignal > 0.05 ? "El remate esta saliendo" : "Agudo fuerte para marcar";
+      const risingTreble = audio.treble > params.trebleGate && this.previousTreble <= params.trebleGate;
+      const clearPeak = frameCount - this.readyAt > 10 && trebleSignal > 0.22;
+      if (risingTreble || clearPeak) this.scoreGoal();
+    }
+
+    this.previousTreble = audio.treble;
+  }
+
+  scoreGoal() {
+    this.score++;
+    this.streak++;
+    this.goalFlash = 1;
+    this.shotT = 0;
+    this.celebrateFrames = this.score >= GOALS_TO_WIN ? 260 : 150;
+    this.phase = this.score >= GOALS_TO_WIN ? "campeon" : "gol";
+    this.feedback = this.score >= GOALS_TO_WIN ? "La Copa responde a tu voz" : "GOL SONORO";
+    this.activateWorldCupMemory();
+    launchCelebration();
+
+    addSonicWave(C.treble, 1.25);
+    addSonicWave(C.bass, 1);
+    addSonicWave(C.core, 0.85);
+  }
+
+  activateWorldCupMemory() {
+    const candidates = matchOrbs.filter(orb => orb.gs.length > 0);
+    if (!candidates.length) {
+      this.lastMemory = null;
+      return;
+    }
+
+    const orb = candidates[(this.score * 7 + floor(random(candidates.length))) % candidates.length];
+    const goal = orb.gs[(this.score - 1) % orb.gs.length];
+    const player = goal.player || "Gol historico";
+    this.lastMemory = {
+      score: `${orb.m.hCode} ${orb.m.hScore}-${orb.m.aScore} ${orb.m.aCode}`,
+      player,
+      minute: goal.label || `${goal.minute}'`,
+      stage: orb.m.stage
+    };
+    orb.ignite(`${player} · ${goal.label}`);
+    pinned = orb;
+  }
+
+  resetRound() {
+    this.phase = "carga";
+    this.bassCharge = 0;
+    this.midCharge = 0;
+    this.readyAt = 0;
+    this.feedback = "Nuevo ataque: carga la tribuna con graves";
+  }
+
+  restart() {
+    this.score = 0;
+    this.streak = 0;
+    this.lastMemory = null;
+    this.celebrateFrames = 0;
+    this.goalFlash = 0;
+    this.shotT = 0;
+    pinned = null;
+    this.resetRound();
+  }
+
+  changeWorldCup() {
+    this.restart();
+    this.feedback = `El Mundial ${selectedYear} espera tu primer pulso`;
+  }
+
+  phaseProgress() {
+    if (this.phase === "carga") return this.bassCharge;
+    if (this.phase === "jugada") return this.midCharge;
+    if (this.phase === "remate" || this.phase === "gol" || this.phase === "campeon") return 1;
+    return 0;
+  }
+}
+
+class CelebrationParticle {
+  constructor() {
+    const palette = [C.bass, C.mid, C.treble, C.core, C.fogHot];
+    this.col = random(palette);
+    this.x = fieldX() + random(-fieldW() * 0.3, fieldW() * 0.3);
+    this.y = fieldY() + random(-30, 20);
+    this.vx = random(-5.5, 5.5);
+    this.vy = random(-11, -3.5);
+    this.gravity = random(0.12, 0.24);
+    this.life = 1;
+    this.decay = random(0.008, 0.018);
+    this.size = random(3, 9);
+    this.spin = random(TWO_PI);
+    this.spinSpeed = random(-0.2, 0.2);
+  }
+
+  update() {
+    this.x += this.vx;
+    this.y += this.vy;
+    this.vy += this.gravity;
+    this.vx *= 0.995;
+    this.life -= this.decay;
+    this.spin += this.spinSpeed;
+  }
+
+  draw() {
+    push();
+    translate(this.x, this.y);
+    rotate(this.spin);
+    noStroke();
+    fill(this.col[0], this.col[1], this.col[2], 230 * max(0, this.life));
+    rectMode(CENTER);
+    rect(0, 0, this.size * 0.45, this.size, 1);
+    pop();
+  }
+}
+
+class SonicWave {
+  constructor(tone, strength) {
+    this.tone = tone;
+    this.strength = strength;
+    this.radius = 24;
+    this.life = 1;
+  }
+
+  update() {
+    this.radius += 7 + this.strength * 4;
+    this.life *= 0.94;
+  }
+
+  draw() {
+    noFill();
+    stroke(this.tone[0], this.tone[1], this.tone[2], 150 * this.life);
+    strokeWeight(1 + this.life * 3);
+    ellipse(fieldX(), fieldY(), this.radius * 2.1, this.radius * 1.1);
+  }
+}
+
 const params = {
   micAmp: 1.8,
   bassGate: 0.11,
+  midGate: 0.09,
   trebleGate: 0.09,
   auraScale: 1.2,
   speed: 1.2,
@@ -518,20 +750,23 @@ function makeUI() {
   ui.panel = createDiv();
   ui.panel.position(22, 22);
   styleMany(ui.panel, {
-    width: "368px",
-    padding: "22px 22px 20px 22px",
+    width: "344px",
+    padding: "20px 20px 18px 20px",
     "border-radius": "22px",
     background: "linear-gradient(180deg, rgba(6,18,14,.94) 0%, rgba(8,28,21,.88) 100%)",
     border: "1px solid rgba(236,230,206,.16)",
     color: "rgb(236,230,206)",
     "box-shadow": "0 22px 60px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.04)",
     "backdrop-filter": "blur(16px)",
-    "box-sizing": "border-box"
+    "box-sizing": "border-box",
+    "max-height": "calc(100vh - 44px)",
+    "overflow-y": "auto",
+    "overscroll-behavior": "contain"
   });
 
-  const kicker = createDiv("SINIESTESIA DIGITAL · VER EL SONIDO").parent(ui.panel);
+  const kicker = createDiv("MUNDIALES · INSTRUMENTO AUDIOVISUAL").parent(ui.panel);
   styleMany(kicker, {
-    "font-family": "Courier New, monospace",
+    "font-family": "Space Mono, monospace",
     "font-size": "11px",
     "font-weight": "900",
     "letter-spacing": ".16em",
@@ -539,26 +774,26 @@ function makeUI() {
     color: "rgba(236,230,206,.66)"
   });
 
-  const title = createElement("h1", "Pulso de estadio").parent(ui.panel);
+  const title = createElement("h1", GAME_TITLE).parent(ui.panel);
   styleMany(title, {
     margin: "14px 0 10px",
-    "font-family": "Georgia, serif",
-    "font-size": "34px",
+    "font-family": "Bodoni Moda, Georgia, serif",
+    "font-size": "36px",
     "line-height": ".94",
     "letter-spacing": "-.05em",
     color: "rgb(247,242,226)"
   });
 
-  const lead = createP("Cada partido es un organismo visual. Las aureolas ya no siguen la linea de tiempo: los goles pares despiertan con graves y los impares con agudos del microfono.");
+  const lead = createP("Juega un ataque con tu voz: carga la tribuna, construye la jugada y remata. Cada gol despierta una memoria real del Mundial elegido.");
   lead.parent(ui.panel);
   styleMany(lead, {
-    margin: "0 0 16px",
+    margin: "0 0 14px",
     "font-size": "13px",
     "line-height": "1.55",
     color: "rgba(236,230,206,.84)"
   });
 
-  ui.micButton = button("Activar micro + fullscreen", startMic, ui.panel);
+  ui.micButton = button("Entrar al estadio", startMic, ui.panel);
   stylePrimaryButton(ui.micButton);
 
   ui.yearLabel = label("MUNDIAL");
@@ -574,22 +809,25 @@ function makeUI() {
   ui.bassLabel = label("UMBRAL GRAVES");
   ui.bassSlider = slider(0.03, 0.35, params.bassGate, 0.01, updateLabels);
 
+  ui.midLabel = label("UMBRAL MEDIOS");
+  ui.midSlider = slider(0.03, 0.35, params.midGate, 0.01, updateLabels);
+
   ui.trebleLabel = label("UMBRAL AGUDOS");
   ui.trebleSlider = slider(0.03, 0.35, params.trebleGate, 0.01, updateLabels);
 
-  ui.auraLabel = label("ESCALA AUREOLA");
+  ui.auraLabel = label("RESPUESTA VISUAL");
   ui.auraSlider = slider(0.7, 2.5, params.auraScale, 0.05, updateLabels);
 
-  ui.speedLabel = label("VELOCIDAD");
+  ui.speedLabel = label("RITMO DE JUEGO");
   ui.speedSlider = slider(0.5, 3, params.speed, 0.05, updateLabels);
 
-  ui.colorLabel = label("FLUJO DE COLOR");
+  ui.colorLabel = label("MEZCLA DE COLOR");
   ui.colorSlider = slider(0, 1, params.colorFlux, 0.01, updateLabels);
 
   const bandTitle = createDiv("BANDAS ACTIVAS").parent(ui.panel);
   styleMany(bandTitle, {
     margin: "16px 0 8px",
-    "font-family": "Courier New, monospace",
+    "font-family": "Space Mono, monospace",
     "font-size": "10px",
     "font-weight": "900",
     "letter-spacing": ".12em",
@@ -616,13 +854,13 @@ function makeUI() {
     "margin-top": "14px"
   });
   const randomBtn = button("Random", () => setYear(floor(random(years.length))), row);
-  const resetBtn = button("Reset", resetView, row);
+  const resetBtn = button("Nueva copa", restartGame, row);
   const fullBtn = button("Fullscreen", () => fullscreen(!fullscreen()), row);
   styleMany(randomBtn, { margin: "0", padding: "10px 8px" });
   styleMany(resetBtn, { margin: "0", padding: "10px 8px" });
   styleMany(fullBtn, { margin: "0", padding: "10px 8px" });
 
-  const microcopy = createP("Inputs: mouse para orbitar y fijar partidos, rueda para zoom, teclas A/Z velocidad, L leyenda, F fullscreen, flechas cambian mundial.").parent(ui.panel);
+  const microcopy = createP("Audio: graves → carga · medios → jugada · agudos → remate. Mouse apunta y explora. Teclas 1/2/3 prueban las bandas; L muestra la ayuda.").parent(ui.panel);
   styleMany(microcopy, {
     margin: "14px 0 0",
     "font-size": "11px",
@@ -631,9 +869,9 @@ function makeUI() {
   });
 
   ui.info = createDiv();
-  ui.info.position(width - 378, 22);
+  ui.info.position(width - 366, 22);
   styleMany(ui.info, {
-    width: "356px",
+    width: "344px",
     padding: "20px",
     "border-radius": "22px",
     background: "linear-gradient(180deg, rgba(7,17,13,.94) 0%, rgba(9,25,19,.9) 100%)",
@@ -656,7 +894,7 @@ function label(name) {
 
   const left = createSpan(name).parent(wrap);
   styleMany(left, {
-    "font-family": "Courier New, monospace",
+    "font-family": "Space Mono, monospace",
     "font-size": "10px",
     "font-weight": "900",
     "letter-spacing": ".12em",
@@ -666,7 +904,7 @@ function label(name) {
 
   const right = createSpan("—").parent(wrap);
   styleMany(right, {
-    "font-family": "Courier New, monospace",
+    "font-family": "Space Mono, monospace",
     "font-size": "15px",
     "font-weight": "900",
     color: "rgb(247,242,226)"
@@ -717,7 +955,7 @@ function button(textValue, fn, parent) {
     border: "1px solid rgba(236,230,206,.14)",
     background: "rgba(255,255,255,.05)",
     color: "rgb(236,230,206)",
-    "font-family": "Courier New, monospace",
+    "font-family": "Space Mono, monospace",
     "font-size": "11px",
     "font-weight": "900",
     "letter-spacing": ".06em",
@@ -749,7 +987,7 @@ function bandToggle(name, tone, checked, parent, fn) {
 
   const labelText = createSpan(name).parent(wrap);
   styleMany(labelText, {
-    "font-family": "Courier New, monospace",
+    "font-family": "Space Mono, monospace",
     "font-size": "10px",
     "font-weight": "900",
     "letter-spacing": ".08em",
@@ -781,6 +1019,7 @@ function readControls() {
 
   params.micAmp = Number(ui.micSlider.value());
   params.bassGate = Number(ui.bassSlider.value());
+  params.midGate = Number(ui.midSlider.value());
   params.trebleGate = Number(ui.trebleSlider.value());
   params.auraScale = Number(ui.auraSlider.value());
   params.speed = Number(ui.speedSlider.value());
@@ -795,6 +1034,7 @@ function updateLabels() {
   ui.yearLabel.html(selectedYear);
   ui.micLabel.html(nf(params.micAmp, 1, 2) + "x");
   ui.bassLabel.html(nf(params.bassGate, 1, 2));
+  ui.midLabel.html(nf(params.midGate, 1, 2));
   ui.trebleLabel.html(nf(params.trebleGate, 1, 2));
   ui.auraLabel.html(nf(params.auraScale, 1, 2) + "x");
   ui.speedLabel.html(nf(params.speed, 1, 2) + "x");
@@ -802,7 +1042,7 @@ function updateLabels() {
 
   if (!ui.micButton) return;
   if (micReady) {
-    ui.micButton.html("Microfono activo");
+    ui.micButton.html("Microfono activo · juega con tu voz");
     stylePrimaryButton(ui.micButton);
   } else if (audioDenied) {
     ui.micButton.html("Reintentar permiso de microfono");
@@ -812,7 +1052,7 @@ function updateLabels() {
       border: "1px solid rgba(255,180,160,.24)"
     });
   } else {
-    ui.micButton.html("Activar micro + fullscreen");
+    ui.micButton.html("Entrar al estadio");
     stylePrimaryButton(ui.micButton);
   }
 }
@@ -837,7 +1077,14 @@ async function startMic() {
 }
 
 function updateAudioState() {
-  if (!micReady || !mic || !fft) {
+  simulatedBand.bass *= 0.9;
+  simulatedBand.mid *= 0.9;
+  simulatedBand.treble *= 0.9;
+
+  const hasMic = micReady && mic && fft;
+  const hasSimulation = max(simulatedBand.bass, simulatedBand.mid, simulatedBand.treble) > 0.01;
+
+  if (!hasMic && !hasSimulation) {
     audioState.rawLevel = 0;
     audioState.level = lerp(audioState.level, 0, 0.08);
     audioState.bass = lerp(audioState.bass, 0, 0.08);
@@ -848,12 +1095,23 @@ function updateAudioState() {
     return;
   }
 
-  fft.analyze();
+  let level = hasSimulation ? max(simulatedBand.bass, simulatedBand.mid, simulatedBand.treble) * 0.12 : 0;
+  let bass = simulatedBand.bass;
+  let mid = simulatedBand.mid;
+  let treble = simulatedBand.treble;
 
-  const level = mic.getLevel();
-  const bass = params.bassEnabled ? fft.getEnergy("bass") / 255 : 0;
-  const mid = params.midEnabled ? fft.getEnergy("mid") / 255 : 0;
-  const treble = params.trebleEnabled ? fft.getEnergy("treble") / 255 : 0;
+  if (hasMic) {
+    fft.analyze();
+    level = max(level, mic.getLevel());
+    const bandBoost = map(params.micAmp, 0.6, 4, 0.72, 1.5);
+    bass = max(bass, fft.getEnergy("bass") / 255 * bandBoost);
+    mid = max(mid, fft.getEnergy("mid") / 255 * bandBoost);
+    treble = max(treble, fft.getEnergy("treble") / 255 * bandBoost);
+  }
+
+  bass = params.bassEnabled ? constrain(bass, 0, 1) : 0;
+  mid = params.midEnabled ? constrain(mid, 0, 1) : 0;
+  treble = params.trebleEnabled ? constrain(treble, 0, 1) : 0;
 
   audioState.rawLevel = level;
   const activeBand = params.bassEnabled || params.midEnabled || params.trebleEnabled;
@@ -864,13 +1122,14 @@ function updateAudioState() {
   audioState.pulse = constrain(audioState.level + max(audioState.bass, audioState.treble) * 0.8, 0, 2.2);
 
   const bassOpen = audioState.bass > params.bassGate;
+  const midOpen = audioState.mid > params.midGate;
   const trebleOpen = audioState.treble > params.trebleGate;
 
   if (!activeBand) audioState.zone = "silenciado";
   else if (bassOpen && trebleOpen) audioState.zone = "mixto";
   else if (bassOpen) audioState.zone = "graves";
   else if (trebleOpen) audioState.zone = "agudos";
-  else if (audioState.mid > 0.08) audioState.zone = "medios";
+  else if (midOpen) audioState.zone = "medios";
   else audioState.zone = "pasivo";
 }
 
@@ -940,6 +1199,34 @@ function drawAtmosphere() {
   const bassA = audioState.bass * 80;
   const trebleA = audioState.treble * 92;
 
+  drawFloodlight(width * 0.13, 0, C.bass, audioState.bass);
+  drawFloodlight(width * 0.87, 0, C.treble, audioState.treble);
+
+  push();
+  translate(fieldX(), fieldY());
+  noFill();
+  for (let ring = 0; ring < 4; ring++) {
+    const ringPulse = audioState.bass * (12 + ring * 9);
+    stroke(C.line[0], C.line[1], C.line[2], 20 - ring * 3 + audioState.level * 18);
+    strokeWeight(1 + audioState.bass * 1.4);
+    ellipse(0, 0, fieldW() * (0.72 + ring * 0.13) + ringPulse, fieldH() * (0.58 + ring * 0.1) + ringPulse * 0.4);
+  }
+
+  const crowdCount = min(180, max(72, matchOrbs.length * 2));
+  for (let i = 0; i < crowdCount; i++) {
+    const a = i * GOLDEN;
+    const band = i % 3;
+    const rx = fieldW() * (0.4 + (i % 5) * 0.014);
+    const ry = fieldH() * (0.34 + (i % 7) * 0.009);
+    const signal = band === 0 ? audioState.bass : band === 1 ? audioState.mid : audioState.treble;
+    const tone = band === 0 ? C.bass : band === 1 ? C.mid : C.treble;
+    const flicker = 0.45 + 0.55 * sin(frameCount * 0.04 + i * 1.7);
+    noStroke();
+    fill(tone[0], tone[1], tone[2], 20 + signal * 155 * flicker);
+    circle(cos(a) * rx, sin(a) * ry, 2 + signal * 5);
+  }
+  pop();
+
   noStroke();
   fill(C.bass[0], C.bass[1], C.bass[2], bassA);
   ellipse(width * 0.26, height * 0.18, width * (0.2 + audioState.bass * 0.16), height * 0.18);
@@ -949,6 +1236,22 @@ function drawAtmosphere() {
 
   fill(C.fog[0], C.fog[1], C.fog[2], audioState.mid * 54);
   ellipse(width * 0.52, height * 0.75, width * 0.42, height * (0.12 + audioState.mid * 0.16));
+
+  const vignette = drawingContext.createRadialGradient(width / 2, height / 2, min(width, height) * 0.2, width / 2, height / 2, max(width, height) * 0.72);
+  vignette.addColorStop(0, "rgba(0,0,0,0)");
+  vignette.addColorStop(1, "rgba(0,0,0,0.68)");
+  drawingContext.fillStyle = vignette;
+  drawingContext.fillRect(0, 0, width, height);
+}
+
+function drawFloodlight(x, y, tone, signal) {
+  if (signal < 0.015) return;
+  const ctx = drawingContext;
+  const gradient = ctx.createRadialGradient(x, y, 0, x, y, height * 0.68);
+  gradient.addColorStop(0, `rgba(${tone[0]},${tone[1]},${tone[2]},${0.12 + signal * 0.22})`);
+  gradient.addColorStop(1, `rgba(${tone[0]},${tone[1]},${tone[2]},0)`);
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, width, height);
 }
 
 function drawMap() {
@@ -962,6 +1265,124 @@ function drawMap() {
   for (const orb of matchOrbs) orb.draw();
 
   pop();
+}
+
+function drawGameCore() {
+  if (!soundGame) return;
+
+  const cx = fieldX();
+  const cy = fieldY();
+  const fw = fieldW();
+  const fh = fieldH();
+  const goalX = cx + fw * 0.37;
+  const aimY = constrain(map(mouseY, 0, height, cy - fh * 0.2, cy + fh * 0.2), cy - fh * 0.2, cy + fh * 0.2);
+  let ballX = cx - fw * 0.28;
+  let ballY = cy;
+
+  if (soundGame.phase === "jugada") {
+    ballX = lerp(cx - fw * 0.28, cx + fw * 0.05, easeInOutCubic(soundGame.midCharge));
+    ballY = lerp(cy, aimY, soundGame.midCharge * 0.7);
+  } else if (soundGame.phase === "remate") {
+    ballX = cx + fw * 0.05;
+    ballY = aimY;
+  } else if (soundGame.phase === "gol" || soundGame.phase === "campeon") {
+    ballX = lerp(cx + fw * 0.05, goalX, easeOutCubic(soundGame.shotT));
+    ballY = lerp(aimY, cy + sin(soundGame.score * 2.1) * fh * 0.12, easeOutCubic(soundGame.shotT));
+  }
+
+  drawGoalFrame(goalX, cy, fw, fh);
+
+  noFill();
+  const routeTone = soundGame.phase === "carga" ? C.bass : soundGame.phase === "jugada" ? C.mid : C.treble;
+  stroke(routeTone[0], routeTone[1], routeTone[2], 65 + soundGame.phaseProgress() * 120);
+  strokeWeight(1.4 + audioState.level * 1.8);
+  drawingContext.setLineDash([4, 9]);
+  bezier(ballX, ballY, lerp(ballX, goalX, 0.35), ballY - fh * 0.18, lerp(ballX, goalX, 0.72), aimY + fh * 0.12, goalX, aimY);
+  drawingContext.setLineDash([]);
+
+  const aura = 42 * params.auraScale + audioState.pulse * 24;
+  for (let i = 3; i >= 0; i--) {
+    noFill();
+    stroke(routeTone[0], routeTone[1], routeTone[2], 22 + audioState.pulse * 18);
+    strokeWeight(1);
+    circle(ballX, ballY, aura * (1 + i * 0.48) + sin(frameCount * 0.05 + i) * 5);
+  }
+
+  drawResonantBall(ballX, ballY, 29 + audioState.level * 9);
+
+  if (soundGame.phase === "campeon") drawTrophy(cx, cy - fh * 0.05, min(fw, fh) * 0.42);
+}
+
+function drawGoalFrame(x, y, fw, fh) {
+  const gw = fw * 0.1;
+  const gh = fh * 0.32;
+  const ripple = soundGame ? soundGame.goalFlash * 12 : 0;
+  push();
+  noFill();
+  stroke(C.line[0], C.line[1], C.line[2], 125 + (soundGame ? soundGame.goalFlash * 120 : 0));
+  strokeWeight(2.2);
+  rect(x - gw / 2, y - gh / 2, gw, gh + ripple, 3);
+  strokeWeight(0.7);
+  for (let i = 1; i < 5; i++) line(x - gw / 2, y - gh / 2 + i * gh / 5, x + gw / 2, y - gh / 2 + i * gh / 5 + ripple);
+  for (let i = 1; i < 4; i++) line(x - gw / 2 + i * gw / 4, y - gh / 2, x - gw / 2 + i * gw / 4, y + gh / 2 + ripple);
+  pop();
+}
+
+function drawResonantBall(x, y, size) {
+  push();
+  translate(x, y);
+  rotate(frameCount * 0.015 + audioState.mid * 0.4);
+  stroke(C.ink[0], C.ink[1], C.ink[2], 210);
+  strokeWeight(1.2);
+  fill(C.core[0], C.core[1], C.core[2]);
+  circle(0, 0, size);
+  fill(C.ink[0], C.ink[1], C.ink[2]);
+  noStroke();
+  poly(0, 0, size * 0.16, 5);
+  for (let i = 0; i < 5; i++) {
+    const a = -HALF_PI + i * TWO_PI / 5;
+    poly(cos(a) * size * 0.32, sin(a) * size * 0.32, size * 0.07, 5);
+  }
+  pop();
+}
+
+function drawTrophy(x, y, size) {
+  const pulse = 1 + sin(frameCount * 0.055) * 0.03;
+  push();
+  translate(x, y);
+  scale(pulse);
+  noStroke();
+  fill(3, 12, 8, 180);
+  ellipse(0, size * 0.35, size * 0.62, size * 0.16);
+  fill(C.bass[0], C.bass[1], C.bass[2], 210);
+  arc(0, -size * 0.08, size * 0.48, size * 0.55, 0, PI, CHORD);
+  rect(-size * 0.07, size * 0.12, size * 0.14, size * 0.25, size * 0.03);
+  rect(-size * 0.22, size * 0.32, size * 0.44, size * 0.08, size * 0.02);
+  noFill();
+  stroke(C.bass[0], C.bass[1], C.bass[2], 200);
+  strokeWeight(size * 0.04);
+  arc(-size * 0.25, -size * 0.03, size * 0.28, size * 0.28, HALF_PI, PI + HALF_PI);
+  arc(size * 0.25, -size * 0.03, size * 0.28, size * 0.28, -HALF_PI, HALF_PI);
+  pop();
+}
+
+function drawCelebration() {
+  for (const wave of sonicWaves) {
+    wave.update();
+    wave.draw();
+  }
+  sonicWaves = sonicWaves.filter(wave => wave.life > 0.025);
+
+  for (const particle of celebrationParticles) {
+    particle.update();
+    particle.draw();
+  }
+  celebrationParticles = celebrationParticles.filter(particle => particle.life > 0);
+
+  if (!soundGame || soundGame.goalFlash < 0.01) return;
+  noStroke();
+  fill(C.core[0], C.core[1], C.core[2], soundGame.goalFlash * 42);
+  rect(0, 0, width, height);
 }
 
 function drawZones() {
@@ -1002,46 +1423,61 @@ function drawRoutes() {
 }
 
 function drawGuideGrid() {
-  const meterX = 430;
-  const meterY = height - 52;
-  const meterW = max(180, width - 820);
-
-  if (meterW < 120) return;
+  if (!soundGame || width < 760) return;
+  const left = width < 1180 ? 28 : 390;
+  const right = width < 1180 ? 28 : 390;
+  const railW = width - left - right;
+  const y = height - 86;
+  if (railW < 360) return;
 
   noStroke();
-  fill(5, 15, 11, 135);
-  rect(meterX - 18, meterY - 28, meterW + 36, 54, 16);
+  fill(4, 14, 10, 215);
+  rect(left, y, railW, 62, 18);
 
-  const bands = [
-    { name: "GRAVES = GOLES PARES", value: audioState.bass, col: C.bass, on: params.bassEnabled },
-    { name: "MEDIOS = DERIVA", value: audioState.mid, col: C.mid, on: params.midEnabled },
-    { name: "AGUDOS = GOLES IMPARES", value: audioState.treble, col: C.treble, on: params.trebleEnabled }
+  const steps = [
+    { id: "carga", index: "01", name: "CARGA", action: "GRAVES", value: soundGame.bassCharge, signal: audioState.bass, col: C.bass },
+    { id: "jugada", index: "02", name: "CONSTRUYE", action: "MEDIOS", value: soundGame.midCharge, signal: audioState.mid, col: C.mid },
+    { id: "remate", index: "03", name: "REMATA", action: "AGUDOS", value: soundGame.phase === "remate" || soundGame.phase === "gol" || soundGame.phase === "campeon" ? 1 : 0, signal: audioState.treble, col: C.treble }
   ];
+  const cellW = railW / 3;
 
-  textFont("monospace");
-  textStyle(BOLD);
-  textSize(10);
-  textAlign(LEFT, CENTER);
+  for (let i = 0; i < steps.length; i++) {
+    const step = steps[i];
+    const x = left + i * cellW;
+    const passed = soundGame.phase === "gol" || soundGame.phase === "campeon" || (i === 0 && soundGame.phase !== "carga") || (i === 1 && ["remate", "gol", "campeon"].includes(soundGame.phase));
+    const active = soundGame.phase === step.id;
+    const alpha = active || passed ? 235 : 88;
 
-  for (let i = 0; i < bands.length; i++) {
-    const y = meterY - 10 + i * 16;
-    fill(C.line[0], C.line[1], C.line[2], bands[i].on ? 210 : 90);
-    text((bands[i].on ? "■ " : "□ ") + bands[i].name, meterX, y);
-
-    fill(255, 255, 255, 22);
-    rect(meterX + 132, y - 5, meterW - 150, 8, 4);
-    fill(bands[i].col[0], bands[i].col[1], bands[i].col[2], bands[i].on ? 205 : 70);
-    rect(meterX + 132, y - 5, (meterW - 150) * constrain(bands[i].value, 0, 1), 8, 4);
+    if (i > 0) {
+      stroke(C.line[0], C.line[1], C.line[2], 24);
+      line(x, y + 13, x, y + 49);
+    }
+    noStroke();
+    fill(step.col[0], step.col[1], step.col[2], active ? 28 + step.signal * 45 : 0);
+    rect(x + 5, y + 5, cellW - 10, 52, 13);
+    fill(C.line[0], C.line[1], C.line[2], alpha);
+    textFont("Space Mono");
+    textStyle(BOLD);
+    textSize(9);
+    textAlign(LEFT, TOP);
+    text(`${step.index}  ${step.name}`, x + 15, y + 13);
+    fill(step.col[0], step.col[1], step.col[2], alpha);
+    textSize(11);
+    text(step.action, x + 15, y + 29);
+    fill(255, 255, 255, 20);
+    rect(x + 15, y + 47, cellW - 30, 4, 2);
+    fill(step.col[0], step.col[1], step.col[2], 220);
+    rect(x + 15, y + 47, (cellW - 30) * constrain(max(step.value, step.signal * 0.35), 0, 1), 4, 2);
   }
 }
 
 function drawLegend() {
   if (!legendVisible) return;
 
-  const x = width - 366;
-  const y = height - 230;
   const w = 330;
-  const h = 192;
+  const h = 214;
+  const x = width - w - 22;
+  const y = height - h - 22;
 
   noStroke();
   fill(5, 15, 11, 204);
@@ -1049,81 +1485,85 @@ function drawLegend() {
 
   fill(C.line[0], C.line[1], C.line[2]);
   textAlign(LEFT, TOP);
-  textFont("monospace");
+  textFont("Space Mono");
   textStyle(BOLD);
   textSize(11);
-  text("LEYENDA / CONCEPTO", x + 16, y + 16);
+  text("LEYENDA · L PARA CERRAR", x + 16, y + 16);
 
-  textFont("Georgia");
+  textFont("Bodoni Moda");
   textSize(22);
   textStyle(BOLD);
-  text(CONCEPT, x + 16, y + 34);
+  text(GAME_TITLE, x + 16, y + 34);
 
-  textFont("Arial");
+  textFont("DM Sans");
   textStyle(NORMAL);
   textSize(11);
-  text("Graves del microfono activan aureolas de goles pares.\nAgudos del microfono activan aureolas de goles impares.\nMedios deforman la deriva, la rotacion y las conexiones.", x + 16, y + 66);
+  text("Concepto: el estadio es un instrumento colectivo.\nCompleta el ataque en orden y marca 5 goles\npara despertar la Copa del Mundial seleccionado.", x + 16, y + 66);
 
-  textFont("monospace");
+  textFont("Space Mono");
   textStyle(BOLD);
   textSize(10);
-  text("L: mostrar/ocultar leyenda", x + 16, y + 126);
-  text("F: fullscreen  |  A/Z: velocidad", x + 16, y + 144);
-  text("Mouse: arrastrar / click fijar / rueda zoom", x + 16, y + 162);
-  text("Sliders: sensibilidad, umbrales, escala, color", x + 16, y + 180);
+  fill(C.bass[0], C.bass[1], C.bass[2]);
+  text("GRAVES  → cargar la tribuna", x + 16, y + 124);
+  fill(C.mid[0], C.mid[1], C.mid[2]);
+  text("MEDIOS  → conducir la pelota", x + 16, y + 142);
+  fill(C.treble[0], C.treble[1], C.treble[2]);
+  text("AGUDOS  → rematar y celebrar", x + 16, y + 160);
+  fill(C.line[0], C.line[1], C.line[2], 180);
+  text("1/2/3: probar bandas  ·  F: fullscreen", x + 16, y + 186);
+  text("Mouse: apuntar / explorar  ·  Flechas: Mundial", x + 16, y + 202);
 }
 
 function drawInfo() {
   if (!ui.info) return;
-
-  const orb = pinned || hovered;
   const t = selectedTournament;
-  if (!t) return;
+  if (!t || !soundGame) return;
 
-  let html = `
-    <div style="font-family:'Courier New',monospace;font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase;color:rgba(236,230,206,.62);">Monitor sinestesico</div>
-    <div style="margin:12px 0 14px;font-family:Georgia,serif;font-size:38px;font-weight:900;line-height:.88;color:rgb(247,242,226);">${selectedYear}</div>
-    <div style="display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:10px;align-items:start;">
-      ${statBox("Concepto", "Pulso de estadio")}
-      ${statBox("Zona sonora", audioState.zone)}
-      ${statBox("Campeon", t.winner)}
-      ${statBox("Sede", t.host)}
-    </div>
-    <div style="margin-top:14px;">
-      ${meterRow("Volumen", audioState.level)}
-      ${meterRow("Graves", audioState.bass)}
-      ${meterRow("Medios", audioState.mid)}
-      ${meterRow("Agudos", audioState.treble)}
-    </div>
-  `;
-
-  if (selectedYear === liveStatus.year && liveStatus.totalMatches > 0) {
-    html += `
-      <div style="margin-top:14px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(236,230,206,.08);font-size:12px;line-height:1.5;color:rgba(236,230,206,.78);">
-        <strong style="color:rgb(247,242,226);">Estado del torneo:</strong><br>
-        ${liveStatus.finishedMatches} de ${liveStatus.totalMatches} partidos jugados.
-      </div>
-    `;
+  const phaseTone = soundGame.phase === "carga" ? C.bass : soundGame.phase === "jugada" ? C.mid : C.treble;
+  const phaseLabel = gamePhaseLabel(soundGame.phase);
+  let goalsHtml = "";
+  for (let i = 0; i < GOALS_TO_WIN; i++) {
+    const active = i < soundGame.score;
+    goalsHtml += `<span style="display:block;width:100%;height:7px;border-radius:999px;background:${active ? `rgb(${C.bass.join(",")})` : "rgba(236,230,206,.12)"};box-shadow:${active ? "0 0 14px rgba(255,198,92,.34)" : "none"};"></span>`;
   }
 
-  if (orb) {
-    const oddNames = orb.oddGoals.slice(0, 3).map(g => `${g.label} · ${g.team} · ${g.player || "Gol"}`).join("<br>");
-    const evenNames = orb.evenGoals.slice(0, 3).map(g => `${g.label} · ${g.team} · ${g.player || "Gol"}`).join("<br>");
+  let html = `
+    <div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:rgba(236,230,206,.58);">Mundial ${selectedYear} · ritual del gol</div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:12px;gap:16px;">
+      <div style="font-family:'Bodoni Moda',Georgia,serif;font-size:52px;font-weight:900;line-height:.82;color:rgb(247,242,226);">${soundGame.score}<span style="font-size:21px;color:rgba(236,230,206,.42);">/${GOALS_TO_WIN}</span></div>
+      <div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:rgb(${phaseTone.join(",")});text-align:right;">${phaseLabel}</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(${GOALS_TO_WIN},1fr);gap:6px;margin-top:15px;">${goalsHtml}</div>
+    <div style="margin-top:15px;padding:14px;border-radius:15px;background:rgba(${phaseTone.join(",")},.08);border:1px solid rgba(${phaseTone.join(",")},.24);">
+      <div style="font-family:'Space Mono',monospace;font-size:9px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:rgba(236,230,206,.52);">Siguiente gesto</div>
+      <div style="margin-top:5px;font-size:14px;font-weight:800;line-height:1.35;color:rgb(247,242,226);">${soundGame.feedback}</div>
+    </div>
+    <div style="margin-top:14px;">
+      ${meterRow("Graves", audioState.bass, C.bass)}
+      ${meterRow("Medios", audioState.mid, C.mid)}
+      ${meterRow("Agudos", audioState.treble, C.treble)}
+    </div>
+    <div style="margin:17px 0 13px;border-top:1px solid rgba(236,230,206,.12);"></div>
+    <div style="font-family:'Space Mono',monospace;font-size:9px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;color:rgba(236,230,206,.5);">Archivo vivo del Mundial</div>
+    <div style="margin-top:6px;font-size:20px;font-family:'Bodoni Moda',Georgia,serif;font-weight:900;color:rgb(247,242,226);">${t.winner || "En juego"}</div>
+    <div style="margin-top:4px;font-size:11px;line-height:1.4;color:rgba(236,230,206,.62);">${t.host} · ${matchOrbs.length} memorias disponibles</div>
+  `;
 
+  if (soundGame.lastMemory) {
+    const memory = soundGame.lastMemory;
     html += `
-      <div style="margin:16px 0 14px;border-top:1px solid rgba(236,230,206,.12);"></div>
-      <div style="font-family:'Courier New',monospace;font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:rgba(236,230,206,.58);">${pinned ? "Partido fijado" : "Partido explorado"}</div>
-      <div style="margin-top:8px;font-size:24px;font-weight:900;color:rgb(247,242,226);">${orb.m.hCode} ${orb.m.hScore}-${orb.m.aScore} ${orb.m.aCode}</div>
-      <div style="margin-top:4px;font-size:14px;font-weight:700;color:rgba(236,230,206,.88);">${orb.m.home} vs ${orb.m.away}</div>
-      <div style="margin-top:10px;font-size:12px;line-height:1.45;color:rgba(236,230,206,.68);">${orb.m.stage}<br>${orb.m.city}, ${orb.m.country}<br>${orb.m.date}</div>
-      <div style="margin-top:12px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(236,230,206,.08);font-size:12px;line-height:1.5;color:rgba(236,230,206,.8);"><strong style="color:rgb(226,186,98);">Pares:</strong> ${orb.evenGoals.length} goles<br>${evenNames || "Sin goles pares."}</div>
-      <div style="margin-top:10px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(236,230,206,.08);font-size:12px;line-height:1.5;color:rgba(236,230,206,.8);"><strong style="color:rgb(135,173,255);">Impares:</strong> ${orb.oddGoals.length} goles<br>${oddNames || "Sin goles impares."}</div>
+      <div style="margin-top:14px;padding:14px;border-radius:15px;background:linear-gradient(135deg,rgba(255,198,92,.13),rgba(118,165,255,.08));border:1px solid rgba(255,198,92,.24);">
+        <div style="font-family:'Space Mono',monospace;font-size:9px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:rgb(226,186,98);">Memoria despertada</div>
+        <div style="margin-top:7px;font-size:19px;font-weight:900;color:rgb(247,242,226);">${memory.score}</div>
+        <div style="margin-top:4px;font-size:12px;line-height:1.45;color:rgba(236,230,206,.78);">${memory.minute} · ${memory.player}<br>${memory.stage}</div>
+      </div>
     `;
   } else {
-    html += `
-      <div style="margin:16px 0 14px;border-top:1px solid rgba(236,230,206,.12);"></div>
-      <div style="padding:14px 15px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(236,230,206,.08);font-size:12px;line-height:1.55;color:rgba(236,230,206,.74);">Pasa el mouse sobre una pelota para leer el partido. Con click lo fijas, y con el microfono abierto puedes ver como cambian sus aureolas segun graves y agudos.</div>
-    `;
+    html += `<div style="margin-top:14px;font-size:11px;line-height:1.5;color:rgba(236,230,206,.55);">Cada gol sonoro ilumina un partido y rescata un goleador real de este Mundial.</div>`;
+  }
+
+  if (selectedYear === liveStatus.year && liveStatus.totalMatches > 0) {
+    html += `<div style="margin-top:10px;font-family:'Space Mono',monospace;font-size:9px;color:rgba(236,230,206,.5);">2026 EN VIVO · ${liveStatus.finishedMatches}/${liveStatus.totalMatches} PARTIDOS</div>`;
   }
 
   ui.info.html(html);
@@ -1131,23 +1571,23 @@ function drawInfo() {
 
 function statBox(labelText, valueText) {
   return `<div style="padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(236,230,206,.08);">
-    <div style="font-family:'Courier New',monospace;font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:rgba(236,230,206,.52);">${labelText}</div>
+    <div style="font-family:'Space Mono',monospace;font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:rgba(236,230,206,.52);">${labelText}</div>
     <div style="margin-top:4px;font-size:14px;font-weight:800;color:rgb(247,242,226);line-height:1.28;white-space:normal;overflow-wrap:anywhere;word-break:break-word;">${valueText}</div>
   </div>`;
 }
 
-function meterRow(labelText, value) {
+function meterRow(labelText, value, tone = C.mid) {
   const pct = constrain(value, 0, 1) * 100;
   return `<div style="display:grid;grid-template-columns:70px 1fr;gap:10px;align-items:center;margin-top:9px;">
-    <div style="font-family:'Courier New',monospace;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:rgba(236,230,206,.6);">${labelText}</div>
+    <div style="font-family:'Space Mono',monospace;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:rgba(236,230,206,.6);">${labelText}</div>
     <div style="height:9px;border-radius:999px;background:rgba(236,230,206,.1);overflow:hidden;">
-      <span style="display:block;height:100%;width:${pct}%;border-radius:999px;background:linear-gradient(90deg,#DDB56A 0%, #7CCAA7 52%, #86A9FF 100%);"></span>
+      <span style="display:block;height:100%;width:${pct}%;border-radius:999px;background:rgb(${tone.join(",")});box-shadow:0 0 12px rgba(${tone.join(",")},.3);"></span>
     </div>
   </div>`;
 }
 
 function drawMicPrompt() {
-  if (micReady) return;
+  if (micReady || demoMode) return;
 
   const w = min(520, width - 120);
   const h = 130;
@@ -1160,15 +1600,15 @@ function drawMicPrompt() {
 
   fill(C.line[0], C.line[1], C.line[2]);
   textAlign(CENTER, CENTER);
-  textFont("Georgia");
+  textFont("Bodoni Moda");
   textStyle(BOLD);
   textSize(28);
-  text("Activa el microfono para ver el sonido", width / 2, y + 38);
+  text("Tu voz pone la Copa en juego", width / 2, y + 38);
 
-  textFont("Arial");
+  textFont("DM Sans");
   textStyle(NORMAL);
   textSize(13);
-  text("Usa el boton del panel izquierdo. Sin permiso de microfono la pieza queda en estado pasivo.", width / 2, y + 78);
+  text("Activa el microfono o prueba el ritual con las teclas 1, 2 y 3.", width / 2, y + 78);
 }
 
 function findHover() {
@@ -1229,9 +1669,21 @@ function mouseWheel(e) {
 function keyPressed() {
   if (key === "l" || key === "L") legendVisible = !legendVisible;
   if (key === "f" || key === "F") fullscreen(!fullscreen());
-  if (key === "r" || key === "R") resetView();
+  if (key === "r" || key === "R") restartGame();
   if (key === "a" || key === "A") ui.speedSlider.value(min(3, Number(ui.speedSlider.value()) + 0.1));
   if (key === "z" || key === "Z") ui.speedSlider.value(max(0.5, Number(ui.speedSlider.value()) - 0.1));
+  if (key === "1") {
+    demoMode = true;
+    simulatedBand.bass = 1;
+  }
+  if (key === "2") {
+    demoMode = true;
+    simulatedBand.mid = 1;
+  }
+  if (key === "3") {
+    demoMode = true;
+    simulatedBand.treble = 1;
+  }
   if (keyCode === RIGHT_ARROW) setYear(yearIndex + 1);
   if (keyCode === LEFT_ARROW) setYear(yearIndex - 1);
   updateLabels();
@@ -1242,6 +1694,13 @@ function resetView() {
   targetZoom = zoom = 1;
   pinned = null;
   updateLabels();
+}
+
+function restartGame() {
+  resetView();
+  if (soundGame) soundGame.restart();
+  celebrationParticles = [];
+  sonicWaves = [];
 }
 
 function fieldX() {
@@ -1277,6 +1736,36 @@ function makeTexture() {
   }
 }
 
+function normalizedBand(value, gate, ceiling) {
+  return constrain(map(value, gate, max(gate + 0.01, ceiling), 0, 1), 0, 1);
+}
+
+function addSonicWave(tone, strength) {
+  sonicWaves.push(new SonicWave(tone, strength));
+}
+
+function launchCelebration() {
+  for (let i = 0; i < 110; i++) celebrationParticles.push(new CelebrationParticle());
+}
+
+function gamePhaseLabel(phase) {
+  if (phase === "carga") return "01 · Carga la tribuna";
+  if (phase === "jugada") return "02 · Construye la jugada";
+  if (phase === "remate") return "03 · Remata";
+  if (phase === "gol") return "Gol sonoro";
+  if (phase === "campeon") return "Copa conquistada";
+  return "En espera";
+}
+
+function easeInOutCubic(t) {
+  const v = constrain(t, 0, 1);
+  return v < 0.5 ? 4 * v * v * v : 1 - pow(-2 * v + 2, 3) / 2;
+}
+
+function easeOutCubic(t) {
+  return 1 - pow(1 - constrain(t, 0, 1), 3);
+}
+
 function colorShift(base, amt) {
   const bassMix = lerpColor(color(base[0], base[1], base[2]), color(C.fogHot[0], C.fogHot[1], C.fogHot[2]), constrain(params.colorFlux * 0.5 + amt * 0.18, 0, 1));
   return lerpColor(bassMix, color(255, 255, 255), constrain(amt * 0.14, 0, 0.35));
@@ -1294,6 +1783,6 @@ function poly(x, y, r, sides) {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   makeTexture();
-  if (ui.info) ui.info.position(width - 378, 22);
+  if (ui.info) ui.info.position(width - 366, 22);
   setYear(yearIndex);
 }

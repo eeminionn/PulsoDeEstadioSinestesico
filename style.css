@@ -1,20 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,800;6..96,900&family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --marfil: #f3edd9;
+  --oro: #e1b968;
+  --verde-noche: #061912;
+  --verde-panel: rgba(5, 22, 15, 0.91);
+}
+
 html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
   background: #071811;
   color: #ece6cf;
-  font-family: "Arial", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 canvas {
   display: block;
 }
 
+div::-webkit-scrollbar {
+  width: 5px;
+}
+
+div::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+div::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(243, 237, 217, 0.2);
+}
+
 button,
 input,
 select {
   font: inherit;
+}
+
+button {
+  transition: transform 160ms ease, border-color 160ms ease, filter 160ms ease;
+}
+
+button:hover {
+  border-color: rgba(243, 237, 217, 0.34) !important;
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+input[type="range"] {
+  height: 16px;
+  background: transparent;
+  cursor: ew-resize;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(225, 185, 104, 0.78), rgba(243, 237, 217, 0.22));
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  margin-top: -5px;
+  appearance: none;
+  border: 2px solid var(--verde-noche);
+  border-radius: 50%;
+  background: var(--marfil);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.42);
+}
+
+input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
 }
 
 .control-panel,
@@ -40,7 +104,7 @@ select {
 }
 
 .kicker {
-  font-family: "Courier New", monospace;
+  font-family: "Space Mono", monospace;
   font-size: 10px;
   font-weight: 900;
   letter-spacing: 0.12em;
@@ -49,7 +113,7 @@ select {
 
 .title {
   margin: 10px 0 8px;
-  font-family: "Georgia", serif;
+  font-family: "Bodoni Moda", serif;
   font-size: 34px;
   line-height: 0.92;
   letter-spacing: -0.05em;
@@ -77,7 +141,7 @@ select {
 
 .label-name,
 .label-value {
-  font-family: "Courier New", monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 900;
 }
 
@@ -109,7 +173,7 @@ select {
   border-radius: 4px;
   border: 1px solid rgba(20, 24, 20, 0.42);
   background: rgba(20, 24, 20, 0.08);
-  font-family: "Courier New", monospace;
+  font-family: "Space Mono", monospace;
   font-size: 10px;
   font-weight: 900;
   cursor: pointer;
@@ -123,7 +187,7 @@ select {
 
 .info-year {
   margin: 10px 0 12px;
-  font-family: "Georgia", serif;
+  font-family: "Bodoni Moda", serif;
   font-size: 34px;
   font-weight: 900;
   line-height: 0.9;
@@ -145,7 +209,7 @@ select {
 .stat-label,
 .meter-label,
 .pin-state {
-  font-family: "Courier New", monospace;
+  font-family: "Space Mono", monospace;
   font-size: 9px;
   font-weight: 900;
   letter-spacing: 0.08em;
