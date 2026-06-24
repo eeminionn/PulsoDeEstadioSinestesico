@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-24T17:05:06.319Z",
+  "updated_at": "2026-06-24T19:47:01.190Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -1720,9 +1720,9 @@
       "away": "Qatar",
       "hCode": "BIH",
       "aCode": "QAT",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 2,
+      "aScore": 1,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1732,8 +1732,27 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 29,
+          "label": "29'",
+          "team": "BIH",
+          "player": "Karim Alaibgvvich"
+        },
+        {
+          "minute": 34,
+          "label": "34'",
+          "team": "BIH",
+          "player": "Hsin Sltan Albrik"
+        },
+        {
+          "minute": 42,
+          "label": "42'",
+          "team": "QAT",
+          "player": "Hassan Al-Haydos"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-058",
@@ -3325,9 +3344,9 @@
       "away": "Canada",
       "hCode": "SUI",
       "aCode": "CAN",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 0,
+      "totalGoals": 0,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3337,7 +3356,7 @@
       "champion": 0,
       "hostTeam": 1,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
