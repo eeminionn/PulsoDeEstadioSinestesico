@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-24T19:47:01.190Z",
+  "updated_at": "2026-06-24T21:23:21.256Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 48,
-    "totalGoals": 141,
-    "currentLeader": "En juego · 48/104 partidos cerrados"
+    "finishedMatches": 50,
+    "totalGoals": 148,
+    "currentLeader": "En juego · 50/104 partidos cerrados"
   },
   "matches": [
     {
@@ -1720,10 +1720,10 @@
       "away": "Qatar",
       "hCode": "BIH",
       "aCode": "QAT",
-      "hScore": 2,
+      "hScore": 3,
       "aScore": 1,
-      "totalGoals": 3,
-      "margin": 1,
+      "totalGoals": 4,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1731,8 +1731,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 29,
@@ -1744,13 +1744,19 @@
           "minute": 34,
           "label": "34'",
           "team": "BIH",
-          "player": "Hsin Sltan Albrik"
+          "player": "Abvnad"
         },
         {
           "minute": 42,
           "label": "42'",
           "team": "QAT",
           "player": "Hassan Al-Haydos"
+        },
+        {
+          "minute": 80,
+          "label": "80'",
+          "team": "BIH",
+          "player": "Armin Mhmich"
         }
       ]
     },
@@ -3344,9 +3350,9 @@
       "away": "Canada",
       "hCode": "SUI",
       "aCode": "CAN",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": 2,
+      "aScore": 1,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3355,9 +3361,28 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 1,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 46,
+          "label": "46'",
+          "team": "SUI",
+          "player": "Rubén Vargas"
+        },
+        {
+          "minute": 57,
+          "label": "57'",
+          "team": "SUI",
+          "player": "Jvhan Mnzambi"
+        },
+        {
+          "minute": 76,
+          "label": "76'",
+          "team": "CAN",
+          "player": "Prvmis Divid"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-057",
