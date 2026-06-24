@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-23T23:58:13.850Z",
+  "updated_at": "2026-06-24T04:17:51.940Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 46,
-    "totalGoals": 139,
-    "currentLeader": "En juego · 46/104 partidos cerrados"
+    "finishedMatches": 48,
+    "totalGoals": 141,
+    "currentLeader": "En juego · 48/104 partidos cerrados"
   },
   "matches": [
     {
@@ -2038,8 +2038,8 @@
       "hCode": "PAN",
       "aCode": "CRO",
       "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "aScore": 1,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2048,9 +2048,16 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 54,
+          "label": "54'",
+          "team": "CRO",
+          "player": "Ante Budimir"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-047",
@@ -2063,9 +2070,9 @@
       "away": "Democratic Republic of the Congo",
       "hCode": "COL",
       "aCode": "COD",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 1,
+      "aScore": 0,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2074,9 +2081,16 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 76,
+          "label": "76'",
+          "team": "COL",
+          "player": "Dnil Mvnvz"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-048",
