@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-25T19:05:25.368Z",
+  "updated_at": "2026-06-25T21:43:11.951Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -3185,10 +3185,10 @@
       "away": "Ivory Coast",
       "hCode": "CUW",
       "aCode": "CIV",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 0,
+      "aScore": 2,
+      "totalGoals": 2,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -3197,8 +3197,21 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 7,
+          "label": "7'",
+          "team": "CIV",
+          "player": "Nikvlas Ph Ph"
+        },
+        {
+          "minute": 64,
+          "label": "64'",
+          "team": "CIV",
+          "player": "Nikvlas Ph Ph"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-056",
@@ -3211,9 +3224,9 @@
       "away": "Germany",
       "hCode": "ECU",
       "aCode": "GER",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 2,
+      "aScore": 1,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3223,8 +3236,27 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 2,
+          "label": "2'",
+          "team": "GER",
+          "player": "Leroy Sané"
+        },
+        {
+          "minute": 9,
+          "label": "9'",
+          "team": "ECU",
+          "player": "Nilsvn Angvlv"
+        },
+        {
+          "minute": 77,
+          "label": "77'",
+          "team": "ECU",
+          "player": "Gvnzalv Plata"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-068",
