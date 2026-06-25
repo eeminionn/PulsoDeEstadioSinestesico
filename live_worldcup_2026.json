@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-24T23:04:14.488Z",
+  "updated_at": "2026-06-25T03:38:43.399Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 50,
-    "totalGoals": 148,
-    "currentLeader": "En juego · 50/104 partidos cerrados"
+    "finishedMatches": 54,
+    "totalGoals": 161,
+    "currentLeader": "En juego · 54/104 partidos cerrados"
   },
   "matches": [
     {
@@ -735,10 +735,10 @@
       "away": "Mexico",
       "hCode": "CZE",
       "aCode": "MEX",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 0,
+      "aScore": 3,
+      "totalGoals": 3,
+      "margin": 3,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -746,9 +746,28 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 1,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 4,
+          "label": "4'",
+          "team": "MEX",
+          "player": "Álvaro Fidalgo 90+"
+        },
+        {
+          "minute": 55,
+          "label": "55'",
+          "team": "MEX",
+          "player": "Mateo Chávez"
+        },
+        {
+          "minute": 61,
+          "label": "61'",
+          "team": "MEX",
+          "player": "Jvlian Kviinvnz"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-060",
@@ -1218,10 +1237,10 @@
       "away": "Haiti",
       "hCode": "MAR",
       "aCode": "HAI",
-      "hScore": 2,
+      "hScore": 4,
       "aScore": 2,
-      "totalGoals": 4,
-      "margin": 1,
+      "totalGoals": 6,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1229,8 +1248,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 1,
@@ -1255,6 +1274,18 @@
           "label": "43'",
           "team": "HAI",
           "player": "Wilson Isidor"
+        },
+        {
+          "minute": 78,
+          "label": "78'",
+          "team": "MAR",
+          "player": "Svfian Rhimi"
+        },
+        {
+          "minute": 89,
+          "label": "89'",
+          "team": "MAR",
+          "player": "Gessime Yassine"
         }
       ]
     },
@@ -1269,9 +1300,9 @@
       "away": "South Korea",
       "hCode": "RSA",
       "aCode": "KOR",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 1,
+      "aScore": 0,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1280,9 +1311,16 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 63,
+          "label": "63'",
+          "team": "RSA",
+          "player": "Taplv Maskv"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-087",
@@ -1720,9 +1758,9 @@
       "hCode": "SCO",
       "aCode": "BRA",
       "hScore": 0,
-      "aScore": 2,
-      "totalGoals": 2,
-      "margin": 2,
+      "aScore": 3,
+      "totalGoals": 3,
+      "margin": 3,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1730,8 +1768,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 3,
@@ -1744,6 +1782,12 @@
           "label": "7'",
           "team": "BRA",
           "player": "Vinícius Júnior"
+        },
+        {
+          "minute": 60,
+          "label": "60'",
+          "team": "BRA",
+          "player": "Matheus Cunha"
         }
       ]
     },
