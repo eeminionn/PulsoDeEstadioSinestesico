@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-25T21:43:11.951Z",
+  "updated_at": "2026-06-25T23:18:48.212Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 54,
-    "totalGoals": 161,
-    "currentLeader": "En juego · 54/104 partidos cerrados"
+    "finishedMatches": 56,
+    "totalGoals": 166,
+    "currentLeader": "En juego · 56/104 partidos cerrados"
   },
   "matches": [
     {
@@ -361,7 +361,7 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
@@ -781,9 +781,9 @@
       "hCode": "TUN",
       "aCode": "NED",
       "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
-      "margin": 1,
+      "aScore": 2,
+      "totalGoals": 2,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -792,8 +792,21 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 3,
+          "label": "3'",
+          "team": "NED",
+          "player": "Alis Skhiri"
+        },
+        {
+          "minute": 7,
+          "label": "7'",
+          "team": "NED",
+          "player": "Brian Brobbey"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-061",
@@ -1853,9 +1866,9 @@
       "away": "United States",
       "hCode": "TUR",
       "aCode": "USA",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3196,8 +3209,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 7,
@@ -3235,8 +3248,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 2,
@@ -3509,9 +3522,9 @@
       "away": "Australia",
       "hCode": "PAR",
       "aCode": "AUS",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
