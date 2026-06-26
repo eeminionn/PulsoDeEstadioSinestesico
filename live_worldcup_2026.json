@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-26T18:52:18.643Z",
+  "updated_at": "2026-06-26T20:47:09.691Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -844,10 +844,10 @@
       "away": "Iraq",
       "hCode": "SEN",
       "aCode": "IRQ",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 4,
+      "aScore": 0,
+      "totalGoals": 4,
+      "margin": 4,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -856,8 +856,33 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 4,
+          "label": "4'",
+          "team": "SEN",
+          "player": "Habib Diarra"
+        },
+        {
+          "minute": 56,
+          "label": "56'",
+          "team": "SEN",
+          "player": "Ismaïla Sarr"
+        },
+        {
+          "minute": 59,
+          "label": "59'",
+          "team": "SEN",
+          "player": "Paph Gviih"
+        },
+        {
+          "minute": 71,
+          "label": "71'",
+          "team": "SEN",
+          "player": "Paph Gviih"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-067",
@@ -1948,10 +1973,10 @@
       "away": "France",
       "hCode": "NOR",
       "aCode": "FRA",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 1,
+      "aScore": 3,
+      "totalGoals": 4,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1960,8 +1985,33 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 7,
+          "label": "7'",
+          "team": "FRA",
+          "player": "Ousmane Dembélé"
+        },
+        {
+          "minute": 20,
+          "label": "20'",
+          "team": "FRA",
+          "player": "Ousmane Dembélé"
+        },
+        {
+          "minute": 21,
+          "label": "21'",
+          "team": "NOR",
+          "player": "Thelo Aasgaard"
+        },
+        {
+          "minute": 32,
+          "label": "32'",
+          "team": "FRA",
+          "player": "Ousmane Dembélé"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-063",
@@ -1974,9 +2024,9 @@
       "away": "Iran",
       "hCode": "EGY",
       "aCode": "IRN",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2000,9 +2050,9 @@
       "away": "Saudi Arabia",
       "hCode": "CPV",
       "aCode": "KSA",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2026,9 +2076,9 @@
       "away": "Spain",
       "hCode": "URU",
       "aCode": "ESP",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3604,9 +3654,9 @@
       "away": "Belgium",
       "hCode": "NZL",
       "aCode": "BEL",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
