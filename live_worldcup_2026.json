@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-25T23:18:48.212Z",
+  "updated_at": "2026-06-26T03:47:45.655Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 56,
-    "totalGoals": 166,
-    "currentLeader": "En juego · 56/104 partidos cerrados"
+    "finishedMatches": 58,
+    "totalGoals": 172,
+    "currentLeader": "En juego · 58/104 partidos cerrados"
   },
   "matches": [
     {
@@ -349,9 +349,9 @@
       "away": "Sweden",
       "hCode": "JPN",
       "aCode": "SWE",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": 1,
+      "aScore": 1,
+      "totalGoals": 2,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -360,9 +360,22 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 56,
+          "label": "56'",
+          "team": "JPN",
+          "player": "Daizen Maeda"
+        },
+        {
+          "minute": 62,
+          "label": "62'",
+          "team": "SWE",
+          "player": "Anthony Elanga"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-095",
@@ -780,9 +793,9 @@
       "away": "Netherlands",
       "hCode": "TUN",
       "aCode": "NED",
-      "hScore": 0,
-      "aScore": 2,
-      "totalGoals": 2,
+      "hScore": 1,
+      "aScore": 3,
+      "totalGoals": 4,
       "margin": 2,
       "extra": 0,
       "pens": 0,
@@ -791,8 +804,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 3,
@@ -805,6 +818,18 @@
           "label": "7'",
           "team": "NED",
           "player": "Brian Brobbey"
+        },
+        {
+          "minute": 54,
+          "label": "54'",
+          "team": "TUN",
+          "player": "Hazm Mstvri"
+        },
+        {
+          "minute": 62,
+          "label": "62'",
+          "team": "NED",
+          "player": "Ian Fn Hkh"
         }
       ]
     },
@@ -1866,9 +1891,9 @@
       "away": "United States",
       "hCode": "TUR",
       "aCode": "USA",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 2,
+      "aScore": 2,
+      "totalGoals": 4,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -1878,8 +1903,33 @@
       "champion": 0,
       "hostTeam": 1,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 3,
+          "label": "3'",
+          "team": "USA",
+          "player": "Auston Trusty"
+        },
+        {
+          "minute": 10,
+          "label": "10'",
+          "team": "TUR",
+          "player": "Arda Güler"
+        },
+        {
+          "minute": 31,
+          "label": "31'",
+          "team": "TUR",
+          "player": "Baris Alpr Ailmaz"
+        },
+        {
+          "minute": 49,
+          "label": "49'",
+          "team": "USA",
+          "player": "Sebastian Berhalter"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-062",
@@ -3522,9 +3572,9 @@
       "away": "Australia",
       "hCode": "PAR",
       "aCode": "AUS",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 0,
+      "totalGoals": 0,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3534,7 +3584,7 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
