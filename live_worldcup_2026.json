@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-27T04:53:58.094Z",
+  "updated_at": "2026-06-27T07:50:03.620Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 64,
-    "totalGoals": 188,
-    "currentLeader": "En juego · 64/104 partidos cerrados"
+    "finishedMatches": 66,
+    "totalGoals": 196,
+    "currentLeader": "En juego · 66/104 partidos cerrados"
   },
   "matches": [
     {
@@ -976,9 +976,9 @@
       "city": "Dallas (Arlington, Texas)",
       "country": "United States",
       "home": "Australia",
-      "away": "Runner-up Group G",
+      "away": "Egypt",
       "hCode": "AUS",
-      "aCode": "RG",
+      "aCode": "EGY",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
@@ -2047,8 +2047,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 5,
@@ -3687,9 +3687,9 @@
       "hCode": "NZL",
       "aCode": "BEL",
       "hScore": 1,
-      "aScore": 4,
-      "totalGoals": 5,
-      "margin": 3,
+      "aScore": 5,
+      "totalGoals": 6,
+      "margin": 4,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -3697,9 +3697,15 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
+        {
+          "minute": 4,
+          "label": "4'",
+          "team": "BEL",
+          "player": "Alexis Saelemaekers 90+"
+        },
         {
           "minute": 28,
           "label": "28'",
@@ -3817,9 +3823,9 @@
       "stage": "round of 32",
       "city": "Atlanta",
       "country": "United States",
-      "home": "Winner Group L",
+      "home": "Belgium",
       "away": "3rd Group E/H/I/J/K",
-      "hCode": "WL",
+      "hCode": "BEL",
       "aCode": "3E",
       "hScore": 0,
       "aScore": 0,
