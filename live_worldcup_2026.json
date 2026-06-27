@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-27T00:08:32.620Z",
+  "updated_at": "2026-06-27T04:53:58.094Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 62,
-    "totalGoals": 187,
-    "currentLeader": "En juego · 62/104 partidos cerrados"
+    "finishedMatches": 64,
+    "totalGoals": 188,
+    "currentLeader": "En juego · 64/104 partidos cerrados"
   },
   "matches": [
     {
@@ -950,9 +950,9 @@
       "city": "Miami (Miami Gardens)",
       "country": "United States",
       "home": "Argentina",
-      "away": "Runner-up Group H",
+      "away": "Cape Verde",
       "hCode": "ARG",
-      "aCode": "RH",
+      "aCode": "CPV",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
@@ -2036,9 +2036,9 @@
       "away": "Iran",
       "hCode": "EGY",
       "aCode": "IRN",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 1,
+      "aScore": 1,
+      "totalGoals": 2,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2048,8 +2048,21 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 5,
+          "label": "5'",
+          "team": "EGY",
+          "player": "Mahmoud Saber"
+        },
+        {
+          "minute": 14,
+          "label": "14'",
+          "team": "IRN",
+          "player": "Ramin Rezaeian"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-065",
@@ -2073,8 +2086,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": []
     },
     {
@@ -2089,8 +2102,8 @@
       "hCode": "URU",
       "aCode": "ESP",
       "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "aScore": 1,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2099,9 +2112,16 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 42,
+          "label": "42'",
+          "team": "ESP",
+          "player": "Álex Baena"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-070",
@@ -3449,9 +3469,9 @@
       "city": "Boston (Foxborough)",
       "country": "United States",
       "home": "Germany",
-      "away": "3rd Group A/B/C/D/F",
+      "away": "Paraguay",
       "hCode": "GER",
-      "aCode": "3A",
+      "aCode": "PAR",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
@@ -3666,10 +3686,10 @@
       "away": "Belgium",
       "hCode": "NZL",
       "aCode": "BEL",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 1,
+      "aScore": 4,
+      "totalGoals": 5,
+      "margin": 3,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -3678,8 +3698,39 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 28,
+          "label": "28'",
+          "team": "BEL",
+          "player": "Leandro Trossard"
+        },
+        {
+          "minute": 50,
+          "label": "50'",
+          "team": "BEL",
+          "player": "Leandro Trossard"
+        },
+        {
+          "minute": 66,
+          "label": "66'",
+          "team": "BEL",
+          "player": "Kevin De Bruyne"
+        },
+        {
+          "minute": 84,
+          "label": "84'",
+          "team": "NZL",
+          "player": "Ali Jast"
+        },
+        {
+          "minute": 86,
+          "label": "86'",
+          "team": "BEL",
+          "player": "Romelu Lukaku"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-075",
