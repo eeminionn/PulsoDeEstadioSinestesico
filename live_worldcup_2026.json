@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-26T20:47:09.691Z",
+  "updated_at": "2026-06-27T00:08:32.620Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 60,
-    "totalGoals": 177,
-    "currentLeader": "En juego · 60/104 partidos cerrados"
+    "finishedMatches": 62,
+    "totalGoals": 187,
+    "currentLeader": "En juego · 62/104 partidos cerrados"
   },
   "matches": [
     {
@@ -844,10 +844,10 @@
       "away": "Iraq",
       "hCode": "SEN",
       "aCode": "IRQ",
-      "hScore": 4,
+      "hScore": 5,
       "aScore": 0,
-      "totalGoals": 4,
-      "margin": 4,
+      "totalGoals": 5,
+      "margin": 5,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -855,8 +855,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 4,
@@ -881,6 +881,12 @@
           "label": "71'",
           "team": "SEN",
           "player": "Paph Gviih"
+        },
+        {
+          "minute": 82,
+          "label": "82'",
+          "team": "SEN",
+          "player": "Ailman Andiaih"
         }
       ]
     },
@@ -1974,9 +1980,9 @@
       "hCode": "NOR",
       "aCode": "FRA",
       "hScore": 1,
-      "aScore": 3,
-      "totalGoals": 4,
-      "margin": 2,
+      "aScore": 4,
+      "totalGoals": 5,
+      "margin": 3,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -1984,9 +1990,15 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
+        {
+          "minute": 4,
+          "label": "4'",
+          "team": "FRA",
+          "player": "Désiré Doué 90+"
+        },
         {
           "minute": 7,
           "label": "7'",
@@ -2050,9 +2062,9 @@
       "away": "Saudi Arabia",
       "hCode": "CPV",
       "aCode": "KSA",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 0,
+      "totalGoals": 0,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2062,7 +2074,7 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
@@ -2076,9 +2088,9 @@
       "away": "Spain",
       "hCode": "URU",
       "aCode": "ESP",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 0,
+      "totalGoals": 0,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2088,7 +2100,7 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
@@ -2704,9 +2716,9 @@
       "stage": "round of 32",
       "city": "New York/New Jersey (East Rutherford)",
       "country": "United States",
-      "home": "Winner Group I",
+      "home": "France",
       "away": "3rd Group C/D/F/G/H",
-      "hCode": "WI",
+      "hCode": "FRA",
       "aCode": "3C",
       "hScore": 0,
       "aScore": 0,
@@ -3703,9 +3715,9 @@
       "city": "Dallas (Arlington, Texas)",
       "country": "United States",
       "home": "Ivory Coast",
-      "away": "Runner-up Group I",
+      "away": "Norway",
       "hCode": "CIV",
-      "aCode": "RI",
+      "aCode": "NOR",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
