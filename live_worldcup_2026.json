@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-27T20:08:32.588Z",
+  "updated_at": "2026-06-27T22:03:06.417Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -901,9 +901,9 @@
       "away": "England",
       "hCode": "PAN",
       "aCode": "ENG",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 0,
+      "totalGoals": 0,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -913,7 +913,7 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
@@ -3420,9 +3420,9 @@
       "away": "Ghana",
       "hCode": "CRO",
       "aCode": "GHA",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 1,
+      "aScore": 0,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3432,8 +3432,15 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 31,
+          "label": "31'",
+          "team": "CRO",
+          "player": "Petar Sučić"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-069",
