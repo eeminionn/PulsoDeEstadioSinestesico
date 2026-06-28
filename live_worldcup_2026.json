@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-28T00:03:20.062Z",
+  "updated_at": "2026-06-28T05:17:31.755Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 68,
-    "totalGoals": 201,
-    "currentLeader": "En juego · 68/104 partidos cerrados"
+    "finishedMatches": 72,
+    "totalGoals": 215,
+    "currentLeader": "En juego · 72/104 partidos cerrados"
   },
   "matches": [
     {
@@ -940,10 +940,10 @@
       "away": "Uzbekistan",
       "hCode": "COD",
       "aCode": "UZB",
-      "hScore": 0,
+      "hScore": 3,
       "aScore": 1,
-      "totalGoals": 1,
-      "margin": 1,
+      "totalGoals": 4,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -951,14 +951,26 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
+        {
+          "minute": 1,
+          "label": "1'",
+          "team": "COD",
+          "player": "Yoane Wissa 90+"
+        },
         {
           "minute": 10,
           "label": "10'",
           "team": "UZB",
           "player": "Aldvr Shvmvrvdvf"
+        },
+        {
+          "minute": 78,
+          "label": "78'",
+          "team": "COD",
+          "player": "Fistvn Mail"
         }
       ]
     },
@@ -2154,10 +2166,10 @@
       "away": "Argentina",
       "hCode": "JOR",
       "aCode": "ARG",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 1,
+      "aScore": 3,
+      "totalGoals": 4,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -2165,9 +2177,28 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 19,
+          "label": "19'",
+          "team": "ARG",
+          "player": "Jivani Lv Slsv"
+        },
+        {
+          "minute": 55,
+          "label": "55'",
+          "team": "JOR",
+          "player": "Mvsi Altmari"
+        },
+        {
+          "minute": 80,
+          "label": "80'",
+          "team": "ARG",
+          "player": "Lionel Messi"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-076",
@@ -2719,8 +2750,8 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": []
     },
     {
@@ -3485,9 +3516,9 @@
       "away": "Austria",
       "hCode": "ALG",
       "aCode": "AUT",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 3,
+      "aScore": 3,
+      "totalGoals": 6,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3496,9 +3527,46 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 3,
+          "label": "3'",
+          "team": "ALG",
+          "player": "Riyad Mahrez 90+"
+        },
+        {
+          "minute": 6,
+          "label": "6'",
+          "team": "AUT",
+          "player": "Saša Kalajdžić 90+"
+        },
+        {
+          "minute": 28,
+          "label": "28'",
+          "team": "AUT",
+          "player": "Marko Arnautović"
+        },
+        {
+          "minute": 45,
+          "label": "45'",
+          "team": "ALG",
+          "player": "Rafik Blghali"
+        },
+        {
+          "minute": 55,
+          "label": "55'",
+          "team": "AUT",
+          "player": "Marcel Sabitzer"
+        },
+        {
+          "minute": 60,
+          "label": "60'",
+          "team": "ALG",
+          "player": "Riyad Mahrez"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-074",
