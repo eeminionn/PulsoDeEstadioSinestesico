@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-27T22:03:06.417Z",
+  "updated_at": "2026-06-28T00:03:20.062Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 66,
-    "totalGoals": 196,
-    "currentLeader": "En juego · 66/104 partidos cerrados"
+    "finishedMatches": 68,
+    "totalGoals": 201,
+    "currentLeader": "En juego · 68/104 partidos cerrados"
   },
   "matches": [
     {
@@ -902,9 +902,9 @@
       "hCode": "PAN",
       "aCode": "ENG",
       "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
-      "margin": 1,
+      "aScore": 2,
+      "totalGoals": 2,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -912,9 +912,22 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 62,
+          "label": "62'",
+          "team": "ENG",
+          "player": "Jvd Blingham"
+        },
+        {
+          "minute": 67,
+          "label": "67'",
+          "team": "ENG",
+          "player": "Hri Kin"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-072",
@@ -927,9 +940,9 @@
       "away": "Uzbekistan",
       "hCode": "COD",
       "aCode": "UZB",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 1,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -939,8 +952,15 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 10,
+          "label": "10'",
+          "team": "UZB",
+          "player": "Aldvr Shvmvrvdvf"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-086",
@@ -2688,9 +2708,9 @@
       "away": "Portugal",
       "hCode": "COL",
       "aCode": "POR",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 0,
+      "totalGoals": 0,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2700,7 +2720,7 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
@@ -3420,9 +3440,9 @@
       "away": "Ghana",
       "hCode": "CRO",
       "aCode": "GHA",
-      "hScore": 1,
-      "aScore": 0,
-      "totalGoals": 1,
+      "hScore": 2,
+      "aScore": 1,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3431,14 +3451,26 @@
       "ko": 0,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 31,
           "label": "31'",
           "team": "CRO",
           "player": "Petar Sučić"
+        },
+        {
+          "minute": 73,
+          "label": "73'",
+          "team": "GHA",
+          "player": "Drik Lvkasn"
+        },
+        {
+          "minute": 83,
+          "label": "83'",
+          "team": "CRO",
+          "player": "Nikola Vlašić"
         }
       ]
     },
