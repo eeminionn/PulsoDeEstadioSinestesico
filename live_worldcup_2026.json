@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-28T19:21:17.111Z",
+  "updated_at": "2026-06-28T21:02:01.262Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 72,
-    "totalGoals": 215,
-    "currentLeader": "En juego · 72/104 partidos cerrados"
+    "finishedMatches": 73,
+    "totalGoals": 216,
+    "currentLeader": "En juego · 73/104 partidos cerrados"
   },
   "matches": [
     {
@@ -2772,8 +2772,8 @@
       "hCode": "RSA",
       "aCode": "CAN",
       "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "aScore": 1,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2782,9 +2782,16 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 1,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 2,
+          "label": "2'",
+          "team": "CAN",
+          "player": "Astfan Avstakviv 90+"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-077",
