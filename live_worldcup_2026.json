@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-29T17:37:56.497Z",
+  "updated_at": "2026-06-29T19:58:58.075Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 73,
-    "totalGoals": 216,
-    "currentLeader": "En juego · 73/104 partidos cerrados"
+    "finishedMatches": 74,
+    "totalGoals": 219,
+    "currentLeader": "En juego · 74/104 partidos cerrados"
   },
   "matches": [
     {
@@ -2217,9 +2217,9 @@
       "away": "Japan",
       "hCode": "BRA",
       "aCode": "JPN",
-      "hScore": 0,
+      "hScore": 2,
       "aScore": 1,
-      "totalGoals": 1,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2228,14 +2228,26 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
+        {
+          "minute": 5,
+          "label": "5'",
+          "team": "BRA",
+          "player": "Gabriel Martinelli 90+"
+        },
         {
           "minute": 29,
           "label": "29'",
           "team": "JPN",
           "player": "Kaishū Sano"
+        },
+        {
+          "minute": 56,
+          "label": "56'",
+          "team": "BRA",
+          "player": "Casemiro"
         }
       ]
     },
@@ -3098,9 +3110,9 @@
       "stage": "round of 16",
       "city": "New York/New Jersey (East Rutherford)",
       "country": "United States",
-      "home": "Winner Match 76",
+      "home": "Brazil",
       "away": "Winner Match 78",
-      "hCode": "M76",
+      "hCode": "BRA",
       "aCode": "M78",
       "hScore": 0,
       "aScore": 0,
