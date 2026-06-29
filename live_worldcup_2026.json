@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-29T14:05:23.844Z",
+  "updated_at": "2026-06-29T17:37:56.497Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -2217,9 +2217,9 @@
       "away": "Japan",
       "hCode": "BRA",
       "aCode": "JPN",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 1,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -2229,8 +2229,15 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 29,
+          "label": "29'",
+          "team": "JPN",
+          "player": "Kaishū Sano"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-083",
