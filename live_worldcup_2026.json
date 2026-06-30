@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-30T21:43:42.068Z",
+  "updated_at": "2026-06-30T23:14:12.792Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 77,
-    "totalGoals": 226,
-    "currentLeader": "En juego · 77/104 partidos cerrados"
+    "finishedMatches": 78,
+    "totalGoals": 229,
+    "currentLeader": "En juego · 78/104 partidos cerrados"
   },
   "matches": [
     {
@@ -2823,10 +2823,10 @@
       "away": "Sweden",
       "hCode": "FRA",
       "aCode": "SWE",
-      "hScore": 0,
+      "hScore": 3,
       "aScore": 0,
-      "totalGoals": 0,
-      "margin": 1,
+      "totalGoals": 3,
+      "margin": 3,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -2834,9 +2834,28 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 45,
+          "label": "45'",
+          "team": "FRA",
+          "player": "Kylian Mbappé"
+        },
+        {
+          "minute": 53,
+          "label": "53'",
+          "team": "FRA",
+          "player": "Bradley Barcola"
+        },
+        {
+          "minute": 74,
+          "label": "74'",
+          "team": "FRA",
+          "player": "Kylian Mbappé"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-084",
@@ -4060,9 +4079,9 @@
       "city": "Philadelphia",
       "country": "United States",
       "home": "Paraguay",
-      "away": "Winner Match 77",
+      "away": "France",
       "hCode": "PAR",
-      "aCode": "M77",
+      "aCode": "FRA",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
