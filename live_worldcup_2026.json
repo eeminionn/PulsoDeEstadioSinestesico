@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-30T17:55:01.274Z",
+  "updated_at": "2026-06-30T19:59:34.457Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 76,
-    "totalGoals": 223,
-    "currentLeader": "En juego · 76/104 partidos cerrados"
+    "finishedMatches": 77,
+    "totalGoals": 226,
+    "currentLeader": "En juego · 77/104 partidos cerrados"
   },
   "matches": [
     {
@@ -2823,9 +2823,9 @@
       "away": "Sweden",
       "hCode": "FRA",
       "aCode": "SWE",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3111,9 +3111,9 @@
       "city": "New York/New Jersey (East Rutherford)",
       "country": "United States",
       "home": "Brazil",
-      "away": "Winner Match 78",
+      "away": "Norway",
       "hCode": "BRA",
-      "aCode": "M78",
+      "aCode": "NOR",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
@@ -3940,9 +3940,9 @@
       "away": "Norway",
       "hCode": "CIV",
       "aCode": "NOR",
-      "hScore": 0,
-      "aScore": 1,
-      "totalGoals": 1,
+      "hScore": 1,
+      "aScore": 2,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3951,14 +3951,26 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 39,
           "label": "39'",
           "team": "NOR",
           "player": "Antonio Nusa"
+        },
+        {
+          "minute": 74,
+          "label": "74'",
+          "team": "CIV",
+          "player": "Amad Diallo"
+        },
+        {
+          "minute": 86,
+          "label": "86'",
+          "team": "NOR",
+          "player": "Erling Haaland"
         }
       ]
     },
@@ -3973,9 +3985,9 @@
       "away": "Ecuador",
       "hCode": "MEX",
       "aCode": "ECU",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
