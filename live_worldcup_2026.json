@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-29T22:58:44.801Z",
+  "updated_at": "2026-06-30T00:14:26.541Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 74,
-    "totalGoals": 219,
-    "currentLeader": "En juego · 74/104 partidos cerrados"
+    "finishedMatches": 75,
+    "totalGoals": 221,
+    "currentLeader": "En juego · 75/104 partidos cerrados"
   },
   "matches": [
     {
@@ -3622,8 +3622,8 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 42,
@@ -4027,9 +4027,9 @@
       "stage": "round of 16",
       "city": "Philadelphia",
       "country": "United States",
-      "home": "Winner Match 74",
+      "home": "Paraguay",
       "away": "Winner Match 77",
-      "hCode": "M74",
+      "hCode": "PAR",
       "aCode": "M77",
       "hScore": 0,
       "aScore": 0,
