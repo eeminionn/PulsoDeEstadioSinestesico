@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-06-30T00:14:26.541Z",
+  "updated_at": "2026-06-30T05:04:14.200Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 75,
-    "totalGoals": 221,
-    "currentLeader": "En juego · 75/104 partidos cerrados"
+    "finishedMatches": 76,
+    "totalGoals": 223,
+    "currentLeader": "En juego · 76/104 partidos cerrados"
   },
   "matches": [
     {
@@ -2872,9 +2872,9 @@
       "city": "Houston",
       "country": "United States",
       "home": "Canada",
-      "away": "Winner Match 75",
+      "away": "Morocco",
       "hCode": "CAN",
-      "aCode": "M75",
+      "aCode": "MAR",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
@@ -3901,9 +3901,9 @@
       "away": "Morocco",
       "hCode": "NED",
       "aCode": "MAR",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 1,
+      "aScore": 1,
+      "totalGoals": 2,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3912,9 +3912,22 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 1,
+          "label": "1'",
+          "team": "MAR",
+          "player": "Issa Diop 90+"
+        },
+        {
+          "minute": 72,
+          "label": "72'",
+          "team": "NED",
+          "player": "Kvdi Khakpv"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-078",
