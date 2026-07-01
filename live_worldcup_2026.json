@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-01T20:02:54.964Z",
+  "updated_at": "2026-07-01T22:17:46.953Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -3568,9 +3568,9 @@
       "away": "Senegal",
       "hCode": "BEL",
       "aCode": "SEN",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": 2,
+      "aScore": 2,
+      "totalGoals": 4,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3581,7 +3581,32 @@
       "hostTeam": 0,
       "finished": false,
       "liveState": "live",
-      "goals": []
+      "goals": [
+        {
+          "minute": 25,
+          "label": "25'",
+          "team": "SEN",
+          "player": "Habib Diarra"
+        },
+        {
+          "minute": 51,
+          "label": "51'",
+          "team": "SEN",
+          "player": "Ismaïla Sarr"
+        },
+        {
+          "minute": 86,
+          "label": "86'",
+          "team": "BEL",
+          "player": "Romelu Lukaku"
+        },
+        {
+          "minute": 89,
+          "label": "89'",
+          "team": "BEL",
+          "player": "Youri Tielemans"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-083",
