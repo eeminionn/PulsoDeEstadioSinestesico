@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-01T17:56:52.665Z",
+  "updated_at": "2026-07-01T20:02:54.964Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 79,
-    "totalGoals": 231,
-    "currentLeader": "En juego · 79/104 partidos cerrados"
+    "finishedMatches": 80,
+    "totalGoals": 234,
+    "currentLeader": "En juego · 80/104 partidos cerrados"
   },
   "matches": [
     {
@@ -3508,8 +3508,8 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 7,
@@ -3542,9 +3542,9 @@
       "away": "Bosnia and Herzegovina",
       "hCode": "USA",
       "aCode": "BIH",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3568,9 +3568,9 @@
       "away": "Senegal",
       "hCode": "BEL",
       "aCode": "SEN",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 0,
+      "totalGoals": 0,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3580,7 +3580,7 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
@@ -3825,9 +3825,9 @@
       "city": "Mexico City",
       "country": "Mexico",
       "home": "Mexico",
-      "away": "Winner Match 80",
+      "away": "England",
       "hCode": "MEX",
-      "aCode": "M80",
+      "aCode": "ENG",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
