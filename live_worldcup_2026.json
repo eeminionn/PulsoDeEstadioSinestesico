@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-01T15:42:35.547Z",
+  "updated_at": "2026-07-01T17:56:52.665Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -3497,9 +3497,9 @@
       "away": "Democratic Republic of the Congo",
       "hCode": "ENG",
       "aCode": "COD",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 2,
+      "aScore": 1,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3509,8 +3509,27 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 7,
+          "label": "7'",
+          "team": "COD",
+          "player": "Braian Sipnga"
+        },
+        {
+          "minute": 75,
+          "label": "75'",
+          "team": "ENG",
+          "player": "Hri Kin"
+        },
+        {
+          "minute": 86,
+          "label": "86'",
+          "team": "ENG",
+          "player": "Hri Kin"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-081",
