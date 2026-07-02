@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-02T20:18:46.180Z",
+  "updated_at": "2026-07-02T22:06:42.866Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 82,
-    "totalGoals": 241,
-    "currentLeader": "En juego · 82/104 partidos cerrados"
+    "finishedMatches": 83,
+    "totalGoals": 244,
+    "currentLeader": "En juego · 83/104 partidos cerrados"
   },
   "matches": [
     {
@@ -3664,10 +3664,10 @@
       "away": "Austria",
       "hCode": "ESP",
       "aCode": "AUT",
-      "hScore": 1,
+      "hScore": 3,
       "aScore": 0,
-      "totalGoals": 1,
-      "margin": 1,
+      "totalGoals": 3,
+      "margin": 3,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -3675,12 +3675,24 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 36,
           "label": "36'",
+          "team": "ESP",
+          "player": "Mikel Oyarzabal"
+        },
+        {
+          "minute": 66,
+          "label": "66'",
+          "team": "ESP",
+          "player": "Pedro Porro"
+        },
+        {
+          "minute": 89,
+          "label": "89'",
           "team": "ESP",
           "player": "Mikel Oyarzabal"
         }
@@ -3902,9 +3914,9 @@
       "city": "Dallas (Arlington, Texas)",
       "country": "United States",
       "home": "Winner Match 83",
-      "away": "Winner Match 84",
+      "away": "Spain",
       "hCode": "M83",
-      "aCode": "M84",
+      "aCode": "ESP",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
