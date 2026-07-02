@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-02T00:07:48.064Z",
+  "updated_at": "2026-07-02T04:57:24.128Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 81,
-    "totalGoals": 239,
-    "currentLeader": "En juego · 81/104 partidos cerrados"
+    "finishedMatches": 82,
+    "totalGoals": 241,
+    "currentLeader": "En juego · 82/104 partidos cerrados"
   },
   "matches": [
     {
@@ -3542,10 +3542,10 @@
       "away": "Bosnia and Herzegovina",
       "hCode": "USA",
       "aCode": "BIH",
-      "hScore": 0,
+      "hScore": 2,
       "aScore": 0,
-      "totalGoals": 0,
-      "margin": 1,
+      "totalGoals": 2,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -3553,9 +3553,22 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 1,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 45,
+          "label": "45'",
+          "team": "USA",
+          "player": "Flvrin Balvgan"
+        },
+        {
+          "minute": 82,
+          "label": "82'",
+          "team": "USA",
+          "player": "Malik Tillman"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-082",
@@ -3901,9 +3914,9 @@
       "stage": "round of 16",
       "city": "Seattle",
       "country": "United States",
-      "home": "Winner Match 81",
+      "home": "United States",
       "away": "Belgium",
-      "hCode": "M81",
+      "hCode": "USA",
       "aCode": "BEL",
       "hScore": 0,
       "aScore": 0,
@@ -3915,7 +3928,7 @@
       "semi": 0,
       "ko": 1,
       "champion": 0,
-      "hostTeam": 0,
+      "hostTeam": 1,
       "finished": false,
       "liveState": "notstarted",
       "goals": []
