@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-03T20:14:18.531Z",
+  "updated_at": "2026-07-03T22:05:07.246Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 85,
-    "totalGoals": 249,
-    "currentLeader": "En juego · 85/104 partidos cerrados"
+    "finishedMatches": 86,
+    "totalGoals": 251,
+    "currentLeader": "En juego · 86/104 partidos cerrados"
   },
   "matches": [
     {
@@ -3761,9 +3761,9 @@
       "away": "Cape Verde",
       "hCode": "ARG",
       "aCode": "CPV",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 0,
+      "totalGoals": 0,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3773,7 +3773,7 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
@@ -3787,9 +3787,9 @@
       "away": "Ghana",
       "hCode": "COL",
       "aCode": "GHA",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": null,
+      "aScore": null,
+      "totalGoals": null,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3824,8 +3824,8 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 13,
@@ -4005,9 +4005,9 @@
       "city": "Atlanta",
       "country": "United States",
       "home": "Winner Match 86",
-      "away": "Winner Match 88",
+      "away": "Egypt",
       "hCode": "M86",
-      "aCode": "M88",
+      "aCode": "EGY",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
