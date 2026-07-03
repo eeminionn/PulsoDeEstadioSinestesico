@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-03T00:06:00.138Z",
+  "updated_at": "2026-07-03T04:41:35.323Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 83,
-    "totalGoals": 244,
-    "currentLeader": "En juego · 83/104 partidos cerrados"
+    "finishedMatches": 84,
+    "totalGoals": 247,
+    "currentLeader": "En juego · 84/104 partidos cerrados"
   },
   "matches": [
     {
@@ -3638,9 +3638,9 @@
       "away": "Croatia",
       "hCode": "POR",
       "aCode": "CRO",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": 2,
+      "aScore": 1,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3649,9 +3649,22 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 4,
+          "label": "4'",
+          "team": "POR",
+          "player": "Gvnchalv Ramvs 90+"
+        },
+        {
+          "minute": 53,
+          "label": "53'",
+          "team": "CRO",
+          "player": "Ivan Perišić"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-084",
@@ -3709,10 +3722,10 @@
       "away": "Algeria",
       "hCode": "SUI",
       "aCode": "ALG",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 2,
+      "aScore": 0,
+      "totalGoals": 2,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -3721,8 +3734,21 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 10,
+          "label": "10'",
+          "team": "SUI",
+          "player": "Breel Embolo"
+        },
+        {
+          "minute": 46,
+          "label": "46'",
+          "team": "SUI",
+          "player": "Dn Andvi"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-086",
@@ -3913,9 +3939,9 @@
       "stage": "round of 16",
       "city": "Dallas (Arlington, Texas)",
       "country": "United States",
-      "home": "Winner Match 83",
+      "home": "Portugal",
       "away": "Spain",
-      "hCode": "M83",
+      "hCode": "POR",
       "aCode": "ESP",
       "hScore": 0,
       "aScore": 0,
