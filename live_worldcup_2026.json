@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-03T22:05:07.246Z",
+  "updated_at": "2026-07-04T00:04:36.253Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -3761,9 +3761,9 @@
       "away": "Cape Verde",
       "hCode": "ARG",
       "aCode": "CPV",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": 1,
+      "aScore": 1,
+      "totalGoals": 2,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3774,7 +3774,20 @@
       "hostTeam": 0,
       "finished": false,
       "liveState": "live",
-      "goals": []
+      "goals": [
+        {
+          "minute": 29,
+          "label": "29'",
+          "team": "ARG",
+          "player": "Lionel Messi"
+        },
+        {
+          "minute": 59,
+          "label": "59'",
+          "team": "CPV",
+          "player": "Drvi Dviart"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-087",
