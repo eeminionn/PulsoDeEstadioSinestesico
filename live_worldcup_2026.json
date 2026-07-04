@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-04T00:04:36.253Z",
+  "updated_at": "2026-07-04T04:35:03.994Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 86,
-    "totalGoals": 251,
-    "currentLeader": "En juego · 86/104 partidos cerrados"
+    "finishedMatches": 88,
+    "totalGoals": 257,
+    "currentLeader": "En juego · 88/104 partidos cerrados"
   },
   "matches": [
     {
@@ -3761,9 +3761,9 @@
       "away": "Cape Verde",
       "hCode": "ARG",
       "aCode": "CPV",
-      "hScore": 1,
-      "aScore": 1,
-      "totalGoals": 2,
+      "hScore": 3,
+      "aScore": 2,
+      "totalGoals": 5,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3772,8 +3772,8 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 29,
@@ -3786,6 +3786,24 @@
           "label": "59'",
           "team": "CPV",
           "player": "Drvi Dviart"
+        },
+        {
+          "minute": 92,
+          "label": "92'",
+          "team": "ARG",
+          "player": "Lisandro Martínez"
+        },
+        {
+          "minute": 103,
+          "label": "103'",
+          "team": "CPV",
+          "player": "Lvpz Kabral"
+        },
+        {
+          "minute": 111,
+          "label": "111'",
+          "team": "ARG",
+          "player": "Dini Bvrgs"
         }
       ]
     },
@@ -3800,9 +3818,9 @@
       "away": "Ghana",
       "hCode": "COL",
       "aCode": "GHA",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 1,
+      "aScore": 0,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3811,9 +3829,16 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 14,
+          "label": "14'",
+          "team": "COL",
+          "player": "Jan Arias"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-088",
@@ -4017,9 +4042,9 @@
       "stage": "round of 16",
       "city": "Atlanta",
       "country": "United States",
-      "home": "Winner Match 86",
+      "home": "Argentina",
       "away": "Egypt",
-      "hCode": "M86",
+      "hCode": "ARG",
       "aCode": "EGY",
       "hScore": 0,
       "aScore": 0,
@@ -4044,9 +4069,9 @@
       "city": "Vancouver",
       "country": "Canada",
       "home": "Switzerland",
-      "away": "Winner Match 87",
+      "away": "Colombia",
       "hCode": "SUI",
-      "aCode": "M87",
+      "aCode": "COL",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
