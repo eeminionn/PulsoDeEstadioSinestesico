@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-04T16:02:34.941Z",
+  "updated_at": "2026-07-04T18:01:41.126Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -3916,9 +3916,9 @@
       "away": "Morocco",
       "hCode": "CAN",
       "aCode": "MAR",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 0,
+      "totalGoals": 0,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3928,7 +3928,7 @@
       "champion": 0,
       "hostTeam": 1,
       "finished": false,
-      "liveState": "notstarted",
+      "liveState": "live",
       "goals": []
     },
     {
