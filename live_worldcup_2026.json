@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-04T23:05:53.017Z",
+  "updated_at": "2026-07-05T03:29:18.237Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 89,
-    "totalGoals": 260,
-    "currentLeader": "En juego · 89/104 partidos cerrados"
+    "finishedMatches": 90,
+    "totalGoals": 261,
+    "currentLeader": "En juego · 90/104 partidos cerrados"
   },
   "matches": [
     {
@@ -3901,8 +3901,8 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": []
     },
     {
@@ -4113,9 +4113,9 @@
       "stage": "quarter-finals",
       "city": "Boston (Foxborough)",
       "country": "United States",
-      "home": "Winner Match 89",
+      "home": "France",
       "away": "Morocco",
-      "hCode": "M89",
+      "hCode": "FRA",
       "aCode": "MAR",
       "hScore": 0,
       "aScore": 0,
