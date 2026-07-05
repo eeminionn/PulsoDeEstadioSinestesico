@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-05T20:14:30.276Z",
+  "updated_at": "2026-07-05T22:02:13.339Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -3962,9 +3962,9 @@
       "hCode": "BRA",
       "aCode": "NOR",
       "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
-      "margin": 1,
+      "aScore": 2,
+      "totalGoals": 2,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -3974,7 +3974,20 @@
       "hostTeam": 0,
       "finished": false,
       "liveState": "live",
-      "goals": []
+      "goals": [
+        {
+          "minute": 79,
+          "label": "79'",
+          "team": "NOR",
+          "player": "Erling Haaland"
+        },
+        {
+          "minute": 90,
+          "label": "90'",
+          "team": "NOR",
+          "player": "Erling Haaland"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-092",
