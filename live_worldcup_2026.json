@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-06T00:06:30.687Z",
+  "updated_at": "2026-07-06T05:12:03.969Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 91,
-    "totalGoals": 264,
-    "currentLeader": "En juego · 91/104 partidos cerrados"
+    "finishedMatches": 92,
+    "totalGoals": 269,
+    "currentLeader": "En juego · 92/104 partidos cerrados"
   },
   "matches": [
     {
@@ -4000,9 +4000,9 @@
       "away": "England",
       "hCode": "MEX",
       "aCode": "ENG",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 2,
+      "aScore": 3,
+      "totalGoals": 5,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -4011,9 +4011,28 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 1,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 36,
+          "label": "36'",
+          "team": "ENG",
+          "player": "Jvd Blingham"
+        },
+        {
+          "minute": 38,
+          "label": "38'",
+          "team": "ENG",
+          "player": "Jvd Blingham"
+        },
+        {
+          "minute": 42,
+          "label": "42'",
+          "team": "MEX",
+          "player": "Jvlian Kviinvnz"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-093",
@@ -4179,9 +4198,9 @@
       "city": "Miami (Miami Gardens)",
       "country": "United States",
       "home": "Norway",
-      "away": "Winner Match 92",
+      "away": "England",
       "hCode": "NOR",
-      "aCode": "M92",
+      "aCode": "ENG",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
