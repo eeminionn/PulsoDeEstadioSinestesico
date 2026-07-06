@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-06T19:58:17.398Z",
+  "updated_at": "2026-07-06T21:43:51.735Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 92,
-    "totalGoals": 269,
-    "currentLeader": "En juego · 92/104 partidos cerrados"
+    "finishedMatches": 93,
+    "totalGoals": 270,
+    "currentLeader": "En juego · 93/104 partidos cerrados"
   },
   "matches": [
     {
@@ -4046,8 +4046,8 @@
       "hCode": "POR",
       "aCode": "ESP",
       "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "aScore": 1,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -4056,9 +4056,16 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 1,
+          "label": "1'",
+          "team": "ESP",
+          "player": "Mikel Merino 90+"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-094",
@@ -4171,9 +4178,9 @@
       "stage": "quarter-finals",
       "city": "Los Angeles (Inglewood)",
       "country": "United States",
-      "home": "Winner Match 93",
+      "home": "Spain",
       "away": "Winner Match 94",
-      "hCode": "M93",
+      "hCode": "ESP",
       "aCode": "M94",
       "hScore": 0,
       "aScore": 0,
