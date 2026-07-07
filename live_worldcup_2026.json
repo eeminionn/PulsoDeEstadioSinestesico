@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-07T16:31:39.905Z",
+  "updated_at": "2026-07-07T19:02:51.469Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 94,
-    "totalGoals": 275,
-    "currentLeader": "En juego · 94/104 partidos cerrados"
+    "finishedMatches": 95,
+    "totalGoals": 280,
+    "currentLeader": "En juego · 95/104 partidos cerrados"
   },
   "matches": [
     {
@@ -4135,9 +4135,9 @@
       "away": "Egypt",
       "hCode": "ARG",
       "aCode": "EGY",
-      "hScore": 0,
-      "aScore": 1,
-      "totalGoals": 1,
+      "hScore": 3,
+      "aScore": 2,
+      "totalGoals": 5,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -4146,14 +4146,38 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
+        {
+          "minute": 2,
+          "label": "2'",
+          "team": "ARG",
+          "player": "Enzo Fernández 90+"
+        },
         {
           "minute": 15,
           "label": "15'",
           "team": "EGY",
           "player": "Yasser Ibrahim"
+        },
+        {
+          "minute": 67,
+          "label": "67'",
+          "team": "EGY",
+          "player": "Mostafa Ziko"
+        },
+        {
+          "minute": 79,
+          "label": "79'",
+          "team": "ARG",
+          "player": "Cristian Romero"
+        },
+        {
+          "minute": 83,
+          "label": "83'",
+          "team": "ARG",
+          "player": "Lionel Messi"
         }
       ]
     },
@@ -4268,9 +4292,9 @@
       "stage": "quarter-finals",
       "city": "Kansas City",
       "country": "United States",
-      "home": "Winner Match 95",
+      "home": "Argentina",
       "away": "Winner Match 96",
-      "hCode": "M95",
+      "hCode": "ARG",
       "aCode": "M96",
       "hScore": 0,
       "aScore": 0,
