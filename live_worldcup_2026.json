@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-07T21:25:06.897Z",
+  "updated_at": "2026-07-07T23:02:17.034Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 95,
+    "finishedMatches": 96,
     "totalGoals": 280,
-    "currentLeader": "En juego · 95/104 partidos cerrados"
+    "currentLeader": "En juego · 96/104 partidos cerrados"
   },
   "matches": [
     {
@@ -4203,8 +4203,8 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": []
     },
     {
@@ -4293,9 +4293,9 @@
       "city": "Kansas City",
       "country": "United States",
       "home": "Argentina",
-      "away": "Winner Match 96",
+      "away": "Switzerland",
       "hCode": "ARG",
-      "aCode": "M96",
+      "aCode": "SUI",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
