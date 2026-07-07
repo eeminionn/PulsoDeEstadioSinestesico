@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-07T13:23:36.292Z",
+  "updated_at": "2026-07-07T16:31:39.905Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -4135,9 +4135,9 @@
       "away": "Egypt",
       "hCode": "ARG",
       "aCode": "EGY",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
+      "hScore": 0,
+      "aScore": 1,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -4147,8 +4147,15 @@
       "champion": 0,
       "hostTeam": 0,
       "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "liveState": "live",
+      "goals": [
+        {
+          "minute": 15,
+          "label": "15'",
+          "team": "EGY",
+          "player": "Yasser Ibrahim"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-096",
