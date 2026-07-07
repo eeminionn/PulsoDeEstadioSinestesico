@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-06T23:08:31.919Z",
+  "updated_at": "2026-07-07T03:27:57.883Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 93,
-    "totalGoals": 270,
-    "currentLeader": "En juego · 93/104 partidos cerrados"
+    "finishedMatches": 94,
+    "totalGoals": 275,
+    "currentLeader": "En juego · 94/104 partidos cerrados"
   },
   "matches": [
     {
@@ -4078,10 +4078,10 @@
       "away": "Belgium",
       "hCode": "USA",
       "aCode": "BEL",
-      "hScore": null,
-      "aScore": null,
-      "totalGoals": null,
-      "margin": 1,
+      "hScore": 1,
+      "aScore": 4,
+      "totalGoals": 5,
+      "margin": 3,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -4089,9 +4089,40 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 1,
-      "finished": false,
-      "liveState": "notstarted",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 3,
+          "label": "3'",
+          "team": "BEL",
+          "player": "Romelu Lukaku 90+"
+        },
+        {
+          "minute": 9,
+          "label": "9'",
+          "team": "BEL",
+          "player": "Sharl D Ktlar"
+        },
+        {
+          "minute": 31,
+          "label": "31'",
+          "team": "USA",
+          "player": "Malik Tillman"
+        },
+        {
+          "minute": 33,
+          "label": "33'",
+          "team": "BEL",
+          "player": "Sharl D Ktlar"
+        },
+        {
+          "minute": 57,
+          "label": "57'",
+          "team": "BEL",
+          "player": "Hans Vanaken"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-095",
@@ -4179,9 +4210,9 @@
       "city": "Los Angeles (Inglewood)",
       "country": "United States",
       "home": "Spain",
-      "away": "Winner Match 94",
+      "away": "Belgium",
       "hCode": "ESP",
-      "aCode": "M94",
+      "aCode": "BEL",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
