@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-10T20:23:26.769Z",
+  "updated_at": "2026-07-10T22:03:56.017Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 97,
-    "totalGoals": 282,
-    "currentLeader": "En juego · 97/104 partidos cerrados"
+    "finishedMatches": 98,
+    "totalGoals": 285,
+    "currentLeader": "En juego · 98/104 partidos cerrados"
   },
   "matches": [
     {
@@ -4257,9 +4257,9 @@
       "away": "Belgium",
       "hCode": "ESP",
       "aCode": "BEL",
-      "hScore": 1,
+      "hScore": 2,
       "aScore": 1,
-      "totalGoals": 2,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -4268,8 +4268,8 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 30,
@@ -4282,6 +4282,12 @@
           "label": "41'",
           "team": "BEL",
           "player": "Sharl D Ktlar"
+        },
+        {
+          "minute": 88,
+          "label": "88'",
+          "team": "ESP",
+          "player": "Mikel Merino"
         }
       ]
     },
@@ -4345,9 +4351,9 @@
       "city": "Dallas (Arlington, Texas)",
       "country": "United States",
       "home": "France",
-      "away": "Winner Match 98",
+      "away": "Spain",
       "hCode": "FRA",
-      "aCode": "M98",
+      "aCode": "ESP",
       "hScore": 0,
       "aScore": 0,
       "totalGoals": 0,
