@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-14T20:12:01.844Z",
+  "updated_at": "2026-07-14T21:57:51.874Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 100,
-    "totalGoals": 292,
-    "currentLeader": "En juego · 100/104 partidos cerrados"
+    "finishedMatches": 101,
+    "totalGoals": 294,
+    "currentLeader": "En juego · 101/104 partidos cerrados"
   },
   "matches": [
     {
@@ -4399,9 +4399,9 @@
       "hCode": "FRA",
       "aCode": "ESP",
       "hScore": 0,
-      "aScore": 1,
-      "totalGoals": 1,
-      "margin": 1,
+      "aScore": 2,
+      "totalGoals": 2,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -4409,9 +4409,16 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 58,
+          "label": "58'",
+          "team": "ESP",
+          "player": "Pedro Porro"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-102",
