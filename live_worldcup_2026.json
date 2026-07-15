@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-15T20:09:25.650Z",
+  "updated_at": "2026-07-15T22:01:14.589Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 101,
-    "totalGoals": 294,
-    "currentLeader": "En juego · 101/104 partidos cerrados"
+    "finishedMatches": 102,
+    "totalGoals": 297,
+    "currentLeader": "En juego · 102/104 partidos cerrados"
   },
   "matches": [
     {
@@ -4431,9 +4431,9 @@
       "away": "Argentina",
       "hCode": "ENG",
       "aCode": "ARG",
-      "hScore": 0,
-      "aScore": 0,
-      "totalGoals": 0,
+      "hScore": 1,
+      "aScore": 2,
+      "totalGoals": 3,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -4442,9 +4442,28 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
-      "goals": []
+      "finished": true,
+      "liveState": "finished",
+      "goals": [
+        {
+          "minute": 2,
+          "label": "2'",
+          "team": "ARG",
+          "player": "Lautaro Martínez 90+"
+        },
+        {
+          "minute": 55,
+          "label": "55'",
+          "team": "ENG",
+          "player": "Antvni Gvrdvn"
+        },
+        {
+          "minute": 85,
+          "label": "85'",
+          "team": "ARG",
+          "player": "Enzo Fernández"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-103",
