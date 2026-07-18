@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-18T22:50:48.102Z",
+  "updated_at": "2026-07-18T23:54:13.924Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 102,
-    "totalGoals": 297,
-    "currentLeader": "En juego · 102/104 partidos cerrados"
+    "finishedMatches": 103,
+    "totalGoals": 307,
+    "currentLeader": "En juego · 103/104 partidos cerrados"
   },
   "matches": [
     {
@@ -4007,10 +4007,10 @@
       "away": "England",
       "hCode": "FRA",
       "aCode": "ENG",
-      "hScore": 3,
-      "aScore": 4,
-      "totalGoals": 7,
-      "margin": 1,
+      "hScore": 4,
+      "aScore": 6,
+      "totalGoals": 10,
+      "margin": 2,
       "extra": 0,
       "pens": 0,
       "final": 0,
@@ -4018,8 +4018,8 @@
       "ko": 1,
       "champion": 0,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 1,
@@ -4032,6 +4032,18 @@
           "label": "3'",
           "team": "ENG",
           "player": "Dklan Rais"
+        },
+        {
+          "minute": 6,
+          "label": "6'",
+          "team": "FRA",
+          "player": "Ousmane Dembélé 90+"
+        },
+        {
+          "minute": 8,
+          "label": "8'",
+          "team": "ENG",
+          "player": "Jvd Blingham 90+"
         },
         {
           "minute": 18,
