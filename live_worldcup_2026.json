@@ -2,7 +2,7 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-19T20:50:27.713Z",
+  "updated_at": "2026-07-19T21:53:12.989Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
@@ -3484,9 +3484,9 @@
       "away": "Argentina",
       "hCode": "ESP",
       "aCode": "ARG",
-      "hScore": 0,
+      "hScore": 1,
       "aScore": 0,
-      "totalGoals": 0,
+      "totalGoals": 1,
       "margin": 1,
       "extra": 0,
       "pens": 0,
@@ -3497,7 +3497,14 @@
       "hostTeam": 0,
       "finished": false,
       "liveState": "live",
-      "goals": []
+      "goals": [
+        {
+          "minute": 106,
+          "label": "106'",
+          "team": "ESP",
+          "player": "Ferran Torres"
+        }
+      ]
     },
     {
       "id": "LIVE-2026-003",
