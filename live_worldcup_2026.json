@@ -2,13 +2,13 @@
   "year": 2026,
   "tournament_name": "FIFA World Cup 2026",
   "host": "United States / Mexico / Canada",
-  "updated_at": "2026-07-19T21:53:12.989Z",
+  "updated_at": "2026-07-19T22:53:05.733Z",
   "source": "https://worldcup26.ir/get/games",
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 103,
-    "totalGoals": 307,
-    "currentLeader": "En juego · 103/104 partidos cerrados"
+    "finishedMatches": 104,
+    "totalGoals": 308,
+    "currentLeader": "En juego · 104/104 partidos cerrados"
   },
   "matches": [
     {
@@ -3493,10 +3493,10 @@
       "final": 1,
       "semi": 0,
       "ko": 1,
-      "champion": 0,
+      "champion": 1,
       "hostTeam": 0,
-      "finished": false,
-      "liveState": "live",
+      "finished": true,
+      "liveState": "finished",
       "goals": [
         {
           "minute": 106,
