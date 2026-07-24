@@ -34,7 +34,9 @@ La clase `BallPanel` genera múltiples paneles con variaciones de forma y reacci
 
 La clase `InfiniteWorldCupGame` controla el tiempo, la alternancia, los toques, la racha, la física del balón y los estados de victoria o fin del partido.
 
-El sketch no necesita CSV, JSON ni datasets externos para funcionar.
+El sketch interactivo no carga CSV, JSON ni datasets externos para funcionar.
+El repositorio mantiene, por separado, una instantanea experimental de partidos
+en `live_worldcup_2026.json`; actualmente el juego no consume ese archivo.
 
 ## Controles
 
@@ -62,6 +64,24 @@ python3 -m http.server 8000
 ```
 
 Luego visita `http://localhost:8000`, activa el micrófono y juega alternando sonidos graves y agudos. Deja una pausa breve entre cada sonido para que el siguiente toque pueda detectarse.
+
+## Datos en vivo del Mundial 2026
+
+`scripts/updateLiveWorldCup2026.mjs` consulta partidos, equipos y estadios desde
+la API publica de `worldcup26.ir`, normaliza los datos y actualiza
+`live_worldcup_2026.json`. La automatizacion
+`.github/workflows/update-live-worldcup-2026.yml` lo ejecuta cada hora y solo
+crea un commit cuando cambian datos deportivos, no por el reloj de ejecucion.
+
+Para actualizar la instantanea localmente se requiere Node.js 24:
+
+```bash
+node scripts/updateLiveWorldCup2026.mjs
+```
+
+Si la API externa no responde despues de los reintentos, el comando termina con
+error y conserva la ultima instantanea confirmada. La experiencia de microfono
+sigue funcionando porque `sketch.js` no depende de esa fuente.
 
 ## Verificacion del updater
 
