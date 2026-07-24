@@ -24,6 +24,9 @@ jobs:
         with:
           node-version: "24"
 
+      - name: Verificar updater
+        run: node --test tests/*.test.mjs
+
       - name: Actualizar JSON del Mundial 2026
         run: node scripts/updateLiveWorldCup2026.mjs
 
