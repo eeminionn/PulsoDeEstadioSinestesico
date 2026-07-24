@@ -62,3 +62,12 @@ python3 -m http.server 8000
 ```
 
 Luego visita `http://localhost:8000`, activa el micrófono y juega alternando sonidos graves y agudos. Deja una pausa breve entre cada sonido para que el siguiente toque pueda detectarse.
+
+## Verificacion del updater
+
+Las pruebas del actualizador funcionan sin red y comprueban que una ejecucion
+sin cambios deportivos no reescriba el JSON:
+
+```bash
+node --test tests/*.test.mjs
+```

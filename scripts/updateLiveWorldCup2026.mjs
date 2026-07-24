@@ -1,4 +1,4 @@
-import { writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -195,6 +195,53 @@ function buildSummary(matches) {
   };
 }
 
+function payloadWithoutTimestamp(payload) {
+  const { updated_at: _updatedAt, ...stablePayload } = payload;
+  return stablePayload;
+}
+
+export async function writePayloadIfChanged(
+  filePath,
+  nextPayload,
+  now = () => new Date()
+) {
+  let previousPayload = null;
+  let previousContent = null;
+
+  try {
+    previousContent = await readFile(filePath, "utf8");
+    previousPayload = JSON.parse(previousContent);
+  } catch (error) {
+    if (error.code !== "ENOENT") {
+      throw error;
+    }
+  }
+
+  const previousStable = previousPayload
+    ? JSON.stringify(payloadWithoutTimestamp(previousPayload))
+    : null;
+  const nextStable = JSON.stringify(payloadWithoutTimestamp(nextPayload));
+
+  if (previousStable === nextStable) {
+    return {
+      changed: false,
+      payload: previousPayload,
+      content: previousContent
+    };
+  }
+
+  const payload = {
+    ...payloadWithoutTimestamp(nextPayload),
+    updated_at: now().toISOString()
+  };
+  const content = `${JSON.stringify(payload, null, 2)}\n`;
+
+  await mkdir(path.dirname(filePath), { recursive: true });
+  await writeFile(filePath, content, "utf8");
+
+  return { changed: true, payload, content };
+}
+
 async function main() {
   const [gamesData, teamsData, stadiumsData] = await Promise.all([
     fetchJson(API.games),
@@ -210,22 +257,26 @@ async function main() {
     year: 2026,
     tournament_name: "FIFA World Cup 2026",
     host: "United States / Mexico / Canada",
-    updated_at: new Date().toISOString(),
     source: API.games,
     summary: buildSummary(matches),
     matches
   };
 
-  await mkdir(rootDir, { recursive: true });
-  await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+  const result = await writePayloadIfChanged(outputPath, payload);
 
-  console.log(`Actualizado: ${outputPath}`);
-  console.log(`Partidos: ${payload.summary.totalMatches}`);
-  console.log(`Cerrados: ${payload.summary.finishedMatches}`);
+  console.log(
+    result.changed
+      ? `Actualizado: ${outputPath}`
+      : `Sin cambios semánticos: ${outputPath}`
+  );
+  console.log(`Partidos: ${result.payload.summary.totalMatches}`);
+  console.log(`Cerrados: ${result.payload.summary.finishedMatches}`);
 }
 
-main().catch(error => {
-  console.error("No se pudo actualizar live_worldcup_2026.json");
-  console.error(error);
-  process.exit(1);
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  main().catch(error => {
+    console.error("No se pudo actualizar live_worldcup_2026.json");
+    console.error(error);
+    process.exit(1);
+  });
+}
